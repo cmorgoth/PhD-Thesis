@@ -1,3 +1,0 @@
-pdflatex NSS_Cpena;
-bibtex NSS_Cpena;
-pdflatex NSS_Cpena;
