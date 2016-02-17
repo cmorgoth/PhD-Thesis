@@ -129,17 +129,17 @@
 \newif\ifthesisdraft
 \newif\ifthesispreprint
 \newif\iflucidafont
-\newif\ifpdf
+%\newif\ifpdf
 
 % Set up \ifpdf
-\pdffalse       % no pdfLaTeX
-\ifx\pdfoutput\undefined
-\else
-  \ifx\pdfoutput\relax
-  \else
-    \pdftrue    % pdfLaTeX
-  \fi
-\fi
+%\pdffalse       % no pdfLaTeX
+%\ifx\pdfoutput\undefined
+%\else
+%  \ifx\pdfoutput\relax
+%  \else
+%    \pdftrue    % pdfLaTeX
+%  \fi
+%\fi
 
 % We require some other packages...
 \RequirePackage{setspace}
