@@ -1,5 +1,24 @@
 \documentclass[draftfoot,preprint]{cit_thesis}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{textcomp}
+
 \usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{natbib}
+%\usepackage{cite}
+
+
+
+\newcommand{\pt}{$p_{T}$}
+\newcommand{\cPZ}{\textrm{Z}}
+\newcommand{\PW}{\textrm{W}}
+\newcommand{\ttbar}{$t\bar{t}$}
+\newcommand{\fbinv}{\textrm{fb}$^{-1}$ }
+\newcommand{\TeV}{\textrm{TeV}}
+\newcommand{\GeV}{\textrm{GeV}}
+
 
 \begin{document}
 
@@ -13,10 +32,12 @@ A search for dark matter (DM) is carried out....
 \end{abstract}
 
 \input{intro}
+AAAAAAAAAAAAAAAAAAAAA~\cite{vandeHulst,Rubin:1980zd}
 \input{LHC}
 \input{CMS}
 \input{ObjectReco}
 \input{DMatLHC}
 \input{Conclusion}
-\bibliography{DarkMatter8TeV/EXO-14-004}
+\bibliography{MyBib}{}
+\bibliographystyle{plain}
 \end{document}
