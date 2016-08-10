@@ -7,17 +7,41 @@
 \usepackage{amsmath}
 \usepackage{multirow}
 \usepackage{natbib}
+%\usepackage{ptdr-definitions}
+%\usepackage{topcapt}
+%\usepackage{pennames-pazo}
+%usepackage{pennames-ital}
+%\usepackage{pdfdraftcopy}
+%usepackage{hypernat}
+%\usepackage{changepage}
 %\usepackage{cite}
 
 
 
-\newcommand{\pt}{$p_{T}$}
-\newcommand{\cPZ}{\textrm{Z}}
-\newcommand{\PW}{\textrm{W}}
-\newcommand{\ttbar}{$t\bar{t}$}
-\newcommand{\fbinv}{\textrm{fb}$^{-1}$ }
-\newcommand{\TeV}{\textrm{TeV}}
-\newcommand{\GeV}{\textrm{GeV}}
+%\newcommand{\pt}{$p_{T}$}
+%\newcommand{\cPZ}{\textrm{Z}}
+%\newcommand{\PW}{\textrm{W}}
+%\newcommand{\ttbar}{$t\bar{t}$}
+%\newcommand{\fbinv}{\textrm{fb}$^{-1}$ }
+%\newcommand{\TeV}{\textrm{TeV}}
+%\newcommand{\GeV}{\textrm{GeV}}
+
+\newcommand\mT{\rule{0pt}{2.3ex}}
+\newcommand\mB{\rule[-1.2ex]{0pt}{0pt}}
+
+\RCS$Revision: 363804 $
+\RCS$HeadURL: svn+ssh://cpena@svn.cern.ch/reps/tdr2/papers/EXO-14-004/trunk/EXO-14-004.tex $
+\RCS$Id: EXO-14-004.tex 363804 2016-08-05 17:11:46Z cpena $
+\newlength\cmsFigWidth
+\ifthenelse{\boolean{cms@external}}{\setlength\cmsFigWidth{0.85\columnwidth}}{\setlength\cmsFigWidth{0.4\textwidth}}
+\ifthenelse{\boolean{cms@external}}{\providecommand{\cmsLeft}{top}}{\providecommand{\cmsLeft}{left}}
+\ifthenelse{\boolean{cms@external}}{\providecommand{\cmsRight}{bottom}}{\providecommand{\cmsRight}{right}}
+\providecommand{\MR}{\ensuremath{M_R}\xspace}
+\providecommand{\RR}{\ensuremath{R}\xspace}
+\providecommand{\NA}{\text{---}\xspace}
+\newlength\cmsTabSkip\setlength{\cmsTabSkip}{1.5ex}
+\newcolumntype{x}{D{,}{\,\pm\,}{-1}}
+\newcommand*{\vv}[1]{\ensuremath{\vec{#1\mkern0mu}}}
 
 
 \begin{document}
@@ -37,7 +61,10 @@ AAAAAAAAAAAAAAAAAAAAA~\cite{vandeHulst,Rubin:1980zd}
 \input{CMS}
 \input{ObjectReco}
 \input{DMatLHC}
+\input{HggRazor}
+\input{Timing}
 \input{Conclusion}
-\bibliography{MyBib}{}
+%\bibliography{MyBib}{}
+\bibliography{auto_generated}
 \bibliographystyle{plain}
 \end{document}

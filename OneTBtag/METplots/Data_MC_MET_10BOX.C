@@ -1,0 +1,383 @@
+{
+//=========Macro generated from canvas: C/C      
+//=========  (Fri Sep 12 00:53:04 2014) by ROOT version5.34/19
+   TCanvas *C = new TCanvas("C", "C      ",0,0,400,500);
+   C->SetHighLightColor(2);
+   C->Range(0,0,1,1);
+   C->SetFillColor(0);
+   C->SetBorderMode(0);
+   C->SetBorderSize(2);
+   C->SetFrameBorderMode(0);
+  
+// ------------>Primitives in pad: pad1
+   TPad *pad1 = new TPad("pad1", "pad1",0,0.25,1,1);
+   pad1->Draw();
+   pad1->cd();
+   pad1->Range(-187.5,-0.4771213,1687.5,4.781094);
+   pad1->SetFillColor(0);
+   pad1->SetBorderMode(0);
+   pad1->SetBorderSize(2);
+   pad1->SetLogy();
+   pad1->SetBottomMargin(0);
+   pad1->SetFrameBorderMode(0);
+   pad1->SetFrameBorderMode(0);
+   
+   THStack *stack3 = new THStack();
+   stack3->SetName("stack3");
+   stack3->SetTitle("");
+   stack3->SetMinimum(1);
+   stack3->SetMaximum(10000);
+   
+   TH1F *stack3_stack_9 = new TH1F("stack3_stack_9","",20,0,1500);
+   stack3_stack_9->SetMinimum(0.3333333);
+   stack3_stack_9->SetMaximum(18000);
+   stack3_stack_9->SetDirectory(0);
+   stack3_stack_9->SetStats(0);
+
+   Int_t ci;      // for color index setting
+   TColor *color; // for color definition with alpha
+   ci = TColor::GetColor("#000099");
+   stack3_stack_9->SetLineColor(ci);
+   stack3_stack_9->GetXaxis()->SetLabelFont(42);
+   stack3_stack_9->GetXaxis()->SetLabelSize(0.035);
+   stack3_stack_9->GetXaxis()->SetTitleSize(0.035);
+   stack3_stack_9->GetXaxis()->SetTitleFont(42);
+   stack3_stack_9->GetYaxis()->SetTitle("Events/20 GeV");
+   stack3_stack_9->GetYaxis()->SetLabelFont(42);
+   stack3_stack_9->GetYaxis()->SetLabelSize(0.035);
+   stack3_stack_9->GetYaxis()->SetTitleSize(0.035);
+   stack3_stack_9->GetYaxis()->SetTitleOffset(1.25);
+   stack3_stack_9->GetYaxis()->SetTitleFont(42);
+   stack3_stack_9->GetZaxis()->SetLabelFont(42);
+   stack3_stack_9->GetZaxis()->SetLabelSize(0.035);
+   stack3_stack_9->GetZaxis()->SetTitleSize(0.035);
+   stack3_stack_9->GetZaxis()->SetTitleFont(42);
+   stack3->SetHistogram(stack3_stack_9);
+   
+   
+   TH1F *BaseDM_METmag_Box1_plotType0 = new TH1F("BaseDM_METmag_Box1_plotType0","BaseDM_METmag_Box1_plotType0",20,0,1500);
+   BaseDM_METmag_Box1_plotType0->SetBinContent(1,4.866162);
+   BaseDM_METmag_Box1_plotType0->SetBinContent(2,1.939923);
+   BaseDM_METmag_Box1_plotType0->SetBinContent(3,2.054364);
+   BaseDM_METmag_Box1_plotType0->SetBinContent(4,0.5828902);
+   BaseDM_METmag_Box1_plotType0->SetBinContent(5,0.165455);
+   BaseDM_METmag_Box1_plotType0->SetBinContent(6,0.121163);
+   BaseDM_METmag_Box1_plotType0->SetBinContent(7,0.0858698);
+   BaseDM_METmag_Box1_plotType0->SetBinContent(8,0.008405764);
+   BaseDM_METmag_Box1_plotType0->SetBinContent(12,0.02264613);
+   BaseDM_METmag_Box1_plotType0->SetBinContent(17,0.02260193);
+   BaseDM_METmag_Box1_plotType0->SetEntries(241);
+   BaseDM_METmag_Box1_plotType0->SetStats(0);
+
+   ci = TColor::GetColor("#3300cc");
+   BaseDM_METmag_Box1_plotType0->SetFillColor(ci);
+
+   ci = TColor::GetColor("#000099");
+   BaseDM_METmag_Box1_plotType0->SetLineColor(ci);
+   BaseDM_METmag_Box1_plotType0->GetXaxis()->SetLabelFont(42);
+   BaseDM_METmag_Box1_plotType0->GetXaxis()->SetLabelSize(0.035);
+   BaseDM_METmag_Box1_plotType0->GetXaxis()->SetTitleSize(0.035);
+   BaseDM_METmag_Box1_plotType0->GetXaxis()->SetTitleFont(42);
+   BaseDM_METmag_Box1_plotType0->GetYaxis()->SetLabelFont(42);
+   BaseDM_METmag_Box1_plotType0->GetYaxis()->SetLabelSize(0.035);
+   BaseDM_METmag_Box1_plotType0->GetYaxis()->SetTitleSize(0.035);
+   BaseDM_METmag_Box1_plotType0->GetYaxis()->SetTitleFont(42);
+   BaseDM_METmag_Box1_plotType0->GetZaxis()->SetLabelFont(42);
+   BaseDM_METmag_Box1_plotType0->GetZaxis()->SetLabelSize(0.035);
+   BaseDM_METmag_Box1_plotType0->GetZaxis()->SetTitleSize(0.035);
+   BaseDM_METmag_Box1_plotType0->GetZaxis()->SetTitleFont(42);
+   stack3->Add(BaseDM_METmag_Box1_plotType0,"");
+   
+   TH1F *BaseDM_METmag_Box1_plotType0 = new TH1F("BaseDM_METmag_Box1_plotType0","BaseDM_METmag_Box1_plotType0",20,0,1500);
+   BaseDM_METmag_Box1_plotType0->SetBinContent(1,421.5561);
+   BaseDM_METmag_Box1_plotType0->SetBinContent(2,993.4625);
+   BaseDM_METmag_Box1_plotType0->SetBinContent(3,866.4908);
+   BaseDM_METmag_Box1_plotType0->SetBinContent(4,296.7145);
+   BaseDM_METmag_Box1_plotType0->SetBinContent(5,71.53079);
+   BaseDM_METmag_Box1_plotType0->SetBinContent(6,19.52862);
+   BaseDM_METmag_Box1_plotType0->SetBinContent(7,5.464822);
+   BaseDM_METmag_Box1_plotType0->SetBinContent(8,1.185049);
+   BaseDM_METmag_Box1_plotType0->SetBinContent(9,0.2288421);
+   BaseDM_METmag_Box1_plotType0->SetBinContent(11,0.02279203);
+   BaseDM_METmag_Box1_plotType0->SetBinContent(12,0.07899242);
+   BaseDM_METmag_Box1_plotType0->SetBinContent(13,0.05478827);
+   BaseDM_METmag_Box1_plotType0->SetBinContent(21,0.01108073);
+   BaseDM_METmag_Box1_plotType0->SetEntries(35626);
+   BaseDM_METmag_Box1_plotType0->SetStats(0);
+
+   ci = TColor::GetColor("#ff33cc");
+   BaseDM_METmag_Box1_plotType0->SetFillColor(ci);
+
+   ci = TColor::GetColor("#000099");
+   BaseDM_METmag_Box1_plotType0->SetLineColor(ci);
+   BaseDM_METmag_Box1_plotType0->GetXaxis()->SetLabelFont(42);
+   BaseDM_METmag_Box1_plotType0->GetXaxis()->SetLabelSize(0.035);
+   BaseDM_METmag_Box1_plotType0->GetXaxis()->SetTitleSize(0.035);
+   BaseDM_METmag_Box1_plotType0->GetXaxis()->SetTitleFont(42);
+   BaseDM_METmag_Box1_plotType0->GetYaxis()->SetLabelFont(42);
+   BaseDM_METmag_Box1_plotType0->GetYaxis()->SetLabelSize(0.035);
+   BaseDM_METmag_Box1_plotType0->GetYaxis()->SetTitleSize(0.035);
+   BaseDM_METmag_Box1_plotType0->GetYaxis()->SetTitleFont(42);
+   BaseDM_METmag_Box1_plotType0->GetZaxis()->SetLabelFont(42);
+   BaseDM_METmag_Box1_plotType0->GetZaxis()->SetLabelSize(0.035);
+   BaseDM_METmag_Box1_plotType0->GetZaxis()->SetTitleSize(0.035);
+   BaseDM_METmag_Box1_plotType0->GetZaxis()->SetTitleFont(42);
+   stack3->Add(BaseDM_METmag_Box1_plotType0,"");
+   
+   TH1F *BaseDM_METmag_Box1_plotType0 = new TH1F("BaseDM_METmag_Box1_plotType0","BaseDM_METmag_Box1_plotType0",20,0,1500);
+   BaseDM_METmag_Box1_plotType0->SetBinContent(1,68.00021);
+   BaseDM_METmag_Box1_plotType0->SetBinContent(2,67.56881);
+   BaseDM_METmag_Box1_plotType0->SetBinContent(3,68.61114);
+   BaseDM_METmag_Box1_plotType0->SetBinContent(4,31.05509);
+   BaseDM_METmag_Box1_plotType0->SetBinContent(5,11.48399);
+   BaseDM_METmag_Box1_plotType0->SetBinContent(6,5.67776);
+   BaseDM_METmag_Box1_plotType0->SetBinContent(7,2.528945);
+   BaseDM_METmag_Box1_plotType0->SetBinContent(8,0.7608541);
+   BaseDM_METmag_Box1_plotType0->SetBinContent(9,0.5063838);
+   BaseDM_METmag_Box1_plotType0->SetBinContent(10,0.1561628);
+   BaseDM_METmag_Box1_plotType0->SetEntries(1748);
+   BaseDM_METmag_Box1_plotType0->SetStats(0);
+
+   ci = TColor::GetColor("#ffff33");
+   BaseDM_METmag_Box1_plotType0->SetFillColor(ci);
+
+   ci = TColor::GetColor("#000099");
+   BaseDM_METmag_Box1_plotType0->SetLineColor(ci);
+   BaseDM_METmag_Box1_plotType0->GetXaxis()->SetLabelFont(42);
+   BaseDM_METmag_Box1_plotType0->GetXaxis()->SetLabelSize(0.035);
+   BaseDM_METmag_Box1_plotType0->GetXaxis()->SetTitleSize(0.035);
+   BaseDM_METmag_Box1_plotType0->GetXaxis()->SetTitleFont(42);
+   BaseDM_METmag_Box1_plotType0->GetYaxis()->SetLabelFont(42);
+   BaseDM_METmag_Box1_plotType0->GetYaxis()->SetLabelSize(0.035);
+   BaseDM_METmag_Box1_plotType0->GetYaxis()->SetTitleSize(0.035);
+   BaseDM_METmag_Box1_plotType0->GetYaxis()->SetTitleFont(42);
+   BaseDM_METmag_Box1_plotType0->GetZaxis()->SetLabelFont(42);
+   BaseDM_METmag_Box1_plotType0->GetZaxis()->SetLabelSize(0.035);
+   BaseDM_METmag_Box1_plotType0->GetZaxis()->SetTitleSize(0.035);
+   BaseDM_METmag_Box1_plotType0->GetZaxis()->SetTitleFont(42);
+   stack3->Add(BaseDM_METmag_Box1_plotType0,"");
+   
+   TH1F *BaseDM_METmag_Box1_plotType0 = new TH1F("BaseDM_METmag_Box1_plotType0","BaseDM_METmag_Box1_plotType0",20,0,1500);
+   BaseDM_METmag_Box1_plotType0->SetBinContent(2,0.06808402);
+   BaseDM_METmag_Box1_plotType0->SetBinContent(3,0.03084239);
+   BaseDM_METmag_Box1_plotType0->SetBinContent(4,0.02243395);
+   BaseDM_METmag_Box1_plotType0->SetBinContent(6,0.05955952);
+   BaseDM_METmag_Box1_plotType0->SetBinContent(7,0.0328439);
+   BaseDM_METmag_Box1_plotType0->SetEntries(9);
+   BaseDM_METmag_Box1_plotType0->SetStats(0);
+
+   ci = TColor::GetColor("#669900");
+   BaseDM_METmag_Box1_plotType0->SetFillColor(ci);
+
+   ci = TColor::GetColor("#000099");
+   BaseDM_METmag_Box1_plotType0->SetLineColor(ci);
+   BaseDM_METmag_Box1_plotType0->GetXaxis()->SetLabelFont(42);
+   BaseDM_METmag_Box1_plotType0->GetXaxis()->SetLabelSize(0.035);
+   BaseDM_METmag_Box1_plotType0->GetXaxis()->SetTitleSize(0.035);
+   BaseDM_METmag_Box1_plotType0->GetXaxis()->SetTitleFont(42);
+   BaseDM_METmag_Box1_plotType0->GetYaxis()->SetLabelFont(42);
+   BaseDM_METmag_Box1_plotType0->GetYaxis()->SetLabelSize(0.035);
+   BaseDM_METmag_Box1_plotType0->GetYaxis()->SetTitleSize(0.035);
+   BaseDM_METmag_Box1_plotType0->GetYaxis()->SetTitleFont(42);
+   BaseDM_METmag_Box1_plotType0->GetZaxis()->SetLabelFont(42);
+   BaseDM_METmag_Box1_plotType0->GetZaxis()->SetLabelSize(0.035);
+   BaseDM_METmag_Box1_plotType0->GetZaxis()->SetTitleSize(0.035);
+   BaseDM_METmag_Box1_plotType0->GetZaxis()->SetTitleFont(42);
+   stack3->Add(BaseDM_METmag_Box1_plotType0,"");
+   stack3->Draw("");
+   
+   TH1F *Data_METmag_Box1_plotType0 = new TH1F("Data_METmag_Box1_plotType0","Data_METmag_Box1_plotType0",20,0,1500);
+   Data_METmag_Box1_plotType0->SetBinContent(1,546);
+   Data_METmag_Box1_plotType0->SetBinContent(2,963);
+   Data_METmag_Box1_plotType0->SetBinContent(3,745);
+   Data_METmag_Box1_plotType0->SetBinContent(4,271);
+   Data_METmag_Box1_plotType0->SetBinContent(5,57);
+   Data_METmag_Box1_plotType0->SetBinContent(6,10);
+   Data_METmag_Box1_plotType0->SetBinContent(7,6);
+   Data_METmag_Box1_plotType0->SetBinContent(8,4);
+   Data_METmag_Box1_plotType0->SetBinContent(9,1);
+   Data_METmag_Box1_plotType0->SetBinError(1,23.36664);
+   Data_METmag_Box1_plotType0->SetBinError(2,31.03224);
+   Data_METmag_Box1_plotType0->SetBinError(3,27.29469);
+   Data_METmag_Box1_plotType0->SetBinError(4,16.46208);
+   Data_METmag_Box1_plotType0->SetBinError(5,7.549834);
+   Data_METmag_Box1_plotType0->SetBinError(6,3.162278);
+   Data_METmag_Box1_plotType0->SetBinError(7,2.44949);
+   Data_METmag_Box1_plotType0->SetBinError(8,2);
+   Data_METmag_Box1_plotType0->SetBinError(9,1);
+   Data_METmag_Box1_plotType0->SetEntries(2603);
+   Data_METmag_Box1_plotType0->SetStats(0);
+   Data_METmag_Box1_plotType0->SetMarkerStyle(20);
+   Data_METmag_Box1_plotType0->SetMarkerSize(0.7);
+   Data_METmag_Box1_plotType0->GetXaxis()->SetLabelFont(42);
+   Data_METmag_Box1_plotType0->GetXaxis()->SetLabelSize(0.035);
+   Data_METmag_Box1_plotType0->GetXaxis()->SetTitleSize(0.035);
+   Data_METmag_Box1_plotType0->GetXaxis()->SetTitleFont(42);
+   Data_METmag_Box1_plotType0->GetYaxis()->SetLabelFont(42);
+   Data_METmag_Box1_plotType0->GetYaxis()->SetLabelSize(0.035);
+   Data_METmag_Box1_plotType0->GetYaxis()->SetTitleSize(0.035);
+   Data_METmag_Box1_plotType0->GetYaxis()->SetTitleFont(42);
+   Data_METmag_Box1_plotType0->GetZaxis()->SetLabelFont(42);
+   Data_METmag_Box1_plotType0->GetZaxis()->SetLabelSize(0.035);
+   Data_METmag_Box1_plotType0->GetZaxis()->SetTitleSize(0.035);
+   Data_METmag_Box1_plotType0->GetZaxis()->SetTitleFont(42);
+   Data_METmag_Box1_plotType0->Draw("same");
+   pad1->Modified();
+   C->cd();
+   
+   TLegend *leg = new TLegend(0.68,0.68,0.88,0.92,NULL,"brNDC");
+   leg->SetBorderSize(0);
+   leg->SetTextSize(0.02);
+   leg->SetLineColor(1);
+   leg->SetLineStyle(1);
+   leg->SetLineWidth(1);
+   leg->SetFillColor(0);
+   leg->SetFillStyle(1001);
+   TLegendEntry *entry=leg->AddEntry("BaseDM_METmag_Box1_plotType0","W + jets","f");
+
+   ci = TColor::GetColor("#ffff33");
+   entry->SetFillColor(ci);
+   entry->SetFillStyle(1001);
+
+   ci = TColor::GetColor("#000099");
+   entry->SetLineColor(ci);
+   entry->SetLineStyle(1);
+   entry->SetLineWidth(1);
+   entry->SetMarkerColor(1);
+   entry->SetMarkerStyle(21);
+   entry->SetMarkerSize(1);
+   entry->SetTextFont(42);
+   entry=leg->AddEntry("BaseDM_METmag_Box1_plotType0","Z(#nu#nu) + jets","f");
+
+   ci = TColor::GetColor("#669900");
+   entry->SetFillColor(ci);
+   entry->SetFillStyle(1001);
+
+   ci = TColor::GetColor("#000099");
+   entry->SetLineColor(ci);
+   entry->SetLineStyle(1);
+   entry->SetLineWidth(1);
+   entry->SetMarkerColor(1);
+   entry->SetMarkerStyle(21);
+   entry->SetMarkerSize(1);
+   entry->SetTextFont(42);
+   entry=leg->AddEntry("BaseDM_METmag_Box1_plotType0","t #bar{t} + jets","f");
+
+   ci = TColor::GetColor("#ff33cc");
+   entry->SetFillColor(ci);
+   entry->SetFillStyle(1001);
+
+   ci = TColor::GetColor("#000099");
+   entry->SetLineColor(ci);
+   entry->SetLineStyle(1);
+   entry->SetLineWidth(1);
+   entry->SetMarkerColor(1);
+   entry->SetMarkerStyle(21);
+   entry->SetMarkerSize(1);
+   entry->SetTextFont(42);
+   entry=leg->AddEntry("BaseDM_METmag_Box1_plotType0","Z/#gamma^{*}(ll) + jets","f");
+
+   ci = TColor::GetColor("#3300cc");
+   entry->SetFillColor(ci);
+   entry->SetFillStyle(1001);
+
+   ci = TColor::GetColor("#000099");
+   entry->SetLineColor(ci);
+   entry->SetLineStyle(1);
+   entry->SetLineWidth(1);
+   entry->SetMarkerColor(1);
+   entry->SetMarkerStyle(21);
+   entry->SetMarkerSize(1);
+   entry->SetTextFont(42);
+   entry=leg->AddEntry("Data_METmag_Box1_plotType0","Data","lep");
+   entry->SetLineColor(1);
+   entry->SetLineStyle(1);
+   entry->SetLineWidth(1);
+   entry->SetMarkerColor(1);
+   entry->SetMarkerStyle(20);
+   entry->SetMarkerSize(0.7);
+   entry->SetTextFont(42);
+   leg->Draw();
+   TLatex *   tex = new TLatex(0.22,0.95,"CMS Preliminary:");
+tex->SetNDC();
+   tex->SetTextAlign(22);
+   tex->SetTextSize(0.03);
+   tex->SetLineWidth(2);
+   tex->Draw();
+      tex = new TLatex(0.42,0.95,"#sqrt{s} = 8 TeV,");
+tex->SetNDC();
+   tex->SetTextAlign(22);
+   tex->SetTextSize(0.03);
+   tex->SetLineWidth(2);
+   tex->Draw();
+      tex = new TLatex(0.62,0.95,"#int L dt = 18.84 fb^{-1}");
+tex->SetNDC();
+   tex->SetTextAlign(22);
+   tex->SetTextSize(0.03);
+   tex->SetLineWidth(2);
+   tex->Draw();
+  
+// ------------>Primitives in pad: pad2
+   pad2 = new TPad("pad2", "pad2",0,0,1,0.25);
+   pad2->Draw();
+   pad2->cd();
+   pad2->Range(0,0,1,1);
+   pad2->SetFillColor(0);
+   pad2->SetBorderMode(0);
+   pad2->SetBorderSize(2);
+   pad2->SetGridy();
+   pad2->SetTopMargin(0.008);
+   pad2->SetBottomMargin(0.25);
+   pad2->SetFrameBorderMode(0);
+   
+   TH1F *RATIO = new TH1F("RATIO","",20,0,1500);
+   RATIO->SetBinContent(1,1.104319);
+   RATIO->SetBinContent(2,0.905893);
+   RATIO->SetBinContent(3,0.7949319);
+   RATIO->SetBinContent(4,0.8252761);
+   RATIO->SetBinContent(5,0.6852589);
+   RATIO->SetBinContent(6,0.3939009);
+   RATIO->SetBinContent(7,0.7396011);
+   RATIO->SetBinContent(8,2.046759);
+   RATIO->SetBinContent(9,1.360126);
+   RATIO->SetBinError(1,0.06855733);
+   RATIO->SetBinError(2,0.04030074);
+   RATIO->SetBinError(3,0.03901897);
+   RATIO->SetBinError(4,0.06772967);
+   RATIO->SetBinError(5,0.1178286);
+   RATIO->SetBinError(6,0.1470628);
+   RATIO->SetBinError(7,0.3982417);
+   RATIO->SetBinError(8,1.786306);
+   RATIO->SetBinError(9,2.089521);
+   RATIO->SetMinimum(0);
+   RATIO->SetMaximum(3.05);
+   RATIO->SetEntries(10.10235);
+   RATIO->SetStats(0);
+   RATIO->SetFillColor(4);
+   RATIO->SetLineColor(4);
+   RATIO->SetMarkerColor(4);
+   RATIO->SetMarkerStyle(20);
+   RATIO->SetMarkerSize(0.7);
+   RATIO->GetXaxis()->SetTitle("#slash{E}_{T}  GeV");
+   RATIO->GetXaxis()->SetLabelFont(42);
+   RATIO->GetXaxis()->SetLabelSize(0.1);
+   RATIO->GetXaxis()->SetTitleSize(0.11);
+   RATIO->GetXaxis()->SetTitleOffset(0.88);
+   RATIO->GetXaxis()->SetTitleFont(42);
+   RATIO->GetYaxis()->SetTitle("Data/MC");
+   RATIO->GetYaxis()->SetLabelFont(42);
+   RATIO->GetYaxis()->SetLabelSize(0.1);
+   RATIO->GetYaxis()->SetTitleSize(0.11);
+   RATIO->GetYaxis()->SetTitleOffset(0.35);
+   RATIO->GetYaxis()->SetTitleFont(42);
+   RATIO->GetZaxis()->SetLabelFont(42);
+   RATIO->GetZaxis()->SetLabelSize(0.035);
+   RATIO->GetZaxis()->SetTitleSize(0.035);
+   RATIO->GetZaxis()->SetTitleFont(42);
+   RATIO->Draw("");
+   pad2->Modified();
+   C->cd();
+   C->Modified();
+   C->cd();
+   C->SetSelected(C);
+}

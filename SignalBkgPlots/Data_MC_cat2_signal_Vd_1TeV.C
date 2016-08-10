@@ -1,0 +1,408 @@
+{
+//=========Macro generated from canvas: C/C      
+//=========  (Thu Sep 11 01:15:50 2014) by ROOT version5.34/20
+   TCanvas *C = new TCanvas("C", "C      ",0,0,400,500);
+   C->SetHighLightColor(2);
+   C->Range(0,0,1,1);
+   C->SetFillColor(0);
+   C->SetBorderMode(0);
+   C->SetBorderSize(2);
+   C->SetFrameBorderMode(0);
+  
+// ------------>Primitives in pad: pad1
+   TPad *pad1 = new TPad("pad1", "pad1",0,0.25,1,1);
+   pad1->Draw();
+   pad1->cd();
+   pad1->Range(0.4125,-0.1906651,1.2875,4.314409);
+   pad1->SetFillColor(0);
+   pad1->SetBorderMode(0);
+   pad1->SetBorderSize(2);
+   pad1->SetLogy();
+   pad1->SetBottomMargin(0);
+   pad1->SetFrameBorderMode(0);
+   pad1->SetFrameBorderMode(0);
+   
+   THStack *stack1 = new THStack();
+   stack1->SetName("stack1");
+   stack1->SetTitle("");
+   stack1->SetMinimum(1.739999);
+   stack1->SetMaximum(4352);
+   Double_t xAxis23[7] = {0.5, 0.575, 0.65, 0.75, 0.85, 0.95, 1.2}; 
+   
+   TH1F *stack1_stack_3_stack_4 = new TH1F("stack1_stack_3_stack_4","",6, xAxis23);
+   stack1_stack_3_stack_4->SetMinimum(0.6446662);
+   stack1_stack_3_stack_4->SetMaximum(7309.741);
+   stack1_stack_3_stack_4->SetDirectory(0);
+   stack1_stack_3_stack_4->SetStats(0);
+
+   Int_t ci;      // for color index setting
+   TColor *color; // for color definition with alpha
+   ci = TColor::GetColor("#000099");
+   stack1_stack_3_stack_4->SetLineColor(ci);
+   stack1_stack_3_stack_4->GetXaxis()->SetTitle("R^{2}");
+   stack1_stack_3_stack_4->GetXaxis()->SetLabelFont(42);
+   stack1_stack_3_stack_4->GetXaxis()->SetLabelSize(0.035);
+   stack1_stack_3_stack_4->GetXaxis()->SetTitleSize(0.035);
+   stack1_stack_3_stack_4->GetXaxis()->SetTitleFont(42);
+   stack1_stack_3_stack_4->GetYaxis()->SetTitle("Events/0.075");
+   stack1_stack_3_stack_4->GetYaxis()->CenterTitle(true);
+   stack1_stack_3_stack_4->GetYaxis()->SetLabelFont(42);
+   stack1_stack_3_stack_4->GetYaxis()->SetLabelSize(0.035);
+   stack1_stack_3_stack_4->GetYaxis()->SetTitleSize(0.035);
+   stack1_stack_3_stack_4->GetYaxis()->SetTitleOffset(1.45);
+   stack1_stack_3_stack_4->GetYaxis()->SetTitleFont(42);
+   stack1_stack_3_stack_4->GetZaxis()->SetLabelFont(42);
+   stack1_stack_3_stack_4->GetZaxis()->SetLabelSize(0.035);
+   stack1_stack_3_stack_4->GetZaxis()->SetTitleSize(0.035);
+   stack1_stack_3_stack_4->GetZaxis()->SetTitleFont(42);
+   stack1->SetHistogram(stack1_stack_3_stack_4);
+   
+   Double_t xAxis24[7] = {0.5, 0.575, 0.65, 0.75, 0.85, 0.95, 1.2}; 
+   
+   TH1F *cat2_dy = new TH1F("cat2_dy","",6, xAxis24);
+   cat2_dy->SetBinContent(1,3.783998);
+   cat2_dy->SetBinContent(2,2.334595);
+   cat2_dy->SetBinContent(3,1.117639);
+   cat2_dy->SetBinContent(4,0.8406829);
+   cat2_dy->SetBinContent(5,0.3600724);
+   cat2_dy->SetBinContent(6,0.09897116);
+   cat2_dy->SetEntries(6);
+   cat2_dy->SetStats(0);
+
+   ci = TColor::GetColor("#3300cc");
+   cat2_dy->SetFillColor(ci);
+
+   ci = TColor::GetColor("#000099");
+   cat2_dy->SetLineColor(ci);
+   cat2_dy->GetXaxis()->SetLabelFont(42);
+   cat2_dy->GetXaxis()->SetLabelSize(0.035);
+   cat2_dy->GetXaxis()->SetTitleSize(0.035);
+   cat2_dy->GetXaxis()->SetTitleFont(42);
+   cat2_dy->GetYaxis()->SetLabelFont(42);
+   cat2_dy->GetYaxis()->SetLabelSize(0.035);
+   cat2_dy->GetYaxis()->SetTitleSize(0.035);
+   cat2_dy->GetYaxis()->SetTitleFont(42);
+   cat2_dy->GetZaxis()->SetLabelFont(42);
+   cat2_dy->GetZaxis()->SetLabelSize(0.035);
+   cat2_dy->GetZaxis()->SetTitleSize(0.035);
+   cat2_dy->GetZaxis()->SetTitleFont(42);
+   stack1->Add(cat2_dy,"");
+   Double_t xAxis25[7] = {0.5, 0.575, 0.65, 0.75, 0.85, 0.95, 1.2}; 
+   
+   TH1F *cat2_tt = new TH1F("cat2_tt","",6, xAxis25);
+   cat2_tt->SetBinContent(1,28.65729);
+   cat2_tt->SetBinContent(2,19.58014);
+   cat2_tt->SetBinContent(3,15.15639);
+   cat2_tt->SetBinContent(4,13.7282);
+   cat2_tt->SetBinContent(5,7.900019);
+   cat2_tt->SetBinContent(6,2.207392);
+   cat2_tt->SetEntries(6);
+   cat2_tt->SetStats(0);
+
+   ci = TColor::GetColor("#ff33cc");
+   cat2_tt->SetFillColor(ci);
+
+   ci = TColor::GetColor("#000099");
+   cat2_tt->SetLineColor(ci);
+   cat2_tt->GetXaxis()->SetLabelFont(42);
+   cat2_tt->GetXaxis()->SetLabelSize(0.035);
+   cat2_tt->GetXaxis()->SetTitleSize(0.035);
+   cat2_tt->GetXaxis()->SetTitleFont(42);
+   cat2_tt->GetYaxis()->SetLabelFont(42);
+   cat2_tt->GetYaxis()->SetLabelSize(0.035);
+   cat2_tt->GetYaxis()->SetTitleSize(0.035);
+   cat2_tt->GetYaxis()->SetTitleFont(42);
+   cat2_tt->GetZaxis()->SetLabelFont(42);
+   cat2_tt->GetZaxis()->SetLabelSize(0.035);
+   cat2_tt->GetZaxis()->SetTitleSize(0.035);
+   cat2_tt->GetZaxis()->SetTitleFont(42);
+   stack1->Add(cat2_tt,"");
+   Double_t xAxis26[7] = {0.5, 0.575, 0.65, 0.75, 0.85, 0.95, 1.2}; 
+   
+   TH1F *cat2_z = new TH1F("cat2_z","",6, xAxis26);
+   cat2_z->SetBinContent(1,692.4422);
+   cat2_z->SetBinContent(2,481.576);
+   cat2_z->SetBinContent(3,359.6151);
+   cat2_z->SetBinContent(4,251.765);
+   cat2_z->SetBinContent(5,213.4687);
+   cat2_z->SetBinContent(6,63.272);
+   cat2_z->SetEntries(6);
+   cat2_z->SetStats(0);
+
+   ci = TColor::GetColor("#ffff33");
+   cat2_z->SetFillColor(ci);
+
+   ci = TColor::GetColor("#000099");
+   cat2_z->SetLineColor(ci);
+   cat2_z->GetXaxis()->SetLabelFont(42);
+   cat2_z->GetXaxis()->SetLabelSize(0.035);
+   cat2_z->GetXaxis()->SetTitleSize(0.035);
+   cat2_z->GetXaxis()->SetTitleFont(42);
+   cat2_z->GetYaxis()->SetLabelFont(42);
+   cat2_z->GetYaxis()->SetLabelSize(0.035);
+   cat2_z->GetYaxis()->SetTitleSize(0.035);
+   cat2_z->GetYaxis()->SetTitleFont(42);
+   cat2_z->GetZaxis()->SetLabelFont(42);
+   cat2_z->GetZaxis()->SetLabelSize(0.035);
+   cat2_z->GetZaxis()->SetTitleSize(0.035);
+   cat2_z->GetZaxis()->SetTitleFont(42);
+   stack1->Add(cat2_z,"");
+   Double_t xAxis27[7] = {0.5, 0.575, 0.65, 0.75, 0.85, 0.95, 1.2}; 
+   
+   TH1F *cat2_w = new TH1F("cat2_w","",6, xAxis27);
+   cat2_w->SetBinContent(1,495.3982);
+   cat2_w->SetBinContent(2,324.1746);
+   cat2_w->SetBinContent(3,229.1888);
+   cat2_w->SetBinContent(4,147.2268);
+   cat2_w->SetBinContent(5,118.9591);
+   cat2_w->SetBinContent(6,25.72758);
+   cat2_w->SetEntries(6);
+   cat2_w->SetStats(0);
+
+   ci = TColor::GetColor("#669900");
+   cat2_w->SetFillColor(ci);
+
+   ci = TColor::GetColor("#000099");
+   cat2_w->SetLineColor(ci);
+   cat2_w->GetXaxis()->SetLabelFont(42);
+   cat2_w->GetXaxis()->SetLabelSize(0.035);
+   cat2_w->GetXaxis()->SetTitleSize(0.035);
+   cat2_w->GetXaxis()->SetTitleFont(42);
+   cat2_w->GetYaxis()->SetLabelFont(42);
+   cat2_w->GetYaxis()->SetLabelSize(0.035);
+   cat2_w->GetYaxis()->SetTitleSize(0.035);
+   cat2_w->GetYaxis()->SetTitleFont(42);
+   cat2_w->GetZaxis()->SetLabelFont(42);
+   cat2_w->GetZaxis()->SetLabelSize(0.035);
+   cat2_w->GetZaxis()->SetTitleSize(0.035);
+   cat2_w->GetZaxis()->SetTitleFont(42);
+   stack1->Add(cat2_w,"");
+   stack1->Draw("");
+   Double_t xAxis28[7] = {0.5, 0.575, 0.65, 0.75, 0.85, 0.95, 1.2}; 
+   
+   TH1F *cat2_data = new TH1F("cat2_data","",6, xAxis28);
+   cat2_data->SetBinContent(1,1088);
+   cat2_data->SetBinContent(2,765);
+   cat2_data->SetBinContent(3,511.4998);
+   cat2_data->SetBinContent(4,423.7498);
+   cat2_data->SetBinContent(5,296.2501);
+   cat2_data->SetBinContent(6,86.99996);
+   cat2_data->SetBinError(1,32.98485);
+   cat2_data->SetBinError(2,27.65863);
+   cat2_data->SetBinError(3,19.58634);
+   cat2_data->SetBinError(4,17.82729);
+   cat2_data->SetBinError(5,14.90596);
+   cat2_data->SetBinError(6,5.108814);
+   cat2_data->SetEntries(6);
+   cat2_data->SetStats(0);
+   cat2_data->SetMarkerStyle(20);
+   cat2_data->SetMarkerSize(0.7);
+   cat2_data->GetXaxis()->SetRange(1,6);
+   cat2_data->GetXaxis()->SetLabelFont(42);
+   cat2_data->GetXaxis()->SetLabelSize(0.035);
+   cat2_data->GetXaxis()->SetTitleSize(0.035);
+   cat2_data->GetXaxis()->SetTitleFont(42);
+   cat2_data->GetYaxis()->SetLabelFont(42);
+   cat2_data->GetYaxis()->SetLabelSize(0.035);
+   cat2_data->GetYaxis()->SetTitleSize(0.035);
+   cat2_data->GetYaxis()->SetTitleFont(42);
+   cat2_data->GetZaxis()->SetLabelFont(42);
+   cat2_data->GetZaxis()->SetLabelSize(0.035);
+   cat2_data->GetZaxis()->SetTitleSize(0.035);
+   cat2_data->GetZaxis()->SetTitleFont(42);
+   cat2_data->Draw("same");
+   Double_t xAxis29[7] = {0.5, 0.575, 0.65, 0.75, 0.85, 0.95, 1.2}; 
+   
+   TH1F *signal2_cat1 = new TH1F("signal2_cat1","signal2_cat1",6, xAxis29);
+   signal2_cat1->SetBinContent(1,26.39268);
+   signal2_cat1->SetBinContent(2,25.05944);
+   signal2_cat1->SetBinContent(3,42.65033);
+   signal2_cat1->SetBinContent(4,31.63812);
+   signal2_cat1->SetBinContent(5,41.77036);
+   signal2_cat1->SetBinContent(6,42.47573);
+   signal2_cat1->SetEntries(1297);
+   signal2_cat1->SetStats(0);
+
+   ci = TColor::GetColor("#000099");
+   signal2_cat1->SetLineColor(ci);
+   signal2_cat1->GetXaxis()->SetLabelFont(42);
+   signal2_cat1->GetXaxis()->SetLabelSize(0.035);
+   signal2_cat1->GetXaxis()->SetTitleSize(0.035);
+   signal2_cat1->GetXaxis()->SetTitleFont(42);
+   signal2_cat1->GetYaxis()->SetLabelFont(42);
+   signal2_cat1->GetYaxis()->SetLabelSize(0.035);
+   signal2_cat1->GetYaxis()->SetTitleSize(0.035);
+   signal2_cat1->GetYaxis()->SetTitleFont(42);
+   signal2_cat1->GetZaxis()->SetLabelFont(42);
+   signal2_cat1->GetZaxis()->SetLabelSize(0.035);
+   signal2_cat1->GetZaxis()->SetTitleSize(0.035);
+   signal2_cat1->GetZaxis()->SetTitleFont(42);
+   signal2_cat1->Draw("same");
+   pad1->Modified();
+   C->cd();
+   
+   TLegend *leg = new TLegend(0.65,0.7,0.89,0.92,NULL,"brNDC");
+   leg->SetBorderSize(0);
+   leg->SetTextSize(0.02);
+   leg->SetLineColor(1);
+   leg->SetLineStyle(1);
+   leg->SetLineWidth(1);
+   leg->SetFillColor(0);
+   leg->SetFillStyle(1001);
+   TLegendEntry *entry=leg->AddEntry("cat2_w","W + jets","f");
+
+   ci = TColor::GetColor("#669900");
+   entry->SetFillColor(ci);
+   entry->SetFillStyle(1001);
+
+   ci = TColor::GetColor("#000099");
+   entry->SetLineColor(ci);
+   entry->SetLineStyle(1);
+   entry->SetLineWidth(1);
+   entry->SetMarkerColor(1);
+   entry->SetMarkerStyle(21);
+   entry->SetMarkerSize(1);
+   entry->SetTextFont(42);
+   entry=leg->AddEntry("cat2_z","Z(#nu#bar{#nu}) + jets","f");
+
+   ci = TColor::GetColor("#ffff33");
+   entry->SetFillColor(ci);
+   entry->SetFillStyle(1001);
+
+   ci = TColor::GetColor("#000099");
+   entry->SetLineColor(ci);
+   entry->SetLineStyle(1);
+   entry->SetLineWidth(1);
+   entry->SetMarkerColor(1);
+   entry->SetMarkerStyle(21);
+   entry->SetMarkerSize(1);
+   entry->SetTextFont(42);
+   entry=leg->AddEntry("cat2_tt","t #bar{t} + jets","f");
+
+   ci = TColor::GetColor("#ff33cc");
+   entry->SetFillColor(ci);
+   entry->SetFillStyle(1001);
+
+   ci = TColor::GetColor("#000099");
+   entry->SetLineColor(ci);
+   entry->SetLineStyle(1);
+   entry->SetLineWidth(1);
+   entry->SetMarkerColor(1);
+   entry->SetMarkerStyle(21);
+   entry->SetMarkerSize(1);
+   entry->SetTextFont(42);
+   entry=leg->AddEntry("cat2_dy","Z/#gamma^{*}(ll) + jets","f");
+
+   ci = TColor::GetColor("#3300cc");
+   entry->SetFillColor(ci);
+   entry->SetFillStyle(1001);
+
+   ci = TColor::GetColor("#000099");
+   entry->SetLineColor(ci);
+   entry->SetLineStyle(1);
+   entry->SetLineWidth(1);
+   entry->SetMarkerColor(1);
+   entry->SetMarkerStyle(21);
+   entry->SetMarkerSize(1);
+   entry->SetTextFont(42);
+   entry=leg->AddEntry("cat2_data","Data","lep");
+   entry->SetLineColor(1);
+   entry->SetLineStyle(1);
+   entry->SetLineWidth(1);
+   entry->SetMarkerColor(1);
+   entry->SetMarkerStyle(20);
+   entry->SetMarkerSize(0.7);
+   entry->SetTextFont(42);
+   entry=leg->AddEntry("signal2_cat1"," Vd-DM m = 1 TeV","l");
+
+   ci = TColor::GetColor("#000099");
+   entry->SetLineColor(ci);
+   entry->SetLineStyle(1);
+   entry->SetLineWidth(1);
+   entry->SetMarkerColor(1);
+   entry->SetMarkerStyle(21);
+   entry->SetMarkerSize(1);
+   entry->SetTextFont(42);
+   leg->Draw();
+   TLatex *   tex = new TLatex(0.22,0.95,"CMS Preliminary:");
+tex->SetNDC();
+   tex->SetTextAlign(22);
+   tex->SetTextSize(0.03);
+   tex->SetLineWidth(2);
+   tex->Draw();
+      tex = new TLatex(0.42,0.95,"#sqrt{s} = 8 TeV,");
+tex->SetNDC();
+   tex->SetTextAlign(22);
+   tex->SetTextSize(0.03);
+   tex->SetLineWidth(2);
+   tex->Draw();
+      tex = new TLatex(0.62,0.95,"#int L dt = 18.84 fb^{-1}");
+tex->SetNDC();
+   tex->SetTextAlign(22);
+   tex->SetTextSize(0.03);
+   tex->SetLineWidth(2);
+   tex->Draw();
+  
+// ------------>Primitives in pad: pad2
+   pad2 = new TPad("pad2", "pad2",0,0,1,0.25);
+   pad2->Draw();
+   pad2->cd();
+   pad2->Range(0.4125,-1.027628,1.2875,3.082884);
+   pad2->SetFillColor(0);
+   pad2->SetBorderMode(0);
+   pad2->SetBorderSize(2);
+   pad2->SetGridy();
+   pad2->SetTopMargin(0.008);
+   pad2->SetBottomMargin(0.25);
+   pad2->SetFrameBorderMode(0);
+   pad2->SetFrameBorderMode(0);
+   Double_t xAxis30[7] = {0.5, 0.575, 0.65, 0.75, 0.85, 0.95, 1.2}; 
+   
+   TH1F *RATIO = new TH1F("RATIO","",6, xAxis30);
+   RATIO->SetBinContent(1,0.8915974);
+   RATIO->SetBinContent(2,0.9242865);
+   RATIO->SetBinContent(3,0.8453453);
+   RATIO->SetBinContent(4,1.024638);
+   RATIO->SetBinContent(5,0.8695645);
+   RATIO->SetBinContent(6,0.95284);
+   RATIO->SetBinError(1,0.09161367);
+   RATIO->SetBinError(2,0.08000566);
+   RATIO->SetBinError(3,0.2257488);
+   RATIO->SetBinError(4,0.1177835);
+   RATIO->SetBinError(5,0.07591);
+   RATIO->SetBinError(6,0.1456677);
+   RATIO->SetMinimum(0);
+   RATIO->SetMaximum(3.05);
+   RATIO->SetEntries(284.5962);
+   RATIO->SetStats(0);
+   RATIO->SetFillColor(4);
+   RATIO->SetLineColor(4);
+   RATIO->SetMarkerColor(4);
+   RATIO->SetMarkerStyle(20);
+   RATIO->SetMarkerSize(0.7);
+   RATIO->GetXaxis()->SetTitle("R^{2}");
+   RATIO->GetXaxis()->SetRange(1,6);
+   RATIO->GetXaxis()->CenterTitle(true);
+   RATIO->GetXaxis()->SetLabelFont(42);
+   RATIO->GetXaxis()->SetLabelSize(0.1);
+   RATIO->GetXaxis()->SetTitleSize(0.11);
+   RATIO->GetXaxis()->SetTitleOffset(0.88);
+   RATIO->GetXaxis()->SetTitleFont(42);
+   RATIO->GetYaxis()->SetTitle("Data/MC");
+   RATIO->GetYaxis()->CenterTitle(true);
+   RATIO->GetYaxis()->SetLabelFont(42);
+   RATIO->GetYaxis()->SetLabelSize(0.07);
+   RATIO->GetYaxis()->SetTitleSize(0.09);
+   RATIO->GetYaxis()->SetTitleOffset(0.5);
+   RATIO->GetYaxis()->SetTitleFont(42);
+   RATIO->GetZaxis()->SetLabelFont(42);
+   RATIO->GetZaxis()->SetLabelSize(0.035);
+   RATIO->GetZaxis()->SetTitleSize(0.035);
+   RATIO->GetZaxis()->SetTitleFont(42);
+   RATIO->Draw("");
+   pad2->Modified();
+   C->cd();
+   C->Modified();
+   C->cd();
+   C->SetSelected(C);
+}
