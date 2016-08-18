@@ -1,70 +1,202 @@
-\documentclass[draftfoot,preprint]{cit_thesis}
-\usepackage[utf8]{inputenc}
-\usepackage{lmodern}
-\usepackage{textcomp}
-
+\documentclass[12pt]{caltech_thesis}
+%\documentclass[12pt]{cms-tdr}
+\usepackage[hyphens]{url}
+\usepackage{lipsum}
 \usepackage{graphicx}
-\usepackage{amsmath}
-\usepackage{multirow}
-\usepackage{natbib}
-%\usepackage{ptdr-definitions}
-%\usepackage{topcapt}
+
+\usepackage{todonotes}
+%%TDR
 %\usepackage{pennames-pazo}
-%usepackage{pennames-ital}
-%\usepackage{pdfdraftcopy}
-%usepackage{hypernat}
-%\usepackage{changepage}
-%\usepackage{cite}
+\usepackage{pennames-ital}
+\usepackage{ptdr-definitions}
+\usepackage{topcapt}
+\usepackage{multirow}
+\usepackage{multicol}
 
+%% Tentative: newtx for better-looking Times
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext,newtxmath}
+\usepackage[pdfencoding=auto]{hyperref}
 
+% Must use biblatex to produce the Published Contents and Contributions, per-chapter bibliography (if desired), etc.
+\usepackage[
+    backend=biber,natbib,
+    % IMPORTANT: load a style suitable for your discipline
+    style=authoryear
+]{biblatex}
 
-%\newcommand{\pt}{$p_{T}$}
-%\newcommand{\cPZ}{\textrm{Z}}
-%\newcommand{\PW}{\textrm{W}}
-%\newcommand{\ttbar}{$t\bar{t}$}
-%\newcommand{\fbinv}{\textrm{fb}$^{-1}$ }
-%\newcommand{\TeV}{\textrm{TeV}}
-%\newcommand{\GeV}{\textrm{GeV}}
-
+%%%CMS COMMANDS
+%\providecommand{\MR}{\ensuremath{M_R}\xspace}
 \newcommand\mT{\rule{0pt}{2.3ex}}
 \newcommand\mB{\rule[-1.2ex]{0pt}{0pt}}
-
-\RCS$Revision: 363804 $
-\RCS$HeadURL: svn+ssh://cpena@svn.cern.ch/reps/tdr2/papers/EXO-14-004/trunk/EXO-14-004.tex $
-\RCS$Id: EXO-14-004.tex 363804 2016-08-05 17:11:46Z cpena $
-\newlength\cmsFigWidth
-\ifthenelse{\boolean{cms@external}}{\setlength\cmsFigWidth{0.85\columnwidth}}{\setlength\cmsFigWidth{0.4\textwidth}}
-\ifthenelse{\boolean{cms@external}}{\providecommand{\cmsLeft}{top}}{\providecommand{\cmsLeft}{left}}
-\ifthenelse{\boolean{cms@external}}{\providecommand{\cmsRight}{bottom}}{\providecommand{\cmsRight}{right}}
-\providecommand{\MR}{\ensuremath{M_R}\xspace}
 \providecommand{\RR}{\ensuremath{R}\xspace}
 \providecommand{\NA}{\text{---}\xspace}
 \newlength\cmsTabSkip\setlength{\cmsTabSkip}{1.5ex}
 \newcolumntype{x}{D{,}{\,\pm\,}{-1}}
 \newcommand*{\vv}[1]{\ensuremath{\vec{#1\mkern0mu}}}
+%%HggRazor
+\newcommand{\MR}{\ensuremath{M_\mathrm{R}}\xspace}
+\newcommand{\MRz}{\ensuremath{M_\mathrm{R}^0}\xspace}
+\newcommand{\Rtwo}{\ensuremath{\mathrm{R}^2}\xspace}
+\newcommand{\Rtwoz}{\ensuremath{\mathrm{R}^2_0}\xspace}
+\newcommand{\R}{\ensuremath{\mathrm{R}}\xspace}
+\newcommand{\MRT}{\ensuremath{M_\mathrm{T}^\mathrm{R}}\xspace}
+%\newcommand{\ptvecmiss}{\ensuremath{{\vec p}_{\mathrm{T}}^{\text{miss}}}\xspace}                                                           
+\newcommand{\mgg}{\ensuremath{m_{\gamma\gamma}} }
 
+% Name of your .bib file(s)
+\addbibresource{example.bib}
+\addbibresource{ownpubs.bib}
 
 \begin{document}
 
-\title{Search for Dark Matter Direct Production in proton-proton collisions at sqrt(s) = 8 TeV With the CMS Detector at the LHC}
-\author{Cristian Pe\~na}
+% Do remember to remove the square bracket!
+\title{Searches for Beyond the Standard Model Physics With the Compact
+Muon Sollenoid Experiment}
+\author{Cristi\'an H. Pe\~na}
 
-\maketitle
+\degreeaward{[Name of Degree]}                 % Degree to be awarded
+\university{California Institute of Technology}    % Institution name
+\address{Pasadena, California}                     % Institution address
+\unilogo{caltech.png}                                 % Institution logo
+\copyyear{2016}  % Year (of graduation) on diploma
+\defenddate{October 2016}          % Date of defense
+
+\orcid{[Author ORCID]}
+
+%% IMPORTANT: Select ONE of the rights statement below.
+\rightsstatement{All rights reserved\todo[size=\footnotesize]{Choose one from the choices in the source code!! And delete this \texttt{todo} when you're done that. :-)}}
+% \rightsstatement{All rights reserved except where otherwise noted}
+% \rightsstatement{Some rights reserved. This thesis is distributed under a [name license, e.g., ``Creative Commons Attribution-NonCommercial-ShareAlike License'']}
+
+%%  If you'd like to remove the Caltech logo from your title page, simply remove the "[logo]" text from the maketitle command
+\maketitle[logo]
+%\maketitle
+
+\begin{acknowledgements} 	 
+   [Add acknowledgements here. If you do not wish to add any to your thesis, you may simply add a blank titled Acknowledgements page.]
+\end{acknowledgements}
 
 \begin{abstract}
-A search for dark matter (DM) is carried out....
+   [This abstract must provide a succinct and informative condensation of your work. Candidates are welcome to prepare a lengthier abstract for inclusion in the dissertation, and provide a shorter one in the CaltechTHESIS record.]
 \end{abstract}
 
+%% Uncomment the `iknowhattodo' option to dismiss the instruction in the PDF.
+\begin{publishedcontent}%[iknowwhattodo]
+% List your publications and contributions here.
+\nocite{Cahn:etal:2015}
+\end{publishedcontent}
+
+\tableofcontents
+\listoffigures
+\listoftables
+\printnomenclature
+
+\mainmatter
+
+\chapter{Introduction}
+Start off all chapters with \verb|chapter|. \index{chapter!numbered} \verb|\extrachapter| will give you an unnumbered chapter that's added to the Table of Contents. \index{chapter!unnumbered}
+
+Here's an example of a citation \citep{GMP81}. Here's another \citep{PP98}. These will appear in the big bibliography at the end of the thesis.
+\index{bibliography}
+
+If you're new to \LaTeX{} and would like to begin by learning the basics, please see our free online course available at:\\ \url{https://www.overleaf.com/latex/learn/free-online-introduction-to-latex-part-1} \index{LaTeX@\LaTeX}
+
+You can define nomenclatures \index{nomenclature} as you talk about
+key terms in your thesis. So what's a galaxy? \nomenclature{Galaxy}{A
+  system of stars independent from all other systems}
 \input{intro}
-AAAAAAAAAAAAAAAAAAAAA~\cite{vandeHulst,Rubin:1980zd}
+\section{This is a Section}
+\lipsum[1-2]
+
+\begin{figure}[hbt!]
+\centering
+\includegraphics[width=.3\textwidth]{caltech.png}
+\caption{This is a figure}\label{fig:logo}
+\index{figures}
+\end{figure}
+
+\subsection{This is a subsection}
+
+\begin{table}[hbt!]
+\centering
+\begin{tabular}{ll}
+\hline
+Area & Count\\
+\hline
+North & 100\\
+South & 200\\
+East & 80\\
+West & 140\\
+\hline
+\end{tabular}
+\caption{This is a table}\label{tab:sample}
+\index{tables}
+\end{table}
+
+\lipsum[3] \nomenclature{Asteroid}{A very small planet ranging from 1,000 km to less than one km in diameter. Asteroids are found commonly around other larger planets}
+
+\lipsum[4-5] 
+
+Here's an endnote.\endnote{Endnotes are notes that you can use to explain text in a document.}
+
+\section{This is Another Section}
+\lipsum[6-7] 
+
+\chapter{This is the Second Chapter}
+\input{HggRazor}
+
+%\begin{refsection}
+%If you'd like to have separate bibliographies at the end of each chapter, put a \verb|refsection| around the material of each chapter, then cite as usual -- e.g.~\citep{GMP81,Ful83}. Then do a \verb|\printbibliography| just before the \verb|refsection| ends. \index{bibliography!by chapter}
+
+%\printbibliography[heading=subbibliography]
+%\end{refsection}
+
+
+\chapter{This is the Third Chapter}
+
+
 \input{LHC}
+\chapter{The Compact Muon Sollenoid Experiment}
 \input{CMS}
 \input{ObjectReco}
+\chapter{Searches for Dark Matter at the LHC with 8 TeV pp collisions}
 \input{DMatLHC}
+\chapter{Searches for Anomalous Higgs Boson Production}
 \input{HggRazor}
+\chapter{Precision Timing for the High Luminosity LHC}
 \input{Timing}
+\chapter{Summary and Conclusions}
 \input{Conclusion}
 %\bibliography{MyBib}{}
 \bibliography{auto_generated}
 \bibliographystyle{plain}
+\publishedas{Cahn:etal:2015}
+
+[You can have chapters that were published as part of your thesis. The text style of the body should be single column, as it was submitted to the publisher, not formatted as the publisher did.]
+
+\chapter{This is the Fourth Chapter}
+\chapter{This is the Fifth Chapter}
+\chapter{This is the Sixth Chapter}
+\chapter{This is the Seventh Chapter}
+\chapter{This is the Eighth Chapter}
+
+%\printbibliography[heading=bibintoc]
+
+\appendix
+
+\chapter{Questionnaire}
+\chapter{Consent Form}
+
+\printindex
+
+\theendnotes
+
+%% Pocket materials at the VERY END of thesis
+\pocketmaterial
+\extrachapter{Pocket Material: Map of Case Study Solar Systems} 
+
+
+
 \end{document}
