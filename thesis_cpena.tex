@@ -1,5 +1,4 @@
 \documentclass[12pt]{caltech_thesis}
-%\documentclass[12pt]{cms-tdr}
 \usepackage[hyphens]{url}
 \usepackage{lipsum}
 \usepackage{graphicx}
@@ -19,11 +18,12 @@
 \usepackage{newtxtext,newtxmath}
 \usepackage[pdfencoding=auto]{hyperref}
 
+
 % Must use biblatex to produce the Published Contents and Contributions, per-chapter bibliography (if desired), etc.
 \usepackage[
     backend=biber,natbib,
     % IMPORTANT: load a style suitable for your discipline
-    style=authoryear
+    style=numeric
 ]{biblatex}
 
 %%%CMS COMMANDS
@@ -46,8 +46,8 @@
 \newcommand{\mgg}{\ensuremath{m_{\gamma\gamma}} }
 
 % Name of your .bib file(s)
-\addbibresource{example.bib}
-\addbibresource{ownpubs.bib}
+\addbibresource{MyBib.bib}
+%\addbibresource{ownpubs.bib}
 
 \begin{document}
 
@@ -182,8 +182,9 @@ Here's an endnote.\endnote{Endnotes are notes that you can use to explain text i
 \chapter{This is the Seventh Chapter}
 \chapter{This is the Eighth Chapter}
 
-%\printbibliography[heading=bibintoc]
+\printbibliography[heading=bibintoc]
 
+ 
 \appendix
 
 \chapter{Questionnaire}
