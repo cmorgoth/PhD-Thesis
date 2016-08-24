@@ -1,15 +1,55 @@
-\section{LYSO-based Calorimeters}
 \section{Introduction}
+Calorimeters are a key detector systems in high energy physics experiments
+ranging from neutrino to particle collider detectors. In
+particular, electromagnetic (EM) calorimeters are designed to fully
+contain the energy deposisted by electrons, positrons, and photons (e/$\gamma$);
+as well as to provide position information by means of their granular
+design. They are usually divided in two types: homogeneous and
+sampling, homogenous calorimeters are those in which their entire
+volume is composed of sensitive media, while sampling calorimeters
+are composed of alternating layers of sensitive and absorber
+media. 
 
-The high luminosity upgrade of the Large Hadron Collider (HL-LHC) at
-CERN~\cite{Rossi:1471000} is expected to provide instantaneous luminosities of
-$5\times10^{34}$ cm$^{-2}$s$^{-1}$. The enhanced data rates will
-provide the datasets necessary to perform precision measurements of the Higgs couplings, 
+Homogeous EM calorimeters are usually made out of dense scintillating
+crystals (BGO, BaF$_{2}$, LYSO, PbWO$_{4}$, among others) or liquid nobel gases
+(Ar, Kr, Xe) and they provide an oustanding energy resolution for
+e/$\gamma$. For example, the CMS EM calorimeter~\cite{cmsECAL} is
+composed of PbWO$_{4}$ scintillating crystals coupled to avalance
+photodiodes and with and energy resolution of
+
+\begin{equation}
+\frac{\sigma_{E}}{E} = \frac{2.8\%\sqrt{\GeV}}{\sqrt{E}} \oplus \frac{12\%\GeV}{E} \oplus 0.3\%.
+\end{equation}
+
+Sampling EM calorimeters use a sensitive medium such as
+scintillating crystals, liquid nobel gases, and silicon, among others
+to measure the energy the incoming particle;
+while the absorber medium is a high density material such as lead or
+tungsten in order to require less volume to completely contain the
+impinging particle's energy and thus result in a compact design. An
+example of such an EM calorimeter is the ATLAS lead-liquid argon (LAr)
+sampling calorimeter with an energy resolution of
+
+\begin{equation}
+\frac{\sigma_{E}}{E} = \frac{10.1\%\sqrt{\GeV}}{\sqrt{E}} \oplus \frac{0.25\%\GeV}{E} \oplus 0.17\%.
+\end{equation}
+
+Particle collider experiments at the LHC such as ATLAS and CMS
+use EM calorimeters in the e/$gamma$ 4-momentum and jet
+energy measurements, particle identification algorithms,
+trigger systems, and the mesurement of the missing transverse energy in
+each proton-proton collision. Therefore, maintaining the current perfomance of the EM
+calorimeters is critical for the current and future physics measurements of those experiments.
+
+In order to provide the necessary datasets to perform precision measurements of the Higgs couplings, 
 probe rare Higgs processes, study the scattering of longitudinally polarized W
-bosons and search for physics beyond the standard model. 
+bosons, and search for new physics. The high luminosity upgrade of the Large Hadron Collider (HL-LHC) at
+CERN~\cite{Rossi:1471000} is expected to provide instantaneous luminosities of
+$5\times10^{34}$ cm$^{-2}$s$^{-1}$. This enhanced data rate will
+increase the simultaneous interactions per bunch crossing (pileup)
+from an average of $20$-$40$ to $140$-$200$. 
 
-The  rate of simultaneous interactions per bunch crossing (pileup) is  projected to reach 
-an average of $140$ to $200$. The large amount of pileup increases the likelihood of 
+The large amount of pileup foreseen for the HL-LHC will increases the likelihood of 
 confusion in the reconstruction of events of interest, due to the contamination from 
 particles produced in different pileup interactions. The ability to discriminate between 
 jets produced in the events of interests -- especially those associated with the vector 
@@ -17,17 +57,36 @@ boson fusion processes -- and jets produced by pileup interactions will be degra
 the missing transverse energy resolution will deteriorate, and several other physics 
 objects performance metrics will suffer.
 
-One way to mitigate pileup confusion effects, complementary to precision tracking methods, 
+One way to mitigate the detrimental pileup effects, complementary to precision tracking methods, 
 is to perform a time of arrival measurement associated with a particular layer of the calorimeter, 
 allowing for a time assignment for both charged particles and photons. Such a measurement with 
 a precision of about $20$ to $30$~ps, when unambiguously associated to the corresponding energy
-measurement, will significantly reduce the inclusion of pileup particles in  the
+measurement, will significantly reduce -- approximately a factor of 10
+-- the inclusion of pileup particles in the
 reconstruction of the event of interest given that the spread in collision time of
 pileup interactions is about $200$~ps. The association of the time measurement to the energy 
-measurement is crucial,  leading to  a  prototype  design that calls for the time and energy 
-measurements to be performed in the same active detector element. It is in this context that we 
-study the possibility of measuring the time of arrival of particles with a calorimetric device.
+measurement is crucial,  leading to  a  prototype  design that requires the time and energy 
+measurements to be performed in the same sensitive medium. It is in
+this context that this thesis presents various prototype
+calorimeters equipped with precision timing capabilities and studies the current limits on their time resolution.
 
+This chapter is organized as follows: section~\ref{prelim-cal}
+provides a brief and general introduction to EM calorimeters, section~\ref{lyso-cal} is
+dedicated to the timing properties of LYSO crystal scintillator based
+calorimeters, section~\ref{mcp-cal} discusses the possibility of a precision timing sampling
+calorimeter where the sensitive medium is a microchannel
+plate~\cite[MCP], section~\ref{sil-cal} discusses the timing capabilities of a sampling
+calorimeter where the sensitive medium is a 300 microns silicon
+sensor. finally, section~\ref{cal-sum} summarizes the results and
+possible improvements as well as future measurements.
+\section{EM Calorimeter Preliminaries}\label{prelim-cal}
+For high energy e/$\gamma$ (with energies above xx\GeV) the main
+mechanism of interaction with the calorimeter is ``blah'', 
+\subsection{EM Shower Development}
+xyz
+\subsection{Important Calorimeter Quantities}
+ xyz
+\section{LYSO-based Calorimeters}\label{lyso-cal}
 We focus our studies on measurements of the time of flight using sampling calorimeters 
 based on LYSO crystals. Due to its very high light yield 
 ($\sim 30$K photons/MeV)~\cite{LYSOProperties}, and radiation 
@@ -51,8 +110,6 @@ are converted into an electrical signal. The time associated with this process i
 photodetector signal transit time, $t_T$. Finally, the data acquisition (DAQ)
 system has a characteristic time constant $t_D$. Each of these time intervals will fluctuate or 
 jitter on an event-by-event basis, contributing to the time resolution.
-
-
 \begin{figure}[h] \centering
 \includegraphics[width=0.85\textwidth]{figs/ScintillatorTiming_v4}
 \caption{\small Timing measurement schematic breakdown using a monolithic, large scintillating crystal. 
@@ -60,7 +117,6 @@ The incident particle impinges on the crystal face from the left. The characteri
 in the text.}
 \label{fig:ScintillatorTiming}
 \end{figure}
-
 Previous studies~\cite{MCPFastCaloNIMA}, measured the time resolution at different
 absorber thickness for electron beams with energies varying from $12$ to
 $32$~GeV, and showed that the time of arrival of the front of an electromagnetic
@@ -76,10 +132,7 @@ and light propagation to the photodetector.  We take advantage of the very large
 scintillation photons in a LYSO crystal which result in modest fluctuations associated with the 
 creation and transit of each particular scintillation photon for a LYSO-based detector. 
 
- 
-
-\section{Experimental Setup}
-
+\subsection{Experimental Setup}
 A schematic diagram of a typical time of flight measurement setup is shown in 
 Figure~\ref{fig:TypicalSchematicDiagram}. All measurements involve a fast photodetector,  
 typically a micro-channel-plate photo-multiplier-tube 
@@ -114,7 +167,7 @@ studies. A differential Cherenkov counter (not shown in the schematic)  provided
 facility and located upstream of our experimental hall,  was used for electron
 identification. 
 
-\section{Event Selection and Data Analysis}
+\subsection{Event Selection and Data Analysis}
 
 Our primary target is to reconstruct the time of flight of beam particles between
 different detector elements. Different time reconstruction algorithms are used
@@ -170,7 +223,7 @@ recorded during an 8 GeV electron run.}
 \end{figure}
 
 
-\section{Timing in LYSO-based Calorimeters}
+\subsection{Timing in LYSO-based Calorimeters}
 The timing measurement in 
 LYSO-based calorimeters is driven by three main factors  -- other  than the intrinsic transit 
 time of the photodetector itself and the DAQ electronics : a) the shower profile fluctuations,  
@@ -198,7 +251,7 @@ calorimeter where the light is extracted through direct optical coupling of  the
 photodetectors at the edges of a few LYSO layers to minimize  the light propagation time.
 
 
-\subsection{Timing Studies of the LYSO-based Sampling Calorimeter}
+\subsubsection{Timing Studies of the LYSO-based Sampling Calorimeter}
 
 We study the combined impact of the shower profile fluctuations, the
 scintillation mechanism in LYSO, and the light propagation time resolution
@@ -265,8 +318,8 @@ that the combined contribution to the time resolution from the shower profile
 fluctuations, the scintillation mechanism, and the light propagation time inside the
 LYSO cube is about $27$~ps.  
 
-\subsection{Timing Studies of the LYSO-Tungsten Shashlik Calorimeter}
-\subsubsection{Wavelength shifting fibers readout (WLS Y11 \& DSB1)}
+\subsubsection{Timing Studies of the LYSO-Tungsten Shashlik Calorimeter}
+\paragraph{Wavelength shifting fibers readout (WLS Y11 \& DSB1)}
 We study the time resolution of a LYSO-tungsten Shashlik calorimeter, one of the
 proposed choices for the Phase 2 upgrade of the CMS endcap calorimeter
 system~\cite{Contardo:1605208}. We compare the time resolution performance for
@@ -385,7 +438,7 @@ using DSB1 fibers for electron beams with varying beam energies.}
 \end{figure}
 
 
-\subsubsection{Directly coupled MCP-PMTs to LYSO shashlik plates}
+\paragraph{Directly coupled MCP-PMTs to LYSO shashlik plates}
 
 In this setup the MCP-PMT photodetectors are directly coupled to the edges of two adjacent LYSO layers in the shashlik
 calorimeter and scintillation light is directly transported to the photodetector
@@ -467,8 +520,7 @@ experiment suggest that a LYSO-tungsten shashlik calorimeter with edge readout
 can likely achieve $30$~ps resolution provided some improvement to the light
 collection efficiency is achieved.
 
-\section{Results Discussion and Summary }
-
+\subsection{Results Discussion and Summary }
 In this article we have described studies characterizing the timing performance
 of LYSO-based calorimeters. Using a (1.7~cm)$^{3}$ LYSO crystal that
 samples the electromagnetic showers created by electrons of various energies
@@ -517,7 +569,7 @@ we obtain about $30$~ps resolution time measurement for the maximum light yield 
 As a follow-up we will investigate the time resolution in the limit of very large light yield, 
 and attempt to improve the light collection efficiency in these types of detectors.
 
-\section{Acknowledgements} We would like to thank Erik Ramberg and Sergey Los for their help and support of this work, and Aria Soha and the FTBF test beam facility for
+\subsection{Acknowledgements} We would like to thank Erik Ramberg and Sergey Los for their help and support of this work, and Aria Soha and the FTBF test beam facility for
 the beam delivery and control. We thank Randy Ruchti for providing us with
 the DSB1 fibers used in the measurements, and Eileen Hahn for the high quality
 work in polishing the fibers. We would also like to thank Ewa Skup and Geoff Savage for help with
@@ -527,9 +579,7 @@ supporting equipment at FTBF.
 This work is supported by funding from Fermi Research Alliance, LLC under Contract No. DE-AC02-07CH11359 with the United States Department of Energy and from California Institute of Technology High Energy Physics under Contract DE-SC0011925 with the United States Department of Energy. 
 
 \clearpage
-\section{Pixel MCP-PMT Timing}
-\section{Introduction}
-
+\section{Pixel MCP-PMT Timing}\label{mcp-cal}
 In order to collect large datasets needed for precise characterization of the
 Higgs boson, and in order to increase new physics discovery potential, future
 high-energy hadron colliders, as well as the High Luminosity LHC (HL-LHC)
@@ -622,7 +672,7 @@ Section~\ref{sec:reconstruction} we present the event selection and pulse
 reconstruction, in Section~\ref{sec:position} and~\ref{sec:timing} the results
 on measured position and timing resolutions are presented. 
 
-\section{Experimental Setup} \label{sec:setup} The experiment was performed at
+\subsection{Experimental Setup} \label{sec:setup} The experiment was performed at
 the MTEST location of the Fermilab Test Beam Facility using an $8$~GeV beam
 primarily comprised of electrons. A differential Cherenkov counter, located
 further upstream of the MTEST location, was used to enhance the purity of
@@ -682,14 +732,12 @@ a ``calibration'' between the four different units.
 % should draw a diagram of how the channels were distributed among the 4 DRS %units
 
 
-\section{Event Selection and Pulse Reconstruction}
-\label{sec:reconstruction}
+\subsection{Event Selection and Pulse Reconstruction}\label{sec:reconstruction}
 Reconstruction of the signal pulses and timestamps is performed using the
 identical methods described in our past
 studies~\cite{Anderson:2015gha,MCPFastCaloNIMA,Ronzhin:2015pba}.
 In Figure~\ref{fig:expulse}, we show example pulses from one pixel channel of
 the Photonis XP85011 MCP-PMT and the Photek 240 MCP-PMT digitized by the DRS4.
-
 
 We measure time resolution as the standard deviation of the Gaussian fit to the
 time-of-flight distribution $t_0-t_1$, where $t_0$ is the time recorded at the
@@ -722,8 +770,8 @@ in~\cite{MCPFastCaloNIMA}.
 \end{figure}
 
 
-\section{ Electromagnetic Shower Position Reconstruction and Resolution}
-\label{sec:position} The transverse shape of electromagnetic showers is very
+\subsection{ Electromagnetic Shower Position Reconstruction and Resolution}\label{sec:position}
+The transverse shape of electromagnetic showers is very
 well known and has a characteristic width given by the Moliere radius. For
 tungsten, the Moliere radius is about $9$~mm and therefore we expect the shower
 to be contained within two of the pixels in the Photonis XP85011 MCP-PMT. In
@@ -804,9 +852,7 @@ resolution of the EM shower as measured by the MCP-PMT detector is determined fr
 the fit to the resolution model. } \label{fig:ResolutionMeasurement}
 \end{figure*}
 
-\section{ Electromagnetic Shower Time Resolution } 
-\label{sec:timing} 
-
+\subsection{Electromagnetic Shower Time Resolution} \label{sec:timing} 
 The timestamps for each event for individual pixels of the Photonis MCP-PMT are
 reconstructed as described in Section~\ref{sec:reconstruction}. We reconstruct
 the timestamp of the entire electromagnetic shower using the same energy
@@ -901,8 +947,7 @@ that we do not observe any improvement from the inclusion of additional pixels.
   \label{fig:sqrtN}
 \end{figure}
 
-\section{Summary} 
-
+\subsection{Summary}
 We continue our studies on the development of future electromagnetic 
 calorimeters capable of high precision energy and time measurements.
 Such calorimeters should provide both spatial resolution below the $\mathrm{mm}$
@@ -924,7 +969,8 @@ In future measurements we intend to include larger prototypes with several layer
 material, that will allow us to explore the longitudinal development of the
 showers.
 
-\section{Acknowledgements} We would like to thank Erik Ramberg for supporting 
+\subsection{Acknowledgements}
+We would like to thank Erik Ramberg for supporting 
 our work, and Aria Soha and the FTBF test beam facility for the good beam
 delivery and control. Thanks to Ewa Skup and Geoff Savage for help with
 operation of Cherenkov counters, and to Todd Nebel for organizing and providing
@@ -936,7 +982,7 @@ from California Institute of Technology High Energy Physics under Contract
 DE-SC0011925 with the United States Department of Energy.
 
 \clearpage
-\section{SiPAD}
+\section{Silicon Based Sampling Calorimeters}\label{sil-cal}
 Future colliders, including the high luminosity upgrade of the Large Hadron
 Collider (HL-LHC) at CERN, will operate with an order of magnitude higher
 instantaneous luminosity compared to what has been achieved at the LHC so far.
@@ -1373,9 +1419,7 @@ $20$~ps level, as long as noise is kept under control. Time jitter arising from
 intrinsic properties of the silicon sensor is demonstrated to be well below the
 $20$~ps level.
 
-\section{Conclusion}
-\label{sec:conclusion} 
-
+\section{Conclusion}\label{cal-sum} 
 The best time resolution of $23$~ps for a silicon sensor was achieved with a $32$~GeV beam 
 and with the silicon sensor placed after 6 radiation
 lengths of tungsten absorber. Based on our calibration data for the response of the
@@ -1391,12 +1435,4 @@ extend our studies to more realistic prototypes covering larger transverse and l
 regions of the electromagnetic shower and using multiple channels. 
 
 
-\section{Acknowledgements} 
-%Operated by Fermi Research Alliance, LLC under
-%Contract N. DE-AC02-07CH11359 with the United States Department of Energy.
-%Supported by funding from California Institute of Technology High Energy Physics
-%under Contract DE-SC0011925 with the United States Department of Energy. We
-%thank the FTBF personnel for very good beam conditions during our test beam
-%time. We also appreciate the technical support of the Fermilab SiDet department
-for the production of high quality silicon samples. 
 
