@@ -35,7 +35,7 @@ sampling calorimeter with an energy resolution of
 \end{equation}
 
 Particle collider experiments at the LHC such as ATLAS and CMS
-use EM calorimeters in the e/$gamma$ 4-momentum and jet
+use EM calorimeters in the e/$\gamma$ four-momentum and jet
 energy measurements, particle identification algorithms,
 trigger systems, and the mesurement of the missing transverse energy in
 each proton-proton collision. Therefore, maintaining the current perfomance of the EM
@@ -80,12 +80,92 @@ calorimeter where the sensitive medium is a 300 microns silicon
 sensor. finally, section~\ref{cal-sum} summarizes the results and
 possible improvements as well as future measurements.
 \section{EM Calorimeter Preliminaries}\label{prelim-cal}
-For high energy e/$\gamma$ (with energies above xx\GeV) the main
-mechanism of interaction with the calorimeter is ``blah'', 
+Calorimeters are highly complex instruments and therefore some
+background is required to understand the subsequent sections in this
+chater; this section is intended to provide a short overview of the
+most important effects -- mostly different physical processes in
+different energy regimes -- and the relevant considerations when
+designing a calorimeter.
 \subsection{EM Shower Development}
-xyz
+High energy e/$\gamma$ (with energies above 1\GeV) will develop an EM
+shower upon entering the calorimeter. The processes involved in the EM
+shower development are few and well understood. Photons lose energy
+mostly by photoelectric effect, Compton scattering, or pair production
+of electrons and positrons. The later dominates at high energies and
+it is reponsible for the shower development, while
+photoelectric effect overwhelmingly dominates at low energies
+(typically below ~10\MeV), Figure~\ref{fig:photonEL} shows the photon cross
+section as a function of the incoming photon energy in lead.
+\begin{figure}[h] \centering
+\includegraphics[width=0.85\textwidth]{calorimetry/PhotonXsec.pdf}
+\caption{Cross
+section as a function of the incoming photon energy in lead.}
+\label{fig:photonEL}
+\end{figure} 
+Electrons and positrons lose energy mainly due to two processes,
+ionization and radiation hereafter refer to as bremsstrahlung, see Figure~\ref{fig:electronEL}. The
+later dominates at high energies while the former dominates at low
+energies. The energy at which these two processes are equally relevant
+is defined as the critical energy ($E_{c}$)~\cite{criticalE}, Figure~\ref{fig:criticalE}
+shows a graphical representation of this definition.
+\begin{figure}[h] \centering
+\includegraphics[width=0.85\textwidth]{calorimetry/dEdx_electrons.pdf}
+\caption{Fractional energy loss per radiation
+  length in lead as a function of the electron/positron energy.}
+\label{fig:electronEL}
+\end{figure} 
+
+\begin{figure}[h] \centering
+\includegraphics[width=0.85\textwidth]{calorimetry/CriticalEnergyDefinition.pdf}
+\caption{Graphical definition of the critical energy ($E_{c}$). The
+  intersection of the solid lines is the definition used in this
+  thesis. The intersection between the solid (ionization) and dashed
+  line is alternative definition.}
+\label{fig:criticalE}
+\end{figure} 
+Empirical functional forms for $E_{c}$ can be obtained when a
+distinction between gase and liquid or solid media is made, since there are
+significant difference in ionization that arise mainly due to the
+density effect. Figure~\ref{fig:criticalEFF} shows the experimental
+data for $E_{c}$ as a function of the atomic number (Z) along with the
+corresponding fits, the functional forms for $E_{c}$ are
+\begin{equation}
+E^{gas}_{c} = \frac{710\MeV}{Z+0.92}\mathrm{,}\hspace{0.5cm}\mathrm{and}\hspace{0.5cm}E^{solid}_{c} = \frac{610\MeV}{Z+1.24}.
+\end{equation}
+
+\begin{figure}[h] \centering
+\includegraphics[width=0.85\textwidth]{calorimetry/CriticalEnergy.pdf}
+\caption{Electron critical energy ($E_{c}$) for the chemical
+  elements. Experimental data is shown for gases (red circles) and
+  solids (magenta crosses). Fits are shown for gases (dashed red line)
+and solids (solid magenta line)}
+\label{fig:criticalEFF}
+\end{figure} 
+
+EM showers are then produced when high energy photons
+(electron/positron) enters the calorimeter media and loses energy by
+pair production (bremsstrahlung), the subsequently $e^{+}$/$e^{-}$
+pair (high energy photon produced by radiation) loses energy by
+bremsstralung (pair production). This process evolves until the newly
+created particles have low energies and therefore other processes such as
+photoelectric effect, Compton scatterring, and ionization start to
+become relevant. Shower development is described independently of the
+calorimeter material by two quantities: the \textbf{radiation length}
+($X_{0}$) and the \textbf{Moli\`ere radius} ($R_{M}$). 
+
+The radiation length is the characteristic amount traversed by high energy
+e/$\gamma$s in the longitudinal direction (along the orignal
+particle's direction), it is usually measured in $g
+\mathrm{cm}^{-2}$. The quantitative definition is (a) the
+mean distance over which it  and electron looses 1/$e$ of its initial
+energy, and (b) 7/9 of the pair production mean free path for high
+energy photons. 
+
+The Moli\`ere radius is the characteristic size in the transverse
+direction, ......
 \subsection{Important Calorimeter Quantities}
  xyz
+
 \section{LYSO-based Calorimeters}\label{lyso-cal}
 We focus our studies on measurements of the time of flight using sampling calorimeters 
 based on LYSO crystals. Due to its very high light yield 
