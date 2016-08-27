@@ -146,23 +146,110 @@ EM showers are then produced when high energy photons
 (electron/positron) enters the calorimeter media and loses energy by
 pair production (bremsstrahlung), the subsequently $e^{+}$/$e^{-}$
 pair (high energy photon produced by radiation) loses energy by
-bremsstralung (pair production). This process evolves until the newly
-created particles have low energies and therefore other processes such as
+bremsstralung (pair production). The number of particles produced by
+this multiplicative process increases until a maximum is reached
+(shower maximum) at the certain depth inside the calorimeter. After
+this point the newly created particles have low energies and therefore other processes such as
 photoelectric effect, Compton scatterring, and ionization start to
-become relevant. Shower development is described independently of the
-calorimeter material by two quantities: the \textbf{radiation length}
-($X_{0}$) and the \textbf{Moli\`ere radius} ($R_{M}$). 
+become relevant. The shower profile in the longitudinal direction for
+a 30\GeV electron in iron is
+shown in Figure~\ref{fig:showerProfile1}. The longitudinal shower
+profile is also a function of the incoming particle energy,
+Figure~\ref{fig:showerProfile1} shows this effect for electrons of
+different energies in copper.
 
-The radiation length is the characteristic amount traversed by high energy
+\begin{figure}[h] \centering
+\includegraphics[width=0.85\textwidth]{calorimetry/EGS4_Simulation.pdf}
+\caption{Shower profile in the longitudinal direction for
+a 30\GeV electron in iron from an EGS4 simulation. The solid line
+histrogram shows the fractional energy per radiation length, and the
+solid line curve is a fit to the distribution using a gamma
+function. The number of electrons (solid circles) and photons
+(hollowed squares) with energies larger than 1.5\MeV and crossing
+planes at $X_{0}/2$ intervals (scale on the right) is also shown. The
+number of photons has been scaled down to have the same area as the
+number of electrons distribution.}
+\label{fig:showerProfile1}
+\end{figure} 
+\begin{figure}[h] \centering
+\includegraphics[width=0.85\textwidth]{calorimetry/ShowerProfile_Left.pdf}
+\caption{Shower profile in the longitudinal direction for
+electrons in copper. The different curves and points represent
+different electron energies ranging from 1\GeV-1\TeV.}
+\label{fig:showerProfile2}
+\end{figure} 
+
+Shower development is described independently of the
+calorimeter material by two quantities: the \textbf{radiation length}
+($X_{0}$) and the \textbf{Moli\`ere radius} ($R_{M}$). The radiation length is the characteristic amount traversed by high energy
 e/$\gamma$s in the longitudinal direction (along the orignal
 particle's direction), it is usually measured in $g
 \mathrm{cm}^{-2}$. The quantitative definition is (a) the
 mean distance over which it  and electron looses 1/$e$ of its initial
 energy, and (b) 7/9 of the pair production mean free path for high
-energy photons. 
+energy photons. $X_{0}$ has been tabulated and calculated by Y. S
+Tsai~\cite{}, the analytical expression is the following:
 
-The Moli\`ere radius is the characteristic size in the transverse
-direction, ......
+\begin{equation}
+\frac{1}{X_{0}} = 4\alpha r^{2}_{e}\frac{N_{A}}{A}\left[ Z^{2}\left(
+    L_{\mathrm{rad}} - f(Z)\right) + ZL^{'}_{\mathrm{rad}}\right],
+\end{equation}
+
+where $\alpha$ is the fine structure constant, $r_{e}$ is the classical
+electron radius, $N_{A}$ is Avogadro's number, A is the atomic mass, Z
+is the atomic number, $L_{\mathrm{rad}}$ and $L^{'}_{\mathrm{rad}}$
+are shown in Table~\ref{tab:Lrad}, and $f(Z)$ is an infinite sum,
+nonetheless for chemical elements up to uranium can be expressed to
+the 4-decimal place accuracy by
+
+\begin{equation}
+f(Z) = (\alpha Z)^{2}\left[ (1+(\alpha Z)^{2})^{2} + 0.2020 - 0.0369
+  (\alpha Z)^{2} + 0.0083(\alpha Z)^{4} - 0.0020 (\alpha Z)^{6}\right].
+\end{equation}
+ 
+\begin{table}[!ht]
+\begin{center}
+\caption{Tabulated values for $L_{\mathrm{rad}}$ and
+  $L^{'}_{\mathrm{rad}}$ from Y. S Tsai.}
+\label{tab:Lrad}
+\begin{tabular}{cccc}
+\hline
+Element & Z & $L_{\mathrm{rad}}$ & $L^{'}_{\mathrm{rad}}$ \\
+\hline
+H & 1 & 5.31 & 6.144\\
+He & 2 & 4.79 & 5.621\\
+Li & 3 & 4.74& 5.805\\
+Be & 4 & 4.71& 5.924\\
+Others & > 4 & ln(184.15$Z^{-1/3}$) & ln(1194$Z^{-2/3}$)\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+The Moli\`ere radius is the characteristic size of the shower in the transverse
+direction and defined as the ratio
+of the radiation length and the critical energy:
+\begin{equation}
+R_{M} = X_{0}/E_{c}.
+\end{equation} 
+The transverse spread of the shower is the result of high
+energy $e^{\pm}$ moving away from the shower axis due to multiple scattering, as well as the
+isotropic production of low energy electrons a photons. Multiple
+scattering dominates the lateral evolution in the early stages while
+isotropic production dominates at the later stages of the shower
+evolution, after the shower maximum. This two components exhibit a
+characteristic exponential decay, see
+Figure~\ref{fig:transverseProfile}, where the transverse energy density for
+electron showers in copper is shown.
+\begin{figure}[h] \centering
+\includegraphics[width=0.85\textwidth]{calorimetry/ShowerProfile_Left.pdf}
+\caption{Energy deposited per unit length in the transverse direction for
+10\GeV electrons in copper. The shower has been sample in three
+different places; at 2$X_{0}$ (red circles), 6$X_{0}$ (black dots),
+and 15$X_{0}$ (blue crosses).}
+\label{fig:transverseProfile}
+\end{figure}
+
 \subsection{Important Calorimeter Quantities}
  xyz
 
