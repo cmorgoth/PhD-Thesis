@@ -1,4 +1,4 @@
-\section{Introduction}
+\chapter{Introduction}
 Calorimeters are a key detector systems in high energy physics experiments
 ranging from neutrino to particle collider detectors. In
 particular, electromagnetic (EM) calorimeters are designed to fully
@@ -70,14 +70,14 @@ measurements to be performed in the same sensitive medium. It is in
 this context that this thesis presents various prototype
 calorimeters equipped with precision timing capabilities and studies the current limits on their time resolution.
 
-This chapter is organized as follows: section~\ref{prelim-cal}
-provides a brief and general introduction to EM calorimeters, section~\ref{lyso-cal} is
+This part of the thesis is organized as follows: section~\ref{prelim-cal}
+provides a brief and general introduction to EM calorimeters, chapter~\ref{lyso-cal} is
 dedicated to the timing properties of LYSO crystal scintillator based
-calorimeters, section~\ref{mcp-cal} discusses the possibility of a precision timing sampling
+calorimeters, chapter~\ref{mcp-cal} discusses the possibility of a precision timing sampling
 calorimeter where the sensitive medium is a microchannel
-plate~\cite[MCP], section~\ref{sil-cal} discusses the timing capabilities of a sampling
-calorimeter where the sensitive medium is a 300 microns silicon
-sensor. finally, section~\ref{cal-sum} summarizes the results and
+plate (MCP)~\cite[MCP], chapter~\ref{sil-cal} discusses the timing capabilities of a sampling
+calorimeter where the sensitive medium is a 350 microns silicon
+sensor. finally, chapter~\ref{cal-sum} summarizes the results and
 possible improvements as well as future measurements.
 \section{EM Calorimeter Preliminaries}\label{prelim-cal}
 Calorimeters are highly complex instruments and therefore some
@@ -253,15 +253,18 @@ and 15$X_{0}$ (blue crosses).}
 \subsection{Important Calorimeter Quantities}
  xyz
 
-\section{LYSO-based Calorimeters}\label{lyso-cal}
-We focus our studies on measurements of the time of flight using sampling calorimeters 
-based on LYSO crystals. Due to its very high light yield 
+\chapter{LYSO-based Calorimeters}\label{lyso-cal}
+This chapter presents studies on measurements of the time of flight using sampling calorimeters 
+based on LYSO crystals. 
+
+\section{Introduction}
+Due to its very high light yield 
 ($\sim 30$K photons/MeV)~\cite{LYSOProperties}, and radiation 
 tolerance~\cite{5402126, 4291695, 5402125, Dissertori:2013rma}, LYSO
 is the active element of one of the options considered for the upgrade of the
 Compact Muon Solenoid (CMS) detector for the HL-LHC~\cite{Contardo:1605208}. 
 
-In Figure~\ref{fig:ScintillatorTiming} we present a simplified illustration of
+In Figure~\ref{fig:ScintillatorTiming} presents a simplified illustration of
 the major time scales associated to the timing measurement using a monolithic
 crystal calorimeter. Upon entering the crystal the photon or electron travels
 at the speed of light, interacts, and begins to shower, producing scintillation light in the crystal. 
@@ -289,8 +292,8 @@ absorber thickness for electron beams with energies varying from $12$ to
 $32$~GeV, and showed that the time of arrival of the front of an electromagnetic
 shower can be determined with a precision better than $20$~ps. The electronic
 time resolution of the DAQ system was measured to be about $6$~ps. Using
-the same techniques, we measure the time resolution of the MCP-PMT photodetectors 
-used in the studies presented in this paper  to be between $11$~ps and $14$~ps, depending 
+the same techniques, the time resolution of the MCP-PMT photodetectors 
+used in the studies presented in this paper have been measured to be between $11$~ps and $14$~ps, depending 
 on the exact device.
 
 To characterize the time resolution of an inorganic crystal scintillator calorimeter we
@@ -299,11 +302,11 @@ and light propagation to the photodetector.  We take advantage of the very large
 scintillation photons in a LYSO crystal which result in modest fluctuations associated with the 
 creation and transit of each particular scintillation photon for a LYSO-based detector. 
 
-\subsection{Experimental Setup}
+\section{Experimental Setup}
 A schematic diagram of a typical time of flight measurement setup is shown in 
 Figure~\ref{fig:TypicalSchematicDiagram}. All measurements involve a fast photodetector,  
 typically a micro-channel-plate photo-multiplier-tube 
-(MCP-PMT), which  measures the reference ($t_{0}$) timestamp, and a photodetector further 
+(MCP-PMT), which  measures the reference timestamp ($t_{0}$), and a photodetector further 
 downstream that detects the signal associated with the electromagnetic shower and provides 
 a simultaneous energy and time ($t_{1}$) measurement. 
 
@@ -316,7 +319,7 @@ measures energy and time simultaneously.}
 \label{fig:TypicalSchematicDiagram}
 \end{figure}
 
-In our study we used two types of MCP-PMT photodetectors, one produced by Hamamatsu 
+In these studies, two types of MCP-PMT photodetectors are used, one produced by Hamamatsu 
 (model R3809-52)~\cite{HamamatsuMCP3809}, and one produced by Photek (model
 PMT240)~\cite{Photek240}. A DRS4  waveform digitizer V4 evaluation
 board ~\cite{DRS4} was used as the primary DAQ system, connected to a laptop via
@@ -334,9 +337,9 @@ studies. A differential Cherenkov counter (not shown in the schematic)  provided
 facility and located upstream of our experimental hall,  was used for electron
 identification. 
 
-\subsection{Event Selection and Data Analysis}
+\section{Event Selection and Data Analysis}
 
-Our primary target is to reconstruct the time of flight of beam particles between
+The primary target is to reconstruct the time of flight of beam particles between
 different detector elements. Different time reconstruction algorithms are used
 for different detector elements, and all involve the assignment of a timestamp
 using specific features of each corresponding signal pulse. The signal pulse for
@@ -390,7 +393,7 @@ recorded during an 8 GeV electron run.}
 \end{figure}
 
 
-\subsection{Timing in LYSO-based Calorimeters}
+\section{Timing in LYSO-based Calorimeters}
 The timing measurement in 
 LYSO-based calorimeters is driven by three main factors  -- other  than the intrinsic transit 
 time of the photodetector itself and the DAQ electronics : a) the shower profile fluctuations,  
@@ -418,7 +421,7 @@ calorimeter where the light is extracted through direct optical coupling of  the
 photodetectors at the edges of a few LYSO layers to minimize  the light propagation time.
 
 
-\subsubsection{Timing Studies of the LYSO-based Sampling Calorimeter}
+\subsection{Timing Studies of the LYSO-based Sampling Calorimeter}
 
 We study the combined impact of the shower profile fluctuations, the
 scintillation mechanism in LYSO, and the light propagation time resolution
@@ -477,7 +480,7 @@ for 4 GeV (top left), 8 GeV(top right), 16 GeV (bottom left),  32 GeV (bottom ri
 \end{figure}
 
 The time resolution measurement is plotted as a function of the
-beam energy in Figure~\ref{fig:TOFResolutionVsEnergy} (left). We fit the result to the sum of a 
+beam energy in Figure~\ref{fig:LYSOCubeTOFResolutionVsEnergy} (left). We fit the result to the sum of a 
 $1/\sqrt{E}$ term and a constant term of about $11$~ps.   Given that we measure the contribution 
 to the intrinsic time resolution of the photodetector and the DAQ electronics to be about 
 $20$~ps~\cite{MCPFastCaloNIMA}, using the results from the 32 GeV electron beam, we infer 
@@ -485,8 +488,8 @@ that the combined contribution to the time resolution from the shower profile
 fluctuations, the scintillation mechanism, and the light propagation time inside the
 LYSO cube is about $27$~ps.  
 
-\subsubsection{Timing Studies of the LYSO-Tungsten Shashlik Calorimeter}
-\paragraph{Wavelength shifting fibers readout (WLS Y11 \& DSB1)}
+\subsection{Timing Studies of the LYSO-Tungsten Shashlik Calorimeter}
+\subsubsection{Wavelength shifting fibers readout (WLS Y11 \& DSB1)}
 We study the time resolution of a LYSO-tungsten Shashlik calorimeter, one of the
 proposed choices for the Phase 2 upgrade of the CMS endcap calorimeter
 system~\cite{Contardo:1605208}. We compare the time resolution performance for
@@ -559,7 +562,7 @@ the averaged pulse shape obtained from direct optical coupling of the photodetec
 
 Using the shashlik calorimeter cell with DSB1 fibers, we measure the time resolution
 for electron beams with energy varying between $4$~GeV and $32$~GeV.
-In Figure~\ref{fig:ShashlikFiberEnergy32GeV}(b) we show the distribution
+In Figure~\ref{fig:ShashlikFiberEnergy32GeV} (b) we show the distribution
 of the pulse integral which is proportional to the total collected charge,
 for the $32$~GeV beam, and observe an energy resolution of about $5\%$
 while for the small LYSO cube shown in ~\ref{fig:ShashlikFiberEnergy32GeV} (a),  the energy 
@@ -578,8 +581,6 @@ that the current calorimeter setup remains in the photostatistics limited regime
 The best time resolution we obtain with this setup is $104$~ps. As the measurements are 
 photostatistics limited, the result can be improved in the future if the light collection
 efficiency is increased.
-
-
 \begin{figure}[ht!] \centering
 \includegraphics[width=0.45\textwidth]{figs/TOF_Electron_LYSOCube_32GeV_energy} 
 \includegraphics[width=0.45\textwidth]{figs/TOF_ShashlikDSB1Fiber_Electron_32GeV_energy} 
@@ -592,8 +593,6 @@ misconfiguration of the Cherenkov counter. }
 \label{fig:ShashlikFiberEnergy32GeV}
 \end{figure}
 
-
-
 \begin{figure}[ht!] \centering
 \includegraphics[width=0.23\textwidth]{figs/TOF_ShashlikDSB1Fiber_Electron_4GeV} 
 \includegraphics[width=0.23\textwidth]{figs/TOF_ShashlikDSB1Fiber_Electron_8GeV} 
@@ -604,9 +603,7 @@ using DSB1 fibers for electron beams with varying beam energies.}
 \label{fig:ShashlikFiberTOF}
 \end{figure}
 
-
-\paragraph{Directly coupled MCP-PMTs to LYSO shashlik plates}
-
+\subsubsection{Directly coupled MCP-PMTs to LYSO shashlik plates}
 In this setup the MCP-PMT photodetectors are directly coupled to the edges of two adjacent LYSO layers in the shashlik
 calorimeter and scintillation light is directly transported to the photodetector
 through the edges of the tile layers. A schematic diagram and corresponding
@@ -660,7 +657,6 @@ with signal extracted from the edges of two LYSO layers. }
 
 
 \begin{figure}[h] \centering
-
 \caption{\small}
 \label{fig:LYSOCubeTOFResolutionVsEnergy}
 \end{figure}
@@ -687,8 +683,8 @@ experiment suggest that a LYSO-tungsten shashlik calorimeter with edge readout
 can likely achieve $30$~ps resolution provided some improvement to the light
 collection efficiency is achieved.
 
-\subsection{Results Discussion and Summary }
-In this article we have described studies characterizing the timing performance
+\section{Results Discussion and Summary }
+This section described studies characterizing the timing performance
 of LYSO-based calorimeters. Using a (1.7~cm)$^{3}$ LYSO crystal that
 samples the electromagnetic showers created by electrons of various energies
 ranging from $4$~GeV to $32$~GeV at about $4.5$~$X_{0}$, we infer that the
@@ -736,7 +732,8 @@ we obtain about $30$~ps resolution time measurement for the maximum light yield 
 As a follow-up we will investigate the time resolution in the limit of very large light yield, 
 and attempt to improve the light collection efficiency in these types of detectors.
 
-\subsection{Acknowledgements} We would like to thank Erik Ramberg and Sergey Los for their help and support of this work, and Aria Soha and the FTBF test beam facility for
+\section{Acknowledgements} 
+I would like to thank Erik Ramberg and Sergey Los for their help and support of this work, and Aria Soha and the FTBF test beam facility for
 the beam delivery and control. We thank Randy Ruchti for providing us with
 the DSB1 fibers used in the measurements, and Eileen Hahn for the high quality
 work in polishing the fibers. We would also like to thank Ewa Skup and Geoff Savage for help with
@@ -746,30 +743,12 @@ supporting equipment at FTBF.
 This work is supported by funding from Fermi Research Alliance, LLC under Contract No. DE-AC02-07CH11359 with the United States Department of Energy and from California Institute of Technology High Energy Physics under Contract DE-SC0011925 with the United States Department of Energy. 
 
 \clearpage
-\section{Pixel MCP-PMT Timing}\label{mcp-cal}
-In order to collect large datasets needed for precise characterization of the
-Higgs boson, and in order to increase new physics discovery potential, future
-high-energy hadron colliders, as well as the High Luminosity LHC (HL-LHC)
-upgrades are expected to deliver peak luminosities in excess of $5\times
-10^{34}$~cm$^{-2}$s$^{-1}$. With the increased instantaneous luminosity the
-simultaneous interactions per bunch crossing (pileup) increase the likelihood of
-confusion in the reconstruction of particles from the hard scatter interaction
-with those produced in different pileup interactions. The ability to
-discriminate jets, photons, and electrons produced in the events of interests
-from pileup becomes significantly degraded. 
+\chapter{MCP-BASED Calorimeters}\label{mcp-cal}
+In this chapter another precision timing calorimetric propototype using micro-channel plates (MCP)  as the
+sensitive medium is studied.
 
-One way to mitigate the pileup confusion effects, complementary to precision tracking 
-methods, is to perform a time of arrival measurement associated with a particular layer of the
-calorimeter, allowing for a time assignment for charged particles and photons.
-Achieving such a time measurement with resolution better than $20$-$30$~ps
-can effectively reduce the impact of pileup by a factor of $5$. The ultimate 
-goal is to develop an electromagnetic calorimeter with the same capabilities as 
-the ones used in the CMS and ATLAS experiments, but with the enhanced capability 
-to achieve time measurements at precisions of $20$-$30$~ps.
-In this paper we continue our investigation of the development of such a calorimeter
-~\cite{Anderson:2015gha,MCPFastCaloNIMA,Ronzhin:2015pba,Ronzhin2015288}. 
-
-The use of micro-channel plates (MCP) as the active element of a shower-maximum
+\section{Introduction}
+The use of micro-channel plates (MCP) as the sensitive element of a shower-maximum
 detector or a calorimeter has been studied in the
 past~\cite{Derevshchikov:1990ej,Albayrak-Yetkin:2013xga}. These studies
 demonstrated the linearity in the multiplicity of secondary shower particles
@@ -779,24 +758,24 @@ picoseconds~\cite{MCPFastCaloNIMA,Ronzhin:2015pba,Ronzhin2015288,Brianza2015216}
 Moreover, such devices are intrinsically radiation hard and thus would tolerate
 the harsh radiation environment at future hadron colliders, particularly when
 operated without the reliance on a photocathode. In
-reference~\cite{Ronzhin2015288}, we have demonstrated that the intrinsic
+reference~\cite{Ronzhin2015288}, it has been demonstrated that the intrinsic
 fluctuations of electromagnetic showers induce jitter on the time measurement
 that is less than $10$~ps, removing one important potential fundamental
-limitation. A further advantage of MCP's is their capability for highly
+limitation. A further advantage of MCPs is their capability for highly
 segmented readout, allowing for the possibility of a highly granular calorimeter
 with sub-millimeter spatial resolution. Such high-granularity calorimeters have
 been studied in the context of detector concepts for the
 ILC~\cite{Grondin:2010fe} and the HL-LHC upgrade of the CMS
 experiment~\cite{Butler:2020886}, indicating that such calorimeters have
 promising potential for substantial improvement in physics reach at the TeV
-scale. In this paper, we complement our past
+scale. The results in this chapter complement past
 results~\cite{Anderson:2015gha,MCPFastCaloNIMA,Ronzhin:2015pba,Ronzhin2015288}
 with additional studies of the position and time resolution for a calorimeter
 prototype with highly granular readout.
 
-In this and the three previous papers we used three different MCP-PMTs:
+The studies in this chapter use three different MCP-PMTs:
 \begin{itemize}
-\item Photek 240: our most performant device, which provides the best
+\item Photek 240: the most performant device, which provides the best
       time resolution, and excellent uniformity across the detector. The main parameters
       of the Photek 240 were reported in Ref.~\cite{MCPFastCaloNIMA}. The pore
       size is 10~$\mu$m and the distance from the photocathode to the first
@@ -816,30 +795,30 @@ In this and the three previous papers we used three different MCP-PMTs:
       directly from secondary shower particles~\cite{Ronzhin:2015pba}.  
 \end{itemize}
 
-In this paper, we report on our studies of the high-granularity shower-maximum detector prototype 
+This chapter reports on the studies of the high-granularity shower-maximum detector prototype 
 that uses the Photonis XP85011 MCP as the active element. As demonstrated in 
-reference~\cite{MCPFastCaloNIMA}, due to the fact that the input window is very thin, the signal in 
-this device is dominated by direct detection of secondary shower particles, 
+reference~\cite{MCPFastCaloNIMA}, due to the fact that the input window is very thin, the signal in this device is dominated by direct detection of secondary shower particles, 
 while Cherenkov photon signals contribute only $30\%$ of the amplitude.
-The MCP is used to sample the electromagnetic shower induced by a beam of electrons impacting a 
-tungsten absorber layer that has a thickness of about 4 radiation lengths ($X_{0}$). The
+The MCP is used to sample the electromagnetic shower induced by a beam
+of electrons impinging into a tungsten absorber layer that has a thickness of about 4 radiation lengths ($X_{0}$). The
 MCP-PMT is read out with a pixelated anode, with square pixels of size 
 $6\times6$~$\mathrm{mm}^{2}$. The energy of the electromagnetic showers is reconstructed 
 using the total collected charge and the positions are reconstructed using a simple
 energy-weighting algorithm, described in Section~\ref{sec:position}.
 Through the use of a high-precision motorized stage, a position scan is
 performed during beam-tests and the position resolution of the shower-maximum
-detector is obtained. Finally, we investigate the precision of measuring the
+detector is obtained. Finally, the precision of measuring the
 arrival time of electromagnetic showers with such a pixellated shower-maximum
-detector.
+detector is investigated.
 
-The paper is organized as follows. In Section~\ref{sec:setup} we describe the
-experimental setup used to perform the measurements, in
-Section~\ref{sec:reconstruction} we present the event selection and pulse
-reconstruction, in Section~\ref{sec:position} and~\ref{sec:timing} the results
-on measured position and timing resolutions are presented. 
+This chapter is organized as follows. Section~\ref{sec:setup} gives a
+description of the
+experimental setup,
+Section~\ref{sec:reconstruction} presents the event selection and pulse
+reconstruction, Section~\ref{sec:position} and~\ref{sec:timing} the
+presents the results on position measurements and timing resolutions, respectively. 
 
-\subsection{Experimental Setup} \label{sec:setup} The experiment was performed at
+\section{Experimental Setup} \label{sec:setup} The experiment was performed at
 the MTEST location of the Fermilab Test Beam Facility using an $8$~GeV beam
 primarily comprised of electrons. A differential Cherenkov counter, located
 further upstream of the MTEST location, was used to enhance the purity of
@@ -899,7 +878,7 @@ a ``calibration'' between the four different units.
 % should draw a diagram of how the channels were distributed among the 4 DRS %units
 
 
-\subsection{Event Selection and Pulse Reconstruction}\label{sec:reconstruction}
+\section{Event Selection and Pulse Reconstruction}\label{sec:reconstruction}
 Reconstruction of the signal pulses and timestamps is performed using the
 identical methods described in our past
 studies~\cite{Anderson:2015gha,MCPFastCaloNIMA,Ronzhin:2015pba}.
@@ -937,7 +916,7 @@ in~\cite{MCPFastCaloNIMA}.
 \end{figure}
 
 
-\subsection{ Electromagnetic Shower Position Reconstruction and Resolution}\label{sec:position}
+\section{ Electromagnetic Shower Position Reconstruction and Resolution}\label{sec:position}
 The transverse shape of electromagnetic showers is very
 well known and has a characteristic width given by the Moliere radius. For
 tungsten, the Moliere radius is about $9$~mm and therefore we expect the shower
@@ -1019,7 +998,7 @@ resolution of the EM shower as measured by the MCP-PMT detector is determined fr
 the fit to the resolution model. } \label{fig:ResolutionMeasurement}
 \end{figure*}
 
-\subsection{Electromagnetic Shower Time Resolution} \label{sec:timing} 
+\section{Electromagnetic Shower Time Resolution} \label{sec:timing} 
 The timestamps for each event for individual pixels of the Photonis MCP-PMT are
 reconstructed as described in Section~\ref{sec:reconstruction}. We reconstruct
 the timestamp of the entire electromagnetic shower using the same energy
@@ -1114,7 +1093,7 @@ that we do not observe any improvement from the inclusion of additional pixels.
   \label{fig:sqrtN}
 \end{figure}
 
-\subsection{Summary}
+\section{Summary}
 We continue our studies on the development of future electromagnetic 
 calorimeters capable of high precision energy and time measurements.
 Such calorimeters should provide both spatial resolution below the $\mathrm{mm}$
@@ -1136,7 +1115,7 @@ In future measurements we intend to include larger prototypes with several layer
 material, that will allow us to explore the longitudinal development of the
 showers.
 
-\subsection{Acknowledgements}
+\section{Acknowledgements}
 We would like to thank Erik Ramberg for supporting 
 our work, and Aria Soha and the FTBF test beam facility for the good beam
 delivery and control. Thanks to Ewa Skup and Geoff Savage for help with
@@ -1149,7 +1128,7 @@ from California Institute of Technology High Energy Physics under Contract
 DE-SC0011925 with the United States Department of Energy.
 
 \clearpage
-\section{Silicon Based Sampling Calorimeters}\label{sil-cal}
+\chapter{Silicon Based Sampling Calorimeters}\label{sil-cal}
 Future colliders, including the high luminosity upgrade of the Large Hadron
 Collider (HL-LHC) at CERN, will operate with an order of magnitude higher
 instantaneous luminosity compared to what has been achieved at the LHC so far.
@@ -1381,24 +1360,6 @@ values. Having established the absolute scale of the response using single
 particles, in our remaining studies we normalize all charge measurements to the
 $120$ GeV proton signal, which we refer to in the following as
 $\mathrm{Q}_{\mathrm{MIP}}$. 
-
-
-%In Figure~\ref{fig:MIP}, we show the response of the silicon sensor to the
-%proton and electron beams without any absorbers upstream. All triggered events
-%were used in these distributions. We observe very similar response for these two
-%cases, and measure an integrated charge of $4.5$~fC and $5.0$~fC for the proton
-%and electron beams, respectively. The measured charge is corrected for the gain
-%of the amplifiers and attenuators used, and hence is the output of the silicon
-%sensor. We expect that a MIP traversing a silicon sensor of thickness 325~$\mu$m
-%to produce roughly 35,000 electron-hole pairs~\cite{Agashe:2014kda},
-%corresponding to a collected charge of about $5$~fC. The difference in
-%ionization losses in silicon is expected to be about 10\% between 120~GeV
-%protons and 8~GeV electrons~\cite{Agashe:2014kda}. Thus, our measured values are
-%in agreement with expectations. Having established the absolute scale of the
-%response using MIPs, in our remaining studies we normalize all charge
-%measurements to the charge integrated in the silicon sensor for one MIP,
-%$\mathrm{Q}_{\mathrm{MIP}}$. 
-
 \begin{figure}[htbp] 
 \centering
 \includegraphics[width=0.45\textwidth]{plots/Proton_charge.pdf} 
@@ -1410,7 +1371,6 @@ minimum-ionizing particle. All triggered events were used in these
 distributions.} 
 \label{fig:MIP} 
 \end{figure} 
-
 We study the response of the silicon sensor to electron beams of various
 energies after 6 radiation lengths ($X_0$) of tungsten absorber. The silicon
 sensor is expected to be sensitive to the number of secondary electrons produced
@@ -1424,7 +1384,6 @@ Figure~\ref{fig:ChargeDistributionExample}. The uncertainties plotted show the R
 charge distribution. Since the electron beam profile and purity varies at different beam energies, we collected between 10 and 50 thousand events for each beam energy, in order to ensure sufficiently large data samples. We observe a fairly linear depedence between the measured
 charge and the incident beam energy, for beam energies between $4$~GeV and
 $32$~GeV. 
-
 \begin{figure}[htbp] 
 \centering
 \includegraphics[width=0.49\textwidth]{plots/Electron_6X0_32GeV_chargeMIP.pdf} 
@@ -1438,7 +1397,6 @@ The uncertainty bands show the RMS of the measured charge distribution. The red 
 is the best fit to a linear function..} 
 \label{fig:ChargeDistributionExample}
 \end{figure}
-
 We also measure the time resolution between the silicon sensor and the Photek
 MCP-PMT, by measuring the standard deviation of the gaussian fit to the
 distribution of $\Delta t = t_0-t_1$. We observe a systematic dependence of
@@ -1464,7 +1422,6 @@ measured time resolution on the beam energy is shown on the right of
 Figure~\ref{fig:MIPVsEnergy}. We observe an improvement in the time resolution
 as beam energy increases, and achieve a time resolution of $23$~ps for the
 $32$~GeV electron beam.
-
 \begin{figure}[htbp] 
 \centering
 \includegraphics[width=0.49\textwidth]{plots/DeltaT_vs_Charge_Uncorrected.pdf} 
@@ -1478,7 +1435,6 @@ after 6~$X_0$ of tungsten absorber.
 } 
 \label{fig:timewalk} 
 \end{figure} 
-
 \begin{figure}[htbp] 
 \centering
 \includegraphics[width=0.49\textwidth]{plots/deltaT_32GeV_6X0.pdf} 
@@ -1491,7 +1447,6 @@ the electron beam energy. The silicon sensor is placed after 6~$X_0$ of
 tungsten absorber. } 
 \label{fig:MIPVsEnergy} 
 \end{figure} 
-
 Furthermore, we study the response and time resolution of the silicon sensor
 along the longitudinal direction of the shower development. We measure the
 integrated charge and the time resolution as a function of the absorber
@@ -1504,7 +1459,6 @@ The RMS of the integrated charge distribution at each absorber thickness is
 relatively large, due to the small transverse size of the active element used in
 the experiment. We also observe that the time resolution improves as the shower
 develops towards its maximum in the longitudinal direction. 
-
 \begin{figure}[htbp] 
 \centering
 \includegraphics[width=0.49\textwidth]{plots/MIPVsAbsorberAt8GeV.pdf} 
@@ -1517,14 +1471,12 @@ distribution. On the right, the time resolution between the silicon sensor and
 the Photek MCP-PMT reference is shown as a function of the absorber thickness. } 
 \label{fig:MIPVsAbsorberAt8GeV} 
 \end{figure} 
-
 Finally, we studied the dependence of the time resolution as a function of the
 bias voltage applied to deplete the silicon sensor. The measurements are shown
 in Figure~\ref{fig:SigmaT_vs_DV_lin30Stamp} for $16$~GeV electrons after
 6~$X_0$ of tungsten absorber. We find that the time resolution
 improves as the bias voltage is increased, which is expected on the basis of 
 increased velocity of electrons and holes in silicon at larger bias voltage. 
-
 \begin{figure}[htbp] 
 \centering
 \includegraphics[width=0.8\textwidth]{plots/SigmaT_vs_DV_lin30Stamp.pdf} 
@@ -1535,9 +1487,7 @@ after 6~$X_0$ of tungsten absorber.}
 \label{fig:SigmaT_vs_DV_lin30Stamp} 
 \end{figure} 
 
-\section{Discussion} 
-\label{sec:discussion} 
-
+\section{Discussion} \label{sec:discussion} 
 From Figures~\ref{fig:noise}~and~\ref{fig:MIP}, we observe that the noise of the
 prototype system is sufficiently low to extract signals from MIPs. Comparing the
 RMS of the noise distribution with the mean of the MIP signal, we find a
@@ -1550,25 +1500,6 @@ linear response to the electron beam energy in the range from 4~GeV to 32~GeV
 after 6 $X_0$ of tungsten absorber, as shown in Figure~\ref{fig:MIPVsEnergy}. We also
 measure a longitudinal shower profile in Figure~\ref{fig:MIPVsAbsorberAt8GeV}
 that is consistent with similar past measurements.
-
-%With regards to the timing measurements, we begin with some general considerations.
-%An electric field applied to silicon results in a built-in junction voltage
-%($\sim 0.6$~V) which is typical of silicon diodes. The high electric field in silicon
-%leads to total depletion as all free charge carriers are removed. 
-%When charged particles pass through the totally depleted region in silicon, 
-%it ionizes atoms and produces electron-hole pairs which serve as charge carriers.
-%The electrons are collected on positive electrode and the holes are collected
-%on the negative electrode. The time and jitter associated with relativistic particles 
-%traversing through the silicon material can be neglected as it takes 
-%less than $1$~ps for relativistic particles to pass through the full $300$~$\mu$m
-%of silicon material. At high electric field (more than $10^{5}$~V/cm), the mobility 
-%of carriers attain a constant drift velocity of $1\mu$m$/10$~ps in the silicon 
-%material~\cite{Ronzhin2015,spieler2005semiconductor}. The time required to collect all ionization electrons
-%produced by a charged particle traversing the $300\mu$m is about $3$~ns.
-%The electrons produced closer to the positive electron are collected first and are
-%most relevant for the time stamp assignment. The time needed to collect the electrons
-%produced in the last $3\mu$m of silicon is about $30$~ps, and roughly sets the scale
-%of the time measurement.
 
 Our results show that the time stamp associated with electromagnetic showers
 induced by electrons with energy between $20$~GeV and $30$~GeV can be measured
@@ -1601,5 +1532,8 @@ to use silicon for timing measurements in future calorimeters. To continue, we p
 extend our studies to more realistic prototypes covering larger transverse and longitudinal 
 regions of the electromagnetic shower and using multiple channels. 
 
-
-
+\chapter{CMS High Granularity Calorimeter Timing Layer}
+\section{Silicon Detector}
+\section{Experimental Setup}
+\section{Data Analysis and Results}
+\section{Dicussion and Conclusions}
