@@ -254,7 +254,7 @@ and 15$X_{0}$ (blue crosses).}
  xyz
 
 \chapter{LYSO-based Calorimeters}\label{lyso-cal}
-This chapter presents studies on measurements of the time of flight using sampling calorimeters 
+This chapter presents studies on measurements of the time of flight (TOF) using sampling calorimeters 
 based on LYSO crystals. 
 
 \section{Introduction}
@@ -303,7 +303,7 @@ scintillation photons in a LYSO crystal which result in modest fluctuations asso
 creation and transit of each particular scintillation photon for a LYSO-based detector. 
 
 \section{Experimental Setup}
-A schematic diagram of a typical time of flight measurement setup is shown in 
+A schematic diagram of a typical TOF measurement setup is shown in 
 Figure~\ref{fig:TypicalSchematicDiagram}. All measurements involve a fast photodetector,  
 typically a micro-channel-plate photo-multiplier-tube 
 (MCP-PMT), which  measures the reference timestamp ($t_{0}$), and a photodetector further 
@@ -313,7 +313,7 @@ a simultaneous energy and time ($t_{1}$) measurement.
 \begin{figure}[ht!] \centering
 \includegraphics[width=0.45\textwidth]{figs/TypicalSchematicDiagram} 
 \caption{\small The basic schematic diagram of the experimental setup for
-a typical time of flight measurement is shown to illustrate the
+a typical TOF measurement is shown to illustrate the
 basic detector elements. One photodetector is used as a time reference and the second 
 measures energy and time simultaneously.} 
 \label{fig:TypicalSchematicDiagram}
@@ -332,14 +332,14 @@ ranging from $4$ to $32$~GeV. All detector elements were placed inside of a dark
 lined with copper foil, providing RF shielding. A $2$x$2$~$\mathrm{mm}^{2}$
 scintillator was placed inside the box at the upstream extremity and used to
 trigger the DAQ readout, providing a strict constraint on the
-location and directionality of the beam particles used in the time of flight
+location and directionality of the beam particles used in the TOF
 studies. A differential Cherenkov counter (not shown in the schematic)  provided by the FTBF
 facility and located upstream of our experimental hall,  was used for electron
 identification. 
 
 \section{Event Selection and Data Analysis}
 
-The primary target is to reconstruct the time of flight of beam particles between
+The primary target is to reconstruct the TOF of beam particles between
 different detector elements. Different time reconstruction algorithms are used
 for different detector elements, and all involve the assignment of a timestamp
 using specific features of each corresponding signal pulse. The signal pulse for
@@ -375,7 +375,7 @@ recorded using  8 GeV electron beam.}
 Event selection and pulse cleaning procedures are used to eliminate abnormal
 pulses in the readout, as described in~\cite{MCPFastCaloNIMA}. Large signals
 above 500 mV are rejected because they saturate the DRS4 inputs. Only pulses
-with amplitude larger than 20 mV are used for time of flight measurements, in
+with amplitude larger than 20 mV are used for TOF measurements, in
 order to reduce the impact of noise from the DRS waveform digitizer DAQ system.
 Events containing more than one pulse within the $200$~ns readout window are not
 used. Attenuators were used to extend the dynamic range of the DRS4
@@ -436,7 +436,7 @@ are shown in Figure~\ref{fig:LYSOSamplingCaloSetup}.
 \includegraphics[width=0.45\textwidth]{figs/LYSOSamplingCaloSetupSchematic} 
 \includegraphics[width=0.45\textwidth]{figs/LYSOSamplingCaloSetupPhoto} 
 \caption{ \small A schematic diagram of the experimental setup for the
-time of flight measurement using the LYSO sampling calorimeter is shown
+TOF measurement using the LYSO sampling calorimeter is shown
 on the left, along with a picture of the experimental setup shown on the right. } 
 \label{fig:LYSOSamplingCaloSetup}
 \end{figure}
@@ -463,9 +463,9 @@ The thickness of the LYSO active element is relatively small and captures only a
 of the total energy of the electron, but yields a reasonable energy measurement
 as it is close to the shower maximum.
 
-The time of flight measurement is performed using the LYSO sampling calorimeter
+The TOF measurement is performed using the LYSO sampling calorimeter
 for electron beams with energies varying from $4$~GeV to $32$~GeV. The corresponding 
-measured time of flight distributions are shown in Figure~\ref{fig:LYSOCubeTOF}.
+measured TOF distributions are shown in Figure~\ref{fig:LYSOCubeTOF}.
 We achieve the best time resolution of $34$~ps for electrons
 with beam energy of $32$~GeV.
 
@@ -474,7 +474,7 @@ with beam energy of $32$~GeV.
 \includegraphics[width=0.23\textwidth]{figs/TOF_Electron_LYSOCube_8GeV} 
 \includegraphics[width=0.23\textwidth]{figs/TOF_Electron_LYSOCube_16GeV} 
 \includegraphics[width=0.23\textwidth]{figs/TOF_Electron_LYSOCube_32GeV} 
-\caption{ \small Time of flight distributions for the LYSO cube sampling calorimeter
+\caption{ \small TOF distributions for the LYSO cube sampling calorimeter
 for 4 GeV (top left), 8 GeV(top right), 16 GeV (bottom left),  32 GeV (bottom right) electron beam energy. } 
 \label{fig:LYSOCubeTOF}
 \end{figure}
@@ -516,7 +516,7 @@ tiles. }
 \includegraphics[width=0.45\textwidth]{figs/ShashlikFiberSetupSchematic} 
 \includegraphics[width=0.45\textwidth]{figs/ShashlikFiberSetupPhoto} 
 \caption{\small A schematic diagram of the experimental setup for the
-time of flight measurement using the LYSO-tungsten shashlik calorimeter
+TOF measurement using the LYSO-tungsten shashlik calorimeter
 with fiber signal extraction, along with a photograph of the
 experimental setup. } 
 \label{fig:ShashlikFiberSetup}
@@ -571,7 +571,7 @@ requirements could be made due to a misconfiguration of the upstream Cherenkov c
 so the background is visible.
 
 
-Time of flight distributions, fitted to gaussian functions,
+TOF distributions, fitted to gaussian functions,
 are shown in Figure~\ref{fig:ShashlikFiberTOF}, and the 
 $\sigma$ parameter of the gaussian fit is plotted as a function of the
 beam energy in Figure~\ref{fig:ShashlikSideReadoutTOFResolutionVsEnergy}.
@@ -598,7 +598,7 @@ misconfiguration of the Cherenkov counter. }
 \includegraphics[width=0.23\textwidth]{figs/TOF_ShashlikDSB1Fiber_Electron_8GeV} 
 \includegraphics[width=0.23\textwidth]{figs/TOF_ShashlikDSB1Fiber_Electron_16GeV} 
 \includegraphics[width=0.23\textwidth]{figs/TOF_ShashlikDSB1Fiber_Electron_32GeV} 
-\caption{\small Time of flight distributions for the LYSO-tungsten shashlik calorimeter
+\caption{\small TOF distributions for the LYSO-tungsten shashlik calorimeter
 using DSB1 fibers for electron beams with varying beam energies.} 
 \label{fig:ShashlikFiberTOF}
 \end{figure}
@@ -617,7 +617,7 @@ is extracted.
 \includegraphics[width=0.45\textwidth]{figs/ShashlikSideReadoutSetupSchematic} 
 \includegraphics[width=0.45\textwidth]{figs/ShashlikSideReadoutPhotoB} 
 \caption{ \small A schematic diagram of the experimental setup for the
-time of flight measurement using the LYSO-tungsten shashlik calorimeter
+TOF measurement using the LYSO-tungsten shashlik calorimeter
 with signal extraction from the edges of two LYSO plates, along
 with a picture of the experimental setup. } 
 \label{fig:ShashlikSideReadoutSetup}
@@ -639,7 +639,7 @@ of two LYSO layers, we minimize the distance the scintillation light  travels to
 photodetectors, and reduce the impact of light propagation jitter on the time measurement 
 resolution. However in this setup we have also reduced the available photostatistics, as we collect 
 light from only a small fraction of the shashlik cell. In Figure~\ref{fig:ShashlikSideReadoutTOF},
-we show the time of flight distributions for electron beams at various energies,
+we show the TOF distributions for electron beams at various energies,
 fitted to gaussian functions. The width of the best-fit gaussian is plotted as a
 function of the beam energy in Figure~\ref{fig:ShashlikSideReadoutTOFResolutionVsEnergy}. The 
 best time resolution that we obtain is about $55$~ps, and fitting the result to the sum of
@@ -650,7 +650,7 @@ $30$~ps.
 \includegraphics[width=0.32\textwidth]{figs/TOF_ShashlikSideReadout_Electron_8GeV} 
 \includegraphics[width=0.32\textwidth]{figs/TOF_ShashlikSideReadout_Electron_16GeV} 
 \includegraphics[width=0.32\textwidth]{figs/TOF_ShashlikSideReadout_Electron_32GeV} 
-\caption{ Time of flight distributions for the LYSO-tungsten shashlik calorimeter
+\caption{ TOF distributions for the LYSO-tungsten shashlik calorimeter
 with signal extracted from the edges of two LYSO layers. } 
 \label{fig:ShashlikSideReadoutTOF}
 \end{figure}
@@ -743,12 +743,12 @@ supporting equipment at FTBF.
 This work is supported by funding from Fermi Research Alliance, LLC under Contract No. DE-AC02-07CH11359 with the United States Department of Energy and from California Institute of Technology High Energy Physics under Contract DE-SC0011925 with the United States Department of Energy. 
 
 \clearpage
-\chapter{MCP-BASED Calorimeters}\label{mcp-cal}
-In this chapter another precision timing calorimetric propototype using micro-channel plates (MCP)  as the
-sensitive medium is studied.
+\chapter{High-Granularity MCP-BASED Calorimeters}\label{mcp-cal}
+In this chapter another precision timing calorimetric propototype
+using MCPs as the sensitive medium is studied.
 
 \section{Introduction}
-The use of micro-channel plates (MCP) as the sensitive element of a shower-maximum
+The use of MCPs as the sensitive element of a shower-maximum
 detector or a calorimeter has been studied in the
 past~\cite{Derevshchikov:1990ej,Albayrak-Yetkin:2013xga}. These studies
 demonstrated the linearity in the multiplicity of secondary shower particles
@@ -775,7 +775,7 @@ prototype with highly granular readout.
 
 The studies in this chapter use three different MCP-PMTs:
 \begin{itemize}
-\item Photek 240: the most performant device, which provides the best
+\item Photek 240: the most performant of the three devices, which provides the best
       time resolution, and excellent uniformity across the detector. The main parameters
       of the Photek 240 were reported in Ref.~\cite{MCPFastCaloNIMA}. The pore
       size is 10~$\mu$m and the distance from the photocathode to the first
@@ -808,7 +808,7 @@ energy-weighting algorithm, described in Section~\ref{sec:position}.
 Through the use of a high-precision motorized stage, a position scan is
 performed during beam-tests and the position resolution of the shower-maximum
 detector is obtained. Finally, the precision of measuring the
-arrival time of electromagnetic showers with such a pixellated shower-maximum
+arrival time of electromagnetic showers with such high-granularity shower-maximum
 detector is investigated.
 
 This chapter is organized as follows. Section~\ref{sec:setup} gives a
@@ -819,24 +819,22 @@ reconstruction, Section~\ref{sec:position} and~\ref{sec:timing} the
 presents the results on position measurements and timing resolutions, respectively. 
 
 \section{Experimental Setup} \label{sec:setup} The experiment was performed at
-the MTEST location of the Fermilab Test Beam Facility using an $8$~GeV beam
+the MTEST location of the FTBF using an $8$~GeV beam
 primarily comprised of electrons. A differential Cherenkov counter, located
 further upstream of the MTEST location, was used to enhance the purity of
-electrons and to suppress pions, by requiring a signal consistent with a passage
+electrons and to suppress pions, by requiring a signal consistent with the passage
 of electrons through the device. All other detectors were placed inside a dark
 box lined with copper foil for electromagnetic shielding. A photograph of the
 experimental setup within the dark box is shown in Figure~\ref{fig:setup}. A
 scintillator of size $1.7$~mm$\times$~$2.0$~mm optically coupled to two
 photomultiplier tubes, one on each side, was used to trigger the data
-acquisition and to constrain the trajectory of the electrons from the beam.
-Downstream of the trigger, a tungsten absorber with a thickness of about $1$~cm,
-equivalent to about 4 radiation lengths, was placed. The Photonis XP85011
+acquisition and to constrain the trajectory of the electrons. Downstream from the trigger, a tungsten absorber with a thickness of about $1$~cm,
+equivalent to about 4 $X_{0}$, was placed. The Photonis XP85011
 MCP-PMT with pixelated readout was set on a high precision motorized stage and
 placed behind the tungsten absorber. The precision of the motorized stage is
 about $0.1$~mm. To avoid unintended early showers due to interactions with the
-material of the casing and MCP device, the Photek 240 MCP-PMT was placed behind
-the Photonis XP85011 MCP-PMT. 
-
+material of the casing and reference MCP-PMT device, the Photek 240
+MCP-PMT was placed behind the Photonis XP85011 MCP-PMT. 
 \begin{figure}[htbp] 
 \centering
 \includegraphics[width=0.8\textwidth]{Images/setup/setup.png} 
@@ -848,16 +846,15 @@ MCP-PMT used as a time reference detector. The DRS4 waveform digitizers are also
 shown on the lower right side.} 
 \label{fig:setup} 
 \end{figure} 
-
 An external view
 of the Photonis XP85011 MCP-PMT is shown on the left of Figure~\ref{fig:photonis},
 and a schematic diagram is shown on the right. There are a total of 64 pixels
-arranged in an $8\times8$ square that can be read out individually. For our
-experiment, the nine pixels shown within the red square are used. During the
-course of the experiment we found that the pixel labelled 44 in
+arranged in an $8\times8$ square matrix that can be read out
+individually. Only the nine pixels shown within the red square are
+used (see Figure~\ref{fig:photonis}). During the
+course of the experiment it was found that the pixel labelled 44 in
 Figure~\ref{fig:photonis} did not function properly and was therefore not used
 in the analysis of the data. 
-
 \begin{figure}[htbp] 
 \centering
 \includegraphics[width=0.49\textwidth]{Images/photonis/photonis.jpg}
@@ -867,7 +864,6 @@ the schematic diagram is shown on the right. The red square indicates the pixels
 used for the experiment and data analysis.} 
 \label{fig:photonis} 
 \end{figure}
-
 Four DRS4 high speed waveform digitizers were used to acquire the signals from
 the Photek 240 MCP-PMT, the cherenkov counter, and the eight operational
 channels from the Photonis XP85011 MCP-PMT. In order to allow a synchronized
@@ -880,13 +876,13 @@ a ``calibration'' between the four different units.
 
 \section{Event Selection and Pulse Reconstruction}\label{sec:reconstruction}
 Reconstruction of the signal pulses and timestamps is performed using the
-identical methods described in our past
+identical methods described in Chapter~\ref{lyso-cal} and other
 studies~\cite{Anderson:2015gha,MCPFastCaloNIMA,Ronzhin:2015pba}.
-In Figure~\ref{fig:expulse}, we show example pulses from one pixel channel of
+Figure~\ref{fig:expulse} shows example pulses from one pixel channel of
 the Photonis XP85011 MCP-PMT and the Photek 240 MCP-PMT digitized by the DRS4.
 
-We measure time resolution as the standard deviation of the Gaussian fit to the
-time-of-flight distribution $t_0-t_1$, where $t_0$ is the time recorded at the
+The time resolution is measured as the standard deviation of the Gaussian fit to the
+TOF distribution $t_0-t_1$, where $t_0$ is the time recorded at the
 ``start'' detector, and $t_1$ is that of the ``stop'' detector. To assign a time
 stamp for each signal pulse, we first determine the time position of the pulse
 peak. A Gaussian function is fitted to the pulse maximum using three points
@@ -894,9 +890,8 @@ before the maximum of the pulse peak and four points after the maximum. The mean
 value of the Gaussian was used as the time stamp for each pulse. A Photek 240
 MCP-PMT, whose time resolution was previously measured to be less than
 $10$~ps~\cite{Ronzhin:2015pba} was used as a ``start'' signal, while pulses from
-individual pixels on the Photonis XP85011 MCP-PMT were used as ``stop'' signals.
-More details on the pulse reconstruction algorithms that we use are presented in
-Ref.~\cite{MCPFastCaloNIMA}. The integrated charge for each pulse is used as a
+individual pixels on the Photonis XP85011 MCP-PMT were used as
+``stop'' signals. The integrated charge for each pulse is used as a
 proxy for the measured energy deposit in each channel, and is computed using
 four time samples before and after the peak of the pulse. Each time sample is
 approximately $0.2$~ns in time. Events containing pulses above $500$~mV in
@@ -918,10 +913,11 @@ in~\cite{MCPFastCaloNIMA}.
 
 \section{ Electromagnetic Shower Position Reconstruction and Resolution}\label{sec:position}
 The transverse shape of electromagnetic showers is very
-well known and has a characteristic width given by the Moliere radius. For
-tungsten, the Moliere radius is about $9$~mm and therefore we expect the shower
-to be contained within two of the pixels in the Photonis XP85011 MCP-PMT. In
-Figure~\ref{fig:exavint}, we show the mean charge measured in each of the pixels
+well known and has a characteristic width given by the Moliere radius,
+see Section~\ref{prelim-cal}. For
+tungsten, the Moliere radius is about $9$~mm and therefore the shower
+is expected to be contained within two of the pixels in the Photonis XP85011 MCP-PMT. In
+Figure~\ref{fig:exavint} shows the mean charge measured in each of the pixels
 for one example run where the Photonis MCP-PMT was held in a fixed location
 approximately centered on the beam. The electron beam has a width of about
 $1$~cm. 
@@ -938,13 +934,12 @@ found to be not operational. }
 
 Each electron impacting the shower-maximum detector will induce an
 electromagnetic shower, and we define such an occurrence as an event. For each
-event, we reconstruct the center position, $\vec{p}$ of the electromagnetic
-shower based on the the pixel positions weighted by the corresponding integrated
+event, the center of the electromagnetic shower ($\vec{\mathbf{{p}}}$) is reconstructed based on the the pixel positions weighted by the corresponding integrated
 charge as follows: 
 \begin{equation} 
  \vec{\mathbf{{p}}} =
 \frac{\sum_{i\in\mathrm{pixels}} Q_{i} \vec{p}_i} {\sum_{i\in\mathrm{pixels}}
-Q_{i}} 
+Q_{i}}, 
 \end{equation} 
 
 where $i$ labels the individual pixels, $Q_{i}$ is the charge collected in pixel
@@ -952,15 +947,13 @@ $i$, and $\vec{p}_{i}$ is the vector describing the $x$ and $y$ coordinates of
 the center of pixel $i$. The origin of the coordinate system is chosen to be at
 the lower left corner of the $3\times3$ array of pixels.
 
-Multiple runs were taken scanning different beam positions relative to the
-Photonis MCP-PMT by moving the motorized stage. In
-Figure~\ref{fig:EMShowerPositions} we show the distributions of the
+Multiple runs were taken; scanning different beam positions relative to the
+Photonis MCP-PMT by moving the motorized stage. Figure~\ref{fig:EMShowerPositions} shows the distributions of the
 reconstructed shower positions for three example runs in which the beam was
-located near the top, center, and bottom of the center pixel. The distributions
+located near the top, center, and bottom of the central pixel. The distributions
 of the reconstructed $y$ coordinate for the three corresponding runs are shown
 together in Figure~\ref{fig:EMShowerYPositionComparison}. The measured beam-spot
 is observed to move consistent with the known movement of the motorized stage.
-
 \begin{figure*}[htbp] \centering
 \includegraphics[width=0.49\textwidth]{Images/centers/run30dist.pdf}
 \includegraphics[width=0.49\textwidth]{Images/centers/run32dist.pdf}
@@ -968,7 +961,6 @@ is observed to move consistent with the known movement of the motorized stage.
 \caption{The distribution of reconstructed shower positions is shown for three
 runs with the beam centered near the top, center, and bottom of the central
 pixel. } \label{fig:EMShowerPositions} \end{figure*} \begin{figure*}[htbp]
-
 \centering
 \includegraphics[width=0.75\textwidth]{Images/centers/superimposed.pdf}
 \caption{The distributions of reconstructed shower position in the $y$ axis is
@@ -977,18 +969,16 @@ Figure~\ref{fig:EMShowerPositions}. The measured beam displacements are compared
 to the known displacements as recorded by the motorized stage. }
 \label{fig:EMShowerYPositionComparison} 
 \end{figure*} 
-
-For each run, we determine the center of the beam-spot by fitting the measured
-$x$ and $y$ coordinates with a gaussian function. The data from all runs are
+In each run, the center of the beam-spot is determined by fitting the measured
+$x$ and $y$ coordinates with a Gaussian function. The data from all runs are
 combined by considering the measured $x$ and $y$ coordinates relative to the
 center of the beam-spot (see Fig~\ref{fig:ResolutionMeasurement}). We model the
 distribution of measured coordinates as a convolution of a flat distribution
 with width equal to the measured dimensions of the scintillator trigger and a
-gaussian resolution function. A maximum likelihood fit is performed on the data
+Gaussian resolution function. A maximum likelihood fit is performed on the data
 using this model, and the position resolution of the detector is measured as the
-width of the gaussian resolution function. We measure the position resolution as
+width of the Gaussian resolution function. We measure the position resolution as
 $0.55\pm0.2$~mm in $x$-coordinate, and $0.91\pm 0.01$~mm in $y$-coordinates.
-
 \begin{figure*}[htbp] \centering
 \includegraphics[width=0.49\textwidth]{Images/XYResolution/X_Resolution_fixedTrigger.pdf}
 \includegraphics[width=0.49\textwidth]{Images/XYResolution/Y_Resolution_fixedTrigger.pdf}
@@ -999,10 +989,11 @@ the fit to the resolution model. } \label{fig:ResolutionMeasurement}
 \end{figure*}
 
 \section{Electromagnetic Shower Time Resolution} \label{sec:timing} 
-The timestamps for each event for individual pixels of the Photonis MCP-PMT are
-reconstructed as described in Section~\ref{sec:reconstruction}. We reconstruct
-the timestamp of the entire electromagnetic shower using the same energy
-weighting procedure that was used above for the shower position reconstruction:
+The timestamps of the individual pixels of the Photonis MCP-PMT for each event are
+reconstructed as described in Section~\ref{sec:reconstruction}. The
+timestamp of the entire electromagnetic shower (t) is estimated using the same energy
+weighting procedure that was used above for the shower position
+reconstruction, i.e.
 
 \begin{equation} t =\frac{\sum_{i\in\mathrm{pixels}} Q_{i} t_{i}}
 {\sum_{i\in\mathrm{pixels} Q_{i}}}, 
@@ -1011,8 +1002,8 @@ weighting procedure that was used above for the shower position reconstruction:
 
 where $i$ labels the individual pixels, $Q_{i}$ is the charge
 collected in pixel $i$, and $t_{i}$ is the reconstructed time-stamp for pixel
-$i$. Alternatively, we also study the time resolution using the single pixel
-with the highest energy deposit measurement. In Figure~\ref{fig:exdt} we show
+$i$. Alternatively, the time resolution using the single pixel
+with the highest energy deposit measurement is used. Figure~\ref{fig:exdt} shows
 the time distributions for these two methods of shower time reconstruction.
 
 \begin{figure*}[htbp] 
@@ -1025,20 +1016,18 @@ displayed on the plot.}
 \label{fig:exdt} 
 \end{figure*} 
 
-In Figure~\ref{fig:wtres}, we compare the time resolution for electromagnetic
+Figure~\ref{fig:wtres} shows the time resolution for electromagnetic
 showers measured using the two methods described above. The time resolution for
 the pixel with the largest energy deposit is around $70$~ps and $85$~ps,
 depending on the run. Using the energy weighted algorithm improves the time
 resolution consistently to about $50$~ps. 
-
 \begin{figure}[htbp] 
 \centering
 \includegraphics[width=8cm]{Images/wtres/tresperrun.pdf} 
 \caption{\small Time resolution found for each run. The time-stamp obtained using the energy weighting method yields time resolutions consistently below $60$~ps. The time resolution measured using the single pixel with the largest signal is significantly worse.} 
 \label{fig:wtres} 
 \end{figure} 
-
-We note that the time measurement made using the Photonis MCP-PMT typically exhibit
+The time measurement obtained using the Photonis MCP-PMT typically exhibit
 a dependence on the pulse amplitude or integrated charge. This dependence is
 shown on the left of Figure~\ref{fig:dt-int}, and is observed to be
 approximately the same for all pixels. We perform a correction to the time
@@ -1056,8 +1045,8 @@ other runs without loss of the precision of the measurements.
 
 \begin{figure*}[htbp] 
 \centering
-\includegraphics[width=8cm]{Images/dt-int/dtint30_o22.pdf}
-\includegraphics[width=8cm]{Images/dt-int/dtint30_c22.pdf} 
+\includegraphics[width=7cm]{Images/dt-int/dtint30_o22.pdf}
+\includegraphics[width=7cm]{Images/dt-int/dtint30_c22.pdf} 
 \caption{The correlation between the time measurement and the measured integrated charge is
 shown on the left for one example pixel. The same correlation after performing
 the time measurement correction is shown on the right. } 
@@ -1073,17 +1062,21 @@ integrated charge. }
 \label{fig:calib} 
 \end{figure} 
 
-Finally, we study the dependence of the electromagnetic shower time resolution
-as a function of the number of pixels included in the energy-weighted algorithm.
-Figure~\ref{fig:sqrtN} shows this dependence for one example run. We observe
+Finally, the dependence of the electromagnetic shower time resolution
+on of the number of pixels included in the energy-weighted algorithm
+is studied.
+Figure~\ref{fig:sqrtN} shows this dependence for one example run. It
+is observed
 that the time resolution improves according to a $1/\sqrt{N}$ scaling up to
-about 5--6 pixels, and then becomes flat as we include more pixels. The
+about 5--6 pixels, and then becomes flat as more pixels are included. The
 initial $1/\sqrt{N}$ scaling is encouraging as it indicates that the time jitter across
 different pixel channels arise primarily from uncorrelated sources, and that
 further granularity may improve the time resolution provided that the signal is
 sufficiently large compared to noise. As the majority of the shower is
-covered by the pixels closest to the center of the shower, it is not surprising
-that we do not observe any improvement from the inclusion of additional pixels.
+covered by the pixels closest to the center of the shower-- usually
+5-6 pixels--, it is not surprising
+that the time resolution does not futher improve by adding the
+remainder of pixels.
 
 \begin{figure}[htbp]
   \centering
@@ -1094,30 +1087,30 @@ that we do not observe any improvement from the inclusion of additional pixels.
 \end{figure}
 
 \section{Summary}
-We continue our studies on the development of future electromagnetic 
-calorimeters capable of high precision energy and time measurements.
-Such calorimeters should provide both spatial resolution below the $\mathrm{mm}$
+Studies towards the development of future electromagnetic 
+calorimeters capable of high precision energy and time measurements
+have been carried out.
+Such calorimeters should ultimately provide both spatial resolution below the $\mathrm{mm}$
 level and time resolution of $20-30$~ps, in order to mitigate the detrimental effects
 of pileup. A highly granular readout is required to achieve these goals. 
 
-We report our results on position and time resolution measurements of a
+This chapter reports the results on position and time resolution measurements of a
 secondary emission based calorimeter prototype that used the Photonis XP85011
-MCP-PMT as the active element. Using a pixelated readout of the MCP-PMT we
-obtain highly granular information of the shower development in the
-transverse plane. Combining the measurements from a $3\times3$-channels readout
-we obtain a sub-millimeter precision for position measurement, which far exceeds
-the 6~mm size of individual pixels. While the more granular readout degrades
-the signal to noise for each individual pixel, we demonstrate that a proper combination from 
-independent readout channels preserves good time resolution. We show that the time resolution 
-of the measurements improves with the increase in the number of pixels used as 
-$1/\sqrt{N}$, and using all pixels we achieve a time resolution of $30-40$~ps. 
-In future measurements we intend to include larger prototypes with several layers of active
-material, that will allow us to explore the longitudinal development of the
+MCP-PMT as the sensitive element. Using a pixelated readout of the MCP-PMT a
+highly granular information of the shower development in the
+transverse plane is obtained. Combining the measurements from a
+$3\times3$-pixel readout a sub-millimeter position resolution is
+measured, which far exceeds the 6~mm size of the individual pixels. While the more granular readout degrades
+the signal to noise for each individual pixel, the proper combination from 
+independent pixels preserves a good time resolution. The mesured time resolution improves with the increase in the number of pixels used as 
+$1/\sqrt{N}$, and when using all pixels, the time resolution is $30-40$~ps. 
+Future measurements could include larger prototypes with several layers of sensitive
+material, that will allow the study of the longitudinal development of the
 showers.
 
 \section{Acknowledgements}
-We would like to thank Erik Ramberg for supporting 
-our work, and Aria Soha and the FTBF test beam facility for the good beam
+I like to thank Erik Ramberg for supporting 
+this work, and Aria Soha and the FTBF test beam facility for the good beam
 delivery and control. Thanks to Ewa Skup and Geoff Savage for help with
 operation of Cherenkov counters, and to Todd Nebel for organizing and providing
 supporting equipment at FTBF. 
@@ -1128,52 +1121,25 @@ from California Institute of Technology High Energy Physics under Contract
 DE-SC0011925 with the United States Department of Energy.
 
 \clearpage
-\chapter{Silicon Based Sampling Calorimeters}\label{sil-cal}
-Future colliders, including the high luminosity upgrade of the Large Hadron
-Collider (HL-LHC) at CERN, will operate with an order of magnitude higher
-instantaneous luminosity compared to what has been achieved at the LHC so far.
-With the increased instantaneous luminosity the rate of simultaneous
-interactions per bunch crossing (pileup) is projected to reach an average of 140
-to 200. The large amount of pileup increases the likelihood of confusion in the
-reconstruction of particles from the hard scatter interaction with those
-produced in different pileup interactions. The ability to discriminate between
-jets produced in the events of interests, especially those associated with the
-vector boson fusion processes, and jets produced by pileup interactions will be
-degraded. The missing transverse energy resolution will deteriorate, and several
-other physics objects performance metrics will suffer.
+\chapter{Silicon-Based Sampling Calorimeters}\label{sil-cal}
 
-One way to mitigate the pileup confusion effects, complementary to precision
-tracking methods, is to perform a time of arrival measurement associated with a
-particular layer of the calorimeter, allowing for a time assignment for 
-charged particles and photons. Such a measurement with a precision of about
-20-30 ps, when unambiguously associated to the corresponding energy measurement,
-will reduce the effective amount of pileup by a factor of 10, given that the
-spread in collision time of the pileup interactions at HL-LHC is foreseen to be
-approximately 200~ps. The association of the time measurement with the energy
-measurement is crucial, and leads to a prototype design that calls for  time
-and energy measurements to be performed in the same detector element. Since both
-the energy and time measurement are performed in the same detector
-element\footnote{If there are no overlapping energy deposits in the same
-detector element from multiple particles.}, once
-an energy deposit is identified as originating from a pileup interaction, it can
-be unambiguously removed from event reconstruction. 
-
+\section{Introduction}
 Several alternative options to combine high resolution energy and timing
-measurements for calorimetry have been reported in Refs.~\cite{Anderson:2015gha,
-MCPFastCaloNIMA, Ronzhin2015288, Ronzhin201552, Brianza2015216, sixie, spiropulu}. In this
-article, we describe the continuation of this program of study using a
+measurements for calorimetry have been reported in Refs.~\cite{Ronzhin2015288, Ronzhin201552, Brianza2015216, sixie,
+spiropulu} as well as those described in Chapters~\ref{lyso-cal} and~\ref{mcp-cal}.
+This chapter describes the continuation of this program by using a
 calorimeter prototype employing a 300~$\mu$m thick silicon pad sensor of
-$6\times 6$~mm$^2$ size as the active element. Silicon-based calorimeters have
+$6\times 6$~mm$^2$ size as the sensitive element. Silicon-based calorimeters have
 recently become a viable choice for future colliders due to the radiation
 hardness of silicon, and the ability to construct highly granular
 detectors~\cite{Adloff:2011ha}. An important example is the forward calorimeter
 proposed for the CMS Phase 2 Upgrade~\cite{Butler:2020886}. We study the timing
-properties of silicon-based calorimetery using a prototype composed of tungsten
-absorber and a silicon sensor produced by Hamamatsu~\cite{hamamatsu}. A similar
-test was previously conducted at the CERN North Area, with a lead absorber
-followed by silicon sensors of 120-320~$\mu$m thickness~\cite{akchurin, rusack}.
+properties of silicon-based calorimeter using a prototype composed of tungsten
+absorber and a silicon sensor produced by Hamamatsu~\cite{hamamatsu}. %A similar
+%test was previously conducted at the CERN North Area, with a lead absorber
+%followed by silicon sensors of 120-320~$\mu$m thickness~\cite{akchurin, rusack}.
 
-The paper is organized as follows. General silicon timing properties and bench
+This chapter is organized as follows. General silicon timing properties and bench
 test results are described in Section~\ref{sec:siliconpad}. The test beam setup
 and experimental apparatus are presented in Section~\ref{sec:tbeam}. The results
 of the test beam measurements are presented in Section~\ref{sec:results}.
@@ -1182,13 +1148,12 @@ and conclusion, respectively.
 
 \section{General Properties of Silicon Timing and Bench Test Studies}
 \label{sec:siliconpad}
-
-For our measurements, we used a silicon sensor produced by
-Hamamatsu~\cite{hamamatsu}. The thickness of the silicon was measured to be ~325
+A silicon sensor produced by
+Hamamatsu~\cite{hamamatsu} was used for all measurements. The thickness of the silicon was measured to be ~325
 $\mu$m. The transverse size of the sensor is 6x6 mm$^2$. The negative bias
 voltage was applied to the p-side of the silicon. The capacitance
 of the silicon diode is measured as a function of the bias voltage
-and shown in Figure~\ref{fig:SiliconDiode}. We observe that the silicon
+and shown in Figure~\ref{fig:SiliconDiode}. The silicon
 is fully depleted above about $120$~V. Timing measurements are expected
 to improve with larger bias voltage as the the carrier velocity increases.
 
@@ -1198,24 +1163,21 @@ paid to provide good filtering for bias voltage, to reduce ground loop effects, 
 to minimize inductive loop for the signal readout. The timing characteristics
 of the signal pulses are dominated primarily by properties of the
 silicon sensor rather than the details of the circuit.
-
 \begin{figure}[htbp] 
 \centering
 \includegraphics[width=0.8\textwidth]{plots/SiliconDiodeCV_v3.pdf} 
 \caption{The measured capacitance as a function of the applied bias voltage.} 
 \label{fig:SiliconDiode} 
 \end{figure} 
-
-The silicon diode was placed inside a light-tight box of thickness $1.5$~cm,
+The silicon diode was placed inside a light-tight box (silicon box) of thickness $1.5$~cm,
 which also provides electromagnetic shielding. The box is made of 0.2~mm steel.
 The bias voltage was supplied to the circuitry by a cable with a balun filter,
 terminated with an SHV connector. The silicon diode output signal is read out
 through an SMA connector electrically grounded to the box. The dark current was
 measured at several values of the bias voltage. The maximum value of the dark
 current was less than $1.0$~nA at $-500$~V, which is the largest bias voltage
-used in the measurements reported in this paper. The silicon box and bench test
+used in the measurements reported. The silicon box and bench test
 setup are presented in Figure~\ref{fig:SiliconPad}. 
-
 \begin{figure}[htbp] 
 \centering
 \includegraphics[width=0.60\textwidth]{plots/SiliconDiodeDiagram.pdf} 
@@ -1225,21 +1187,20 @@ view of the box with silicon diode, and the bias voltage connection is shown
 below it (right).} 
 \label{fig:SiliconPad} 
 \end{figure} 
-
-The signals from the silicon sensor were amplified by two fast, high-bandwidth
+Signals from the silicon sensor were amplified by two fast, high-bandwidth
 pre-amplifiers connected in series. The first amplifier is an ORTEC VT120C
-pre-amplifier, and the second amplifier is a Hamamatsu C5594 amplifier. Using a
-pulse-generator, we measured the combined gain of the two amplifiers in series
-as a function of the input signal amplitude and found some degree of
-non-linearity for typical signals produced by the silicon sensor under study,
-and we corrected for them.
+pre-amplifier, and the second is a Hamamatsu C5594 amplifier. The 
+combined gain of the two amplifiers in series
+as a function of the input signal amplitude was measured using a
+pulse-generator, some
+non-linearities for typical signals produced by the silicon sensor
+under study were found and corrected.
 
 %. The measured gain ranged from $200$ for signals with
 %input amplitude around $0.15$~mV to $650$ for signals with amplitude around $10$~mV.
 
 \section{Test-beam Setup and Experimental Apparatus }
 \label{sec:tbeam}
-
 We performed the test-beam measurements at the Fermilab Test-beam Facility
 (FTBF) which provided a proton beam from the Fermilab Main Injector accelerator
 at $120$~GeV, and secondary beams composed of electrons, pions, and muons of
