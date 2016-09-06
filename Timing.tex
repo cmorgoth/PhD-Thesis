@@ -172,7 +172,7 @@ number of electrons distribution.}
 \label{fig:showerProfile1}
 \end{figure} 
 \begin{figure}[h] \centering
-\includegraphics[width=0.85\textwidth]{calorimetry/ShowerProfile_Left.pdf}
+\includegraphics[width=0.75\textwidth]{calorimetry/ShowerProfile_Left.pdf}
 \caption{Shower profile in the longitudinal direction for
 electrons in copper. The different curves and points represent
 different electron energies ranging from 1\GeV-1\TeV.}
@@ -242,14 +242,14 @@ characteristic exponential decay, see
 Figure~\ref{fig:transverseProfile}, where the transverse energy density for
 electron showers in copper is shown.
 \begin{figure}[h] \centering
-\includegraphics[width=0.85\textwidth]{calorimetry/ShowerProfile_Left.pdf}
+\includegraphics[width=0.75\textwidth]{calorimetry/ShowerProfile_Right.pdf}
 \caption{Energy deposited per unit length in the transverse direction for
 10\GeV electrons in copper. The shower has been sample in three
 different places; at 2$X_{0}$ (red circles), 6$X_{0}$ (black dots),
 and 15$X_{0}$ (blue crosses).}
 \label{fig:transverseProfile}
 \end{figure}
-
+\clearpage
 \subsection{Important Calorimeter Quantities}
  xyz
 
@@ -1570,7 +1570,7 @@ the same experimental facility in references~\cite{Anderson:2015gha,
 MCPFastCaloNIMA, Ronzhin2015288,Ronzhin201552} as well as in Chapters~\ref{lyso-cal} and~\ref{mcp-cal}.
 \begin{figure}[h] 
 \centering
-\includegraphics[width=0.65\textwidth]{HGC/cartoon_setup.pdf} 
+\includegraphics[width=0.65\textwidth]{HGC/cartoon_setup2.pdf} 
 \caption{A schematic diagram of the test-beam setup is shown. The $t_0$ and $t_1$ are defined in Section~\ref{sec:results}.} 
 \label{hgc:BeamSchematicDiagram} 
 \end{figure} 
@@ -1672,26 +1672,224 @@ respect to the Photek 240 MCP-PMT, i.e. $\Delta t = t_{1}-t_{0}$, is
 calculated. Subsequently, the information from all the pixels is
 combined by weighting the individual times with the corresponding
 charge deposited in the following fashion:
-\begin{equation}
-\Delta t_{HGC} = \frac{\sum\mathrm{charge}_{i}\times\Delta t_{i}}{\sum\mathrm{charge}_{i}},
+\begin{equation}\label{eq:combinePixels}
+\Delta t_{HGC} = \frac{\sum\limits_{i=0}^{6}\mathrm{charge}_{i}\times\Delta t_{i}}{\sum\limits_{i=0}^{6}\mathrm{charge}_{i}},
 \end{equation}
 where $\Delta t_{HGC}$ is the combined HGC layer TOF, $\mathrm{charge}_{i}$ is
 the charge deposited in the $i$-th pixel, and $\Delta t_{i}$ is the 
- $i$-th pixel TOF. The TOF distributions of the HGC layer ($\Delta
- t_{HGC}$) and central pixel are shown in the left and right panel of
+ $i$-th pixel TOF. The TOF distributions for the pixels with highest
+ and second highest charge are shown in the left and right panel of
  Figure~\ref{hgc:tof1}, respectively.
+ The TOF distributions of the HGC layer ($\Delta
+ t_{HGC}$) is shown in the left panel of
+ Figure~\ref{hgc:tof2}, while an alternative method for combining the
+ HGC pixels --
+ using the most probable value (mpv) of the deposited charge distribution in each pixel
+ as the weight, see Eq.~\ref{eq:combinePixels}. These weights are
+ constant throughout an entire run.  -- is shown in the right panel of
+ Figure~\ref{hgc:tof2}. It is of note that the default and the
+ alternative (mpv) algorithms yield very similar results with an
+ outstanding time resolution of about 15~ps for an electron beam of 32\GeV.
   
 \begin{figure}[h] 
 \centering
 \includegraphics[width=0.45\textwidth]{HGC/deltaTPicoSilEventCharge104.pdf} 
 \includegraphics[width=0.45\textwidth]{HGC/deltaTCenter104.pdf} 
-\caption{TOF distribution for (left) the HGC layer and (right) the
-  central pixel of the HGC layer. TOF resolutions are estimated by the
-standard deviation parameter of the Gaussian fit to the distribution
-(red solid curve).} 
+\caption{TOF distributions for (left) the pixel with the highest and (right) the
+  the pixel with the second highest charge in the HGC layer using a
+  32\GeV electron beam and 6$X_{0}$ of tungsten. The TOF resolutions are estimated by the
+standard deviation parameter of the Gaussian fit (red solid curve) to the TOF distribution.} 
 \label{hgc:tof1} 
 \end{figure}
 
-\subsubsection{Emulation of SKIROC2 Digitizer}
-\subsection{Combining to Timing Layers}
-\section{Dicussion and Conclusions}\label{hgc:conclusion}
+\begin{figure}[h] 
+\centering
+\includegraphics[width=0.45\textwidth]{HGC/deltaTPicoSilEventCharge104.pdf} 
+\includegraphics[width=0.45\textwidth]{HGC/deltaTPicoSilLandauCharge104.pdf} 
+\caption{TOF distributions of the HGC layer using a 32\GeV electron
+  beam and 6$X_{0}$ of tungsten, where the pixels are
+  combined with (left) the default algorithm and (right) the mpv of
+  the charge distribution as the weight. The TOF resolutions are estimated by the
+standard deviation parameter of the Gaussian fit (red solid curve) to the TOF distribution
+.} 
+\label{hgc:tof2} 
+\end{figure}
+
+Comparing Figure~\ref{hgc:tof1} (left panel) and
+Figure~\ref{hgc:tof2}, it is observed that the TOF resolution of the
+central pixel is already close the final time resolution of the entire
+HGC layer. This suggests that pixels combination does not provide a
+significant improvement to the overall TOF
+resolution. Figure~\ref{hgc:tof_vs_pixel} shows the HGC TOF resolution
+as a function of the pixels combined at different separations between
+the tunsten absorber and the HGC layer, where it is observed that the
+TOF resolution is not significantly improved as a function of the
+added pixels for any of the separations. Despite the small
+improvement, it is observed that the larger the distance between the
+absorber and the HGC layer the larger is the relative improvement in
+the time resolution as more pixels are added, this is consistent with
+the fact that showers are more spread for the runs with more
+separation. Thus, it is convenient to define a quantity related to the
+transverse shower spread, to achive this we use the ratio of the
+charge in the central pixel and the total charge in the 7 pixels as
+proxy to the transverse showe profile:
+
+\begin{equation}
+\mathrm{R_{7}} = \frac{\mathrm{charge_{0}}}{\sum\limits_{i=0}^{6} \mathrm{charge_{i}}},
+\end{equation}
+
+where $charge_{i}$ is the charge deposited in the $i$-th pixel, with
+the zeroth being the central pixel. The $\mathrm{R_{7}}$ distribution
+is shown in Figure~\ref{hgc:R7}.
+
+\begin{figure}[h] 
+\centering
+\includegraphics[width=0.65\textwidth]{HGC/charge_weighting.pdf} 
+\caption{HGC layer TOF resolution as a function of the number of
+  pixels combined. The distance between the absorber and the HGC layer
+was varied to sample the shower at different location.} 
+\label{hgc:tof_vs_pixel} 
+\end{figure}
+\begin{figure}[h] 
+\centering
+\includegraphics[width=0.65\textwidth]{HGC/center_all_ratio.png} 
+\caption{$\mathrm{R_{7}}$ distribution for different separations
+  between the HGC layer and the 6$X_{0}$ of tungsten.} 
+\label{hgc:R7} 
+\end{figure}
+
+Finally, the dependence of the time resolution as a function of the
+beam energy is studied. Electron beams with energies of 8, 16, and
+32\GeV were used, the separation between the absorber and the HGC
+layer was 1~mm. The results are sumarized in
+Figure~\ref{hgc:res_vs_beamEnergy}, the functional form $A/\sqrt{E} +
+B$ was used to fit the data points. It is observed that the functional
+form does not fit well the data and thus more beam energy points are needed
+to better contrain the floating parameters. Nevertheless, the best time
+resolution measured was found to be around 15~ps for a 32\GeV electron
+beam.
+
+\begin{figure}[h] 
+\centering
+\includegraphics[width=0.65\textwidth]{HGC/TOF_vs_beamEnergy_no_smearing.pdf} 
+\caption{HGC layer TOF resolution as a function of the beam energy
+  using 6$X_{0}$ of tungsten. The functional form $A/\sqrt{E} +
+B$ was fitted to the data points (red solid curve).}  
+\label{hgc:res_vs_beamEnergy} 
+\end{figure}
+
+\subsection{Combining Two Timing Layers}
+Combining the timing information of multiple HGC layers could improve
+the final TOF resolution of the calorimeter to em showers. The
+measurements presented in this chapter lack of an identical second HGC layer, but as shown in
+Chapter~\ref{mcp-cal} the Photonics MCP-PMT localted downstream of the HGC
+layer could be use as an additional timing measurement. To obtain the
+final TOF measurement (two-layer combination) the HGC layer and the
+Photonis MCP-PMT are combined with an equal weigh. Figure~\ref{hgc:tofLong} shows the TOF distribution for the Photonis
+MCP-PMT and the final two-layer combination in the left and right panels, respectively.
+\begin{figure}[h] 
+\centering
+\includegraphics[width=0.45\textwidth]{HGC/deltaTMCP.pdf} 
+\includegraphics[width=0.45\textwidth]{HGC/deltaT_PicoSilTotalCharge_MCP_Equal104.pdf} 
+\caption{TOF distributions for (left) the Photonis MCP-PMT and (right)
+  the final two-layer combination using a 32\GeV electron
+  beam and 6$X_{0}$ of tungsten. The TOF resolutions are estimated by the
+standard deviation parameter of the Gaussian fit (red solid curve) to the TOF distribution
+.} 
+\label{hgc:tofLong} 
+\end{figure}
+
+\subsubsection{Emulation of SKIROC2 Readout}
+The HGC proposed for the Phase 2 Upgrade of the CMS electromagnetic
+calorimeter uses a fron-end electronics readout based on the
+\textit{SKIROC2} chip, which has been preliminary shown to have
+around 50~ps jitter\cite{Butler:2020886}. In order to simulate the effect of having a
+\textit{SKIROC2} readout, the studies just presented
+above are now repeated with all the measured timestamps randomly
+smeared by 50~ps. Each timestamp -- this includes all the  HGC
+layer pixels, the Photonis MCP-PMT, and the reference Photek 240
+MCP-PMT. -- is smeared by adding a random number
+drawn from a Gaussian p.d.f with a mean and a width of 0 and 50~ps,
+respectively. 
+
+Figure~\ref{hgc:tof1_smear} shows the TOF distributions after smearing
+for the pixels with highest and second highest charge in the left and
+right panel, respectively. The $\Delta t_{HGC}$ distribution and the
+two-layer combination TOF distribution are shown in the left and right panel of
+Figure~\ref{hgc:tof2_smear}. Here, pixels and layer are all combined
+with the same weight. The HGC time resolution improves from that of
+the central pixel only, this could be explain since the dominance of
+the central pixels has been diluted by the 50~ps Gaussian
+smearing. The HGC time resolution as a function of the number of
+pixels combined is shown in
+Figure~\ref{hgc:tof_vs_pixel_smear}. 
+\begin{figure}[h] 
+\centering
+\includegraphics[width=0.45\textwidth]{HGC/SKIROC_1_Pixels50.pdf} 
+\includegraphics[width=0.45\textwidth]{HGC/SKIROC_1_Pixels_NoCenter50.pdf} 
+\caption{TOF distributions after a 50~ps Gaussian smearing for (left) the pixel with the highest and (right) the
+  the pixel with the second highest charge in the HGC layer using a
+  32\GeV electron beam and 6$X_{0}$ of tungsten. The TOF resolutions are estimated by the
+standard deviation parameter of the Gaussian fit (red solid curve) to the TOF distribution.} 
+\label{hgc:tof1_smear} 
+\end{figure}
+\begin{figure}[h] 
+\centering
+\includegraphics[width=0.45\textwidth]{HGC/deltaTPicoSilEqualSmear50.pdf} 
+\includegraphics[width=0.45\textwidth]{HGC/deltaT_PicoSilEqual_MCP_Equal_BothSmear50.pdf} 
+\caption{TOF distributions after a 50~ps Gaussian smearing for (left)
+  the HGC layer and (right) the final two-layer combination using a
+  32\GeV electron beam and 6$X_{0}$ of tungsten. The TOF resolutions are estimated by the
+standard deviation parameter of the Gaussian fit (red solid curve) to the TOF distribution.} 
+\label{hgc:tof2_smear} 
+\end{figure}
+\begin{figure}[h] 
+\centering
+\includegraphics[width=0.65\textwidth]{HGC/smearing_50_10mm.pdf} 
+\caption{HGC layer TOF resolution after a 50~ps Gaussian smearing as a function of the number of
+  pixels combined.} 
+\label{hgc:tof_vs_pixel_smear} 
+\end{figure}
+
+Finally, the dependence of the TOF resolution is studied after the
+50~ps smearing was applied. The results are sumarized in
+Figure~\ref{hgc:TOF_vs_beamEnergy_Smeared}.
+It is of note that the final
+two-layer combination time
+resolution for a 32\GeV electron beam is around 30~ps and meets the
+requirements needed to reject pileup at the HL-LHC (30~ps is
+equivalent to ~1~cm resolution in the collision axis).
+\begin{figure}[h] 
+\centering
+\includegraphics[width=0.45\textwidth]{HGC/TOF_vs_beamEnergy_50_ps_smearing.pdf} 
+\includegraphics[width=0.45\textwidth]{HGC/TOF_vs_beamEnergy_50_ps_smearing_50_ps_smearing_two_layer.pdf} 
+\caption{TOF distributions as a function of the beam energy after a 50~ps Gaussian smearing for (left)
+  the HGC layer and (right) the final two-layer combination using 6$X_{0}$ of tungsten. The functional form $A/\sqrt{E} +
+B$ was fitted to the data points (red solid curve).} 
+\label{hgc:TOF_vs_beamEnergy_Smeared} 
+\end{figure}
+\section{Conclusions}\label{hgc:conclusion}
+The first timing studies on the HGC were carried out; the studies were
+done on a single HGC layer implemented with 25 pixels, each with an
+independent analog readout and then digitized by the the CAEN
+V1742 digitizer. The HGC layer was place right downstream of 6$X_{0}$
+of tungsten absorber. The selected em shower events showed a
+transverse spread that was contained in the inner most pixels with the
+central pixel containig most of the energy of the shower. As expected,
+the total
+charge deposited in the 7 HGC pixels showed a linear relationship with
+respect to the electron beam energy. The HGC time-of-flight resolution
+was obtained by combining the 7 inner pixels and found to be around
+15~ps, which was close to that of the central pixel alone; suggesting,
+that sampling the shower at place with more transverse spread could
+inprove the timing performance, provided large signal to noise ratios in
+the 7 inner pixels. The combination of two timing layers was also
+studied, the results suggest that adding additional timing layers
+improves the timing performance as expected from two uncorrelated
+measurements. Finally, the effect of the \textit{SKIROC2} readout was
+studied by smearing each timestamp measurement by a Gaussian with
+50~ps width. The HGC layer time resolution and the final two-layer
+combination were measured to be about
+45~ps and 30~ps, respetively. These studies suggest that the desirable
+time-of-flight resolution for the proposed CMS high-granularity
+calorimeter are in principle well within reach. 
