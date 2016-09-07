@@ -1,24 +1,17 @@
-\section{Introduction}
-\section{8 TeV Results}
-\section{13 TeV Results}
-\subsection{Event Selection and Categorization}
-\section{Introduction}
-\label{sec:intro}
-
-
+\section{Introduction}\label{sec:intro}
 The discovery of the standard model (SM) Higgs boson at the LHC~\cite{ATLAShiggs,CMShiggs} 
 presents a unique opportunity to search for physics beyond the SM (BSM) using the Higgs boson as a search
 tool. Given the small value of the Higgs production cross section in the standard model, 
 any BSM scenario predicting new mechanisms for Higgs boson production can be investigated 
-with dedicated searches, using the Higgs mass to suppress SM background processes.
+with dedicated searches, using the known Higgs mass to suppress SM background processes.
 
 
-We present a search of this kind in pp collisions at 13 TeV using data from the CMS detector at the CERN LHC.
+This Chapter presents a search of this kind in pp collisions at 13 TeV using data from the CMS detector at the CERN LHC.
 Events with two photons consistent with a Higgs candidate are selected and categorized
 according to the $p_{T}$ of the Higgs candidate, the presence of additional 
 Higgs to $b\bar{b}$ or Z to $b\bar{b}$ candidates, and the estimated resolution of the diphoton
 pair. Motivated by supersymmetric (SUSY) scenarios, we use the razor variables~\cite{razor2010, rogan}
-\MR and \Rtwo to define search regions that may contain additional events above the SM prediction
+\MR and \Rtwo -- extensively dicussed and illustrated in Chapter~\ref{chapter:razor}-- to define search regions that may contain additional events above the SM prediction
 if a BSM Higgs production mechanism is present.  
 The contribution in the search regions from the non-resonant QCD background is distinguished from a potential BSM 
 Higgs signal using the shape of the diphoton mass distribution. The search uses $2.3$~$\mathrm{fb}^{-1}$ of 
@@ -53,6 +46,7 @@ LSP mass.
        \label{fig:T2bH}}
 \end{figure}
 
+\section{Summary of the 8 TeV Results}
 
 \section{Object Selection}\label{sec:ObjectSelection}
 
@@ -86,7 +80,7 @@ overlap with either of the two photons; this requirement is imposed by the condi
 The vector sum of the reconstructed $\pt$ of the PF particles is used to quantify 
 the missing transverse momentum $\ptvecmiss$ in the event.  Events with detector- and beam-related noise that can mimic 
 event topologies with high energy and large $\ETm = \left|\ptvecmiss\right|$ are filtered using dedicated 
-noise reduction algorithms ~\cite{Chatrchyan:2011tn,Chatrchyan:2012lia,Khachatryan:2014gga}.
+noise reduction algorithms~\cite{Chatrchyan:2011tn,Chatrchyan:2012lia,Khachatryan:2014gga}.
 
 
 The combined secondary vertex (CSV) tagging algorithm~\cite{btag8TeV} is used to identify 
@@ -111,7 +105,7 @@ and diphoton mass between $103$\GeV and $160$\GeV.
 
 In addition to the diphoton Higgs candidate, we require at least one additional jet
 with $p_{T}>30$\GeV and $|\eta|<3.0$. The Higgs candidate and all identified jets
-are clustered into hemispheres according to the Razor \textit{megajet} algorithm\cite{razorPRD}, and
+are clustered into hemispheres according to the Razor~\textit{megajet} algorithm\cite{razorPRD}, and
 the razor variables ~\cite{razor2010, rogan} \MR and \Rtwo are computed as follows:
 \begin{align}
  \label{eq:MRstar}
@@ -368,9 +362,57 @@ Bin & Category & ggH & $t\bar{t}$H & VBF H & VH & bbH & Total \\
 
 
 
+\section{Nos-resonant Background Functional Form Selection: AIC
+  Criterion and Bias Tests}
+For each signal region -- i.e. every \MR-\Rtwo bin in the search -- a functional form is needed to estimate the non-resonant
+contribution from SM QCD  production. This selection process has two
+steps: 1) the AIC criterion, and 2) the bias test.
 
+The AIC criterion step is used to decide what functions described
+reasonable well the observed data and therefore describe better the
+QCD background in each signal region. The AIC criterion, first
+introduced by Akaike in 1973~\cite{AIC}, is an estimate of the
+Kullback–Leibler divergence~\cite{KLbook} -- the later is a measure of
+the distance between two probability density functions. Therefore the
+AIC criterion is a measure of the distance between the data and a
+particular probability density function (p.d.f). An advantage over
+other goodness of fit quantities is that the AIC criterion also
+accounts for the fact that a function may have move free parameters
+and thus more flexibility to accomodate the observed data. It is
+useful to define the AIC score:
+\begin{equation}
+\label{eq:AIC}
+\mathrm{AIC}_{i} = -2log(\mathcal{L}) + 2k -\frac{2k(k+1)}{n-k-1},
+\end{equation}
 
+where $i$ represents the $i$-th p.d.f under study, $\mathcal{L}$ is the likelihood after the minimization process,
+k is the number of free parameters of the p.d.f, and n is the total
+numer of observed events. The procedure is as follows: from a set of
+functions, all AIC scores are computed, then AIC score differences
+with respect ot the minumum AIC score
+($\Delta_{i} = \mathrm{AIC}_{i} -\mathrm{AIC_{min}}$) are calculated.
+%for all the functions but the one with the minumum AIC score -- by
+%construction its $\mathrm{AIC_{s}}$ is zero.
+The AIC weight, which could be interpreted as the probability that the
+p.d.f under study is the true p.d.f from were the observed
+dataset was draw, is defined as
+\begin{equation}
+\label{eq:AICweight}
+\omega_{i} = \frac{e^{-\frac{1}{2}\Delta_{i}}}{\sum\limits_{j=0}^{7}e^{-\frac{1}{2}\Delta_{j}}}.
+\end{equation}
+Only p.d.fs with AIC weight larger than 0.1 pass the first step and
+are then tested for the bias test described
+below. Table~\ref{table:aicpdfs} shows the full list of p.d.fs used in
+these studies. Tables~\ref{table:AICresults1} and
+~\ref{table:AICresults2} summarize two examples of the AIC results
+obtained for two search regions, Figures ~\ref{fig:AICresults1} and
+~\ref{fig:AICresults2} show the corresponding fits to the observed
+data. It is of note that the AIC fits are done only to the
+$m_{\gamma\gamma}\in \{[103-120],[131-160]\}$\GeV region.
 
+The second step is the bias test, where only functions that passed the
+AIC test are considered. The bias test quantifies the error made when
+performing a signal-plus-background fit
 \section{Systematic Uncertainties}\label{sec:systematics}
 
 The dominant systematic uncertainty is the uncertainty on the prediction of the 
@@ -603,7 +645,7 @@ The significance is computed using the profile likelihood, where the sign
 reflects whether an excess (positive sign) or deficit (negative sign) is observed. 
 }
 % Needs updated prefit Higgs bkg numbers from cristian's latest fits
-\small
+\tiny
 \begin{tabular}{|cc|cccc|c|}
 \hline
            &          &                   & Yields        &                 &                        & Obs. Local     \\ 
