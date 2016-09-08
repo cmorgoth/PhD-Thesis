@@ -1,0 +1,107 @@
+{
+//=========Macro generated from canvas: c1/c1
+//=========  (Mon Jul 21 22:38:22 2014) by ROOT version5.34/11
+   TCanvas *c1 = new TCanvas("c1", "c1",2079,237,700,502);
+   c1->Range(-0.03626571,-1.173683,1.338241,4.862407);
+   c1->SetFillColor(0);
+   c1->SetBorderMode(0);
+   c1->SetBorderSize(2);
+   c1->SetLogy();
+   c1->SetFrameBorderMode(0);
+   c1->SetFrameBorderMode(0);
+   
+   TH1F *r2 = new TH1F("r2","RSQ {weight*(MR<1500 && MR > 200 && RSQ < 1.2)}",50,0.1,1.2);
+   r2->SetBinContent(5,5755.178);
+   r2->SetBinContent(6,9633.996);
+   r2->SetBinContent(7,7127.037);
+   r2->SetBinContent(8,4719.101);
+   r2->SetBinContent(9,3622.826);
+   r2->SetBinContent(10,2522.437);
+   r2->SetBinContent(11,1998.354);
+   r2->SetBinContent(12,1503.416);
+   r2->SetBinContent(13,1010.922);
+   r2->SetBinContent(14,659.9619);
+   r2->SetBinContent(15,562.7662);
+   r2->SetBinContent(16,427.8811);
+   r2->SetBinContent(17,350.6882);
+   r2->SetBinContent(18,182.2825);
+   r2->SetBinContent(19,137.9494);
+   r2->SetBinContent(20,183.9597);
+   r2->SetBinContent(21,124.3122);
+   r2->SetBinContent(22,83.9238);
+   r2->SetBinContent(23,47.62866);
+   r2->SetBinContent(24,34.7623);
+   r2->SetBinContent(25,38.01734);
+   r2->SetBinContent(26,63.73459);
+   r2->SetBinContent(27,40.83674);
+   r2->SetBinContent(28,28.01507);
+   r2->SetBinContent(29,26.29211);
+   r2->SetBinContent(30,37.77113);
+   r2->SetBinContent(31,8.517715);
+   r2->SetBinContent(32,6.951812);
+   r2->SetBinContent(33,30.36753);
+   r2->SetBinContent(34,6.647043);
+   r2->SetBinContent(35,12.89436);
+   r2->SetBinContent(36,12.28291);
+   r2->SetBinContent(37,8.804172);
+   r2->SetBinContent(38,7.746707);
+   r2->SetBinContent(39,7.210488);
+   r2->SetBinContent(40,18.53393);
+   r2->SetBinContent(41,12.83298);
+   r2->SetBinContent(42,6.106473);
+   r2->SetBinContent(43,12.40267);
+   r2->SetBinContent(44,0.551045);
+   r2->SetBinContent(45,8.108716);
+   r2->SetBinContent(46,1.630409);
+   r2->SetBinContent(47,8.098891);
+   r2->SetBinContent(48,5.81878);
+   r2->SetBinContent(49,12.29676);
+   r2->SetBinContent(50,0.9584966);
+   r2->SetEntries(25536);
+   r2->SetStats(0);
+
+   Int_t ci;   // for color index setting
+   ci = TColor::GetColor("#ff9999");
+   r2->SetFillColor(ci);
+   r2->SetFillStyle(3008);
+
+   ci = TColor::GetColor("#ff9999");
+   r2->SetLineColor(ci);
+   r2->GetXaxis()->SetTitle("R^{2}");
+   r2->GetXaxis()->CenterTitle(true);
+   r2->GetXaxis()->SetLabelFont(42);
+   r2->GetXaxis()->SetLabelSize(0.035);
+   r2->GetXaxis()->SetTitleSize(0.05);
+   r2->GetXaxis()->SetTitleOffset(0.79);
+   r2->GetXaxis()->SetTitleFont(42);
+   r2->GetYaxis()->SetTitle("Events/0.022");
+   r2->GetYaxis()->CenterTitle(true);
+   r2->GetYaxis()->SetLabelFont(42);
+   r2->GetYaxis()->SetLabelSize(0.035);
+   r2->GetYaxis()->SetTitleSize(0.05);
+   r2->GetYaxis()->SetTitleOffset(0.83);
+   r2->GetYaxis()->SetTitleFont(42);
+   r2->GetZaxis()->SetLabelFont(42);
+   r2->GetZaxis()->SetLabelSize(0.035);
+   r2->GetZaxis()->SetTitleSize(0.035);
+   r2->GetZaxis()->SetTitleFont(42);
+   r2->Draw("");
+   
+   TPaveText *pt = new TPaveText(0.1494253,0.934322,0.8491379,0.9957627,"blNDC");
+   pt->SetName("title");
+   pt->SetBorderSize(0);
+   pt->SetFillColor(0);
+   pt->SetFillStyle(0);
+   pt->SetTextFont(42);
+   pt->Draw();
+   TLatex *   tex = new TLatex(0.5087971,582.266,"R^{2}");
+   tex->SetLineWidth(2);
+   tex->Draw();
+   TLine *line = new TLine(0.5008977,0.3192263,0.5008977,960.5566);
+   line->SetLineWidth(3);
+   line->Draw();
+   c1->Modified();
+   c1->cd();
+   c1->SetSelected(c1);
+   c1->ToggleToolBar();
+}

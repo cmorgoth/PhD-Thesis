@@ -1,0 +1,245 @@
+{
+//=========Macro generated from canvas: C/C	
+//=========  (Wed Jun 25 15:56:27 2014) by ROOT version5.34/11
+   TCanvas *C = new TCanvas("C", "C	",0,0,400,500);
+   C->SetHighLightColor(2);
+   C->Range(0,0,1,1);
+   C->SetFillColor(0);
+   C->SetBorderMode(0);
+   C->SetBorderSize(2);
+   C->SetFrameBorderMode(0);
+  
+// ------------>Primitives in pad: pad1
+   TPad *pad1 = new TPad("pad1", "pad1",0,0,1,1);
+   pad1->Draw();
+   pad1->cd();
+   pad1->Range(0.409,-229.7494,1.291,2102.222);
+   pad1->SetFillColor(0);
+   pad1->SetBorderMode(0);
+   pad1->SetBorderSize(2);
+   pad1->SetFrameBorderMode(0);
+   pad1->SetFrameBorderMode(0);
+   
+   TGraphAsymmErrors *grae = new TGraphAsymmErrors(6);
+   grae->SetName("Graph0");
+   grae->SetTitle("");
+   grae->SetFillColor(2);
+   grae->SetFillStyle(3001);
+   grae->SetPoint(0,0.5375,1245.719);
+   grae->SetPointError(0,0.03749999,0.03749999,12.16211,12.16211);
+   grae->SetPoint(1,0.6125,829.1689);
+   grae->SetPointError(1,0.03749999,0.03749999,0.8627014,0.8627014);
+   grae->SetPoint(2,0.7,889.6174);
+   grae->SetPointError(2,0.05000001,0.05000001,6.084961,6.084961);
+   grae->SetPoint(3,0.8,603.2028);
+   grae->SetPointError(3,0.05000001,0.05000001,2.18634,2.18634);
+   grae->SetPoint(4,0.9,485.1886);
+   grae->SetPointError(4,0.04999998,0.04999998,1.249985,1.249985);
+   grae->SetPoint(5,1.075,348.5167);
+   grae->SetPointError(5,0.125,0.125,0.5339966,0.5339966);
+   
+   TH1F *Graph_Graph3 = new TH1F("Graph_Graph3","",100,0.43,1.27);
+   Graph_Graph3->SetMinimum(3.44778);
+   Graph_Graph3->SetMaximum(1869.025);
+   Graph_Graph3->SetDirectory(0);
+   Graph_Graph3->SetStats(0);
+
+   Int_t ci;   // for color index setting
+   ci = TColor::GetColor("#000099");
+   Graph_Graph3->SetLineColor(ci);
+   Graph_Graph3->GetXaxis()->SetTitle("R^{2}");
+   Graph_Graph3->GetXaxis()->SetRange(9,92);
+   Graph_Graph3->GetXaxis()->CenterTitle(true);
+   Graph_Graph3->GetXaxis()->SetLabelFont(42);
+   Graph_Graph3->GetXaxis()->SetLabelSize(0.035);
+   Graph_Graph3->GetXaxis()->SetTitleSize(0.035);
+   Graph_Graph3->GetXaxis()->SetTitleFont(42);
+   Graph_Graph3->GetYaxis()->SetLabelFont(42);
+   Graph_Graph3->GetYaxis()->SetLabelSize(0.035);
+   Graph_Graph3->GetYaxis()->SetTitleSize(0.035);
+   Graph_Graph3->GetYaxis()->SetTitleFont(42);
+   Graph_Graph3->GetZaxis()->SetLabelFont(42);
+   Graph_Graph3->GetZaxis()->SetLabelSize(0.035);
+   Graph_Graph3->GetZaxis()->SetTitleSize(0.035);
+   Graph_Graph3->GetZaxis()->SetTitleFont(42);
+   grae->SetHistogram(Graph_Graph3);
+   
+   grae->Draw("a2");
+   Double_t xAxis3[7] = {0.5, 0.575, 0.65, 0.75, 0.85, 0.95, 1.2}; 
+   
+   TH1F *Data_cat2_1D_2mu_Box__3 = new TH1F("Data_cat2_1D_2mu_Box__3","",6, xAxis3);
+   Data_cat2_1D_2mu_Box__3->SetBinContent(1,1246.017);
+   Data_cat2_1D_2mu_Box__3->SetBinContent(2,827.1441);
+   Data_cat2_1D_2mu_Box__3->SetBinContent(3,894.5516);
+   Data_cat2_1D_2mu_Box__3->SetBinContent(4,602.1921);
+   Data_cat2_1D_2mu_Box__3->SetBinContent(5,484.927);
+   Data_cat2_1D_2mu_Box__3->SetBinContent(6,344.778);
+   Data_cat2_1D_2mu_Box__3->SetBinError(1,150.4037);
+   Data_cat2_1D_2mu_Box__3->SetBinError(2,37.71855);
+   Data_cat2_1D_2mu_Box__3->SetBinError(3,256.2997);
+   Data_cat2_1D_2mu_Box__3->SetBinError(4,75.96949);
+   Data_cat2_1D_2mu_Box__3->SetBinError(5,70.29342);
+   Data_cat2_1D_2mu_Box__3->SetBinError(6,59.40328);
+   Data_cat2_1D_2mu_Box__3->SetEntries(3771.684);
+   Data_cat2_1D_2mu_Box__3->SetDirectory(0);
+   Data_cat2_1D_2mu_Box__3->SetStats(0);
+
+   ci = TColor::GetColor("#ccffcc");
+   Data_cat2_1D_2mu_Box__3->SetFillColor(ci);
+
+   ci = TColor::GetColor("#ccffcc");
+   Data_cat2_1D_2mu_Box__3->SetLineColor(ci);
+   Data_cat2_1D_2mu_Box__3->GetXaxis()->SetTitle("RSQ");
+   Data_cat2_1D_2mu_Box__3->GetXaxis()->SetRange(1,6);
+   Data_cat2_1D_2mu_Box__3->GetXaxis()->SetLabelFont(42);
+   Data_cat2_1D_2mu_Box__3->GetXaxis()->SetLabelSize(0.035);
+   Data_cat2_1D_2mu_Box__3->GetXaxis()->SetTitleSize(0.035);
+   Data_cat2_1D_2mu_Box__3->GetXaxis()->SetTitleFont(42);
+   Data_cat2_1D_2mu_Box__3->GetYaxis()->SetLabelFont(42);
+   Data_cat2_1D_2mu_Box__3->GetYaxis()->SetLabelSize(0.035);
+   Data_cat2_1D_2mu_Box__3->GetYaxis()->SetTitleSize(0.035);
+   Data_cat2_1D_2mu_Box__3->GetYaxis()->SetTitleFont(42);
+   Data_cat2_1D_2mu_Box__3->GetZaxis()->SetLabelFont(42);
+   Data_cat2_1D_2mu_Box__3->GetZaxis()->SetLabelSize(0.035);
+   Data_cat2_1D_2mu_Box__3->GetZaxis()->SetTitleSize(0.035);
+   Data_cat2_1D_2mu_Box__3->GetZaxis()->SetTitleFont(42);
+   Data_cat2_1D_2mu_Box__3->Draw("E2same][");
+   Double_t xAxis4[7] = {0.5, 0.575, 0.65, 0.75, 0.85, 0.95, 1.2}; 
+   
+   TH1F *h2clone__4 = new TH1F("h2clone__4","",6, xAxis4);
+   h2clone__4->SetBinContent(1,1246.017);
+   h2clone__4->SetBinContent(2,827.1441);
+   h2clone__4->SetBinContent(3,894.5516);
+   h2clone__4->SetBinContent(4,602.1921);
+   h2clone__4->SetBinContent(5,484.927);
+   h2clone__4->SetBinContent(6,344.778);
+   h2clone__4->SetBinError(1,150.4037);
+   h2clone__4->SetBinError(2,37.71855);
+   h2clone__4->SetBinError(3,256.2997);
+   h2clone__4->SetBinError(4,75.96949);
+   h2clone__4->SetBinError(5,70.29342);
+   h2clone__4->SetBinError(6,59.40328);
+   h2clone__4->SetEntries(3771.684);
+   h2clone__4->SetDirectory(0);
+   h2clone__4->SetStats(0);
+
+   ci = TColor::GetColor("#00ff00");
+   h2clone__4->SetLineColor(ci);
+   h2clone__4->GetXaxis()->SetTitle("RSQ");
+   h2clone__4->GetXaxis()->SetRange(1,6);
+   h2clone__4->GetXaxis()->SetLabelFont(42);
+   h2clone__4->GetXaxis()->SetLabelSize(0.035);
+   h2clone__4->GetXaxis()->SetTitleSize(0.035);
+   h2clone__4->GetXaxis()->SetTitleFont(42);
+   h2clone__4->GetYaxis()->SetLabelFont(42);
+   h2clone__4->GetYaxis()->SetLabelSize(0.035);
+   h2clone__4->GetYaxis()->SetTitleSize(0.035);
+   h2clone__4->GetYaxis()->SetTitleFont(42);
+   h2clone__4->GetZaxis()->SetLabelFont(42);
+   h2clone__4->GetZaxis()->SetLabelSize(0.035);
+   h2clone__4->GetZaxis()->SetTitleSize(0.035);
+   h2clone__4->GetZaxis()->SetTitleFont(42);
+   h2clone__4->Draw("hist same][");
+   
+   grae = new TGraphAsymmErrors(6);
+   grae->SetName("Graph0");
+   grae->SetTitle("");
+   grae->SetFillColor(2);
+   grae->SetFillStyle(3001);
+   grae->SetPoint(0,0.5375,1245.719);
+   grae->SetPointError(0,0.03749999,0.03749999,12.16211,12.16211);
+   grae->SetPoint(1,0.6125,829.1689);
+   grae->SetPointError(1,0.03749999,0.03749999,0.8627014,0.8627014);
+   grae->SetPoint(2,0.7,889.6174);
+   grae->SetPointError(2,0.05000001,0.05000001,6.084961,6.084961);
+   grae->SetPoint(3,0.8,603.2028);
+   grae->SetPointError(3,0.05000001,0.05000001,2.18634,2.18634);
+   grae->SetPoint(4,0.9,485.1886);
+   grae->SetPointError(4,0.04999998,0.04999998,1.249985,1.249985);
+   grae->SetPoint(5,1.075,348.5167);
+   grae->SetPointError(5,0.125,0.125,0.5339966,0.5339966);
+   
+   TH1F *Graph_Graph_Graph34 = new TH1F("Graph_Graph_Graph34","",100,0.43,1.27);
+   Graph_Graph_Graph34->SetMinimum(3.44778);
+   Graph_Graph_Graph34->SetMaximum(1869.025);
+   Graph_Graph_Graph34->SetDirectory(0);
+   Graph_Graph_Graph34->SetStats(0);
+
+   ci = TColor::GetColor("#000099");
+   Graph_Graph_Graph34->SetLineColor(ci);
+   Graph_Graph_Graph34->GetXaxis()->SetTitle("R^{2}");
+   Graph_Graph_Graph34->GetXaxis()->SetRange(9,92);
+   Graph_Graph_Graph34->GetXaxis()->CenterTitle(true);
+   Graph_Graph_Graph34->GetXaxis()->SetLabelFont(42);
+   Graph_Graph_Graph34->GetXaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph34->GetXaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph34->GetXaxis()->SetTitleFont(42);
+   Graph_Graph_Graph34->GetYaxis()->SetLabelFont(42);
+   Graph_Graph_Graph34->GetYaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph34->GetYaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph34->GetYaxis()->SetTitleFont(42);
+   Graph_Graph_Graph34->GetZaxis()->SetLabelFont(42);
+   Graph_Graph_Graph34->GetZaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph34->GetZaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph34->GetZaxis()->SetTitleFont(42);
+   grae->SetHistogram(Graph_Graph_Graph34);
+   
+   grae->Draw("2");
+   pad1->Modified();
+   C->cd();
+   
+   TLegend *leg = new TLegend(0.6,0.7,0.85,0.85,NULL,"brNDC");
+   leg->SetBorderSize(1);
+   leg->SetTextSize(0.018);
+   leg->SetLineColor(0);
+   leg->SetLineStyle(1);
+   leg->SetLineWidth(1);
+   leg->SetFillColor(0);
+   leg->SetFillStyle(1001);
+   TLegendEntry *entry=leg->AddEntry("Graph0"," JES Syst.","lf");
+   entry->SetFillColor(2);
+   entry->SetFillStyle(3001);
+   entry->SetLineColor(1);
+   entry->SetLineStyle(1);
+   entry->SetLineWidth(1);
+   entry->SetMarkerColor(1);
+   entry->SetMarkerStyle(21);
+   entry->SetMarkerSize(1);
+   entry->SetTextFont(42);
+   entry=leg->AddEntry("Data_cat2_1D_2mu_Box"," Bkg Pred. Nominal","lf");
+
+   ci = TColor::GetColor("#ccffcc");
+   entry->SetFillColor(ci);
+   entry->SetFillStyle(1001);
+
+   ci = TColor::GetColor("#00ff00");
+   entry->SetLineColor(ci);
+   entry->SetLineStyle(1);
+   entry->SetLineWidth(1);
+   entry->SetMarkerColor(1);
+   entry->SetMarkerStyle(21);
+   entry->SetMarkerSize(1);
+   entry->SetTextFont(42);
+   leg->Draw();
+   TLatex *   tex = new TLatex(0.22,0.95,"CMS Preliminary:");
+tex->SetNDC();
+   tex->SetTextAlign(22);
+   tex->SetTextSize(0.03);
+   tex->SetLineWidth(2);
+   tex->Draw();
+      tex = new TLatex(0.42,0.95,"#sqrt{s} = 8 TeV,");
+tex->SetNDC();
+   tex->SetTextAlign(22);
+   tex->SetTextSize(0.03);
+   tex->SetLineWidth(2);
+   tex->Draw();
+      tex = new TLatex(0.62,0.95,"#int L dt = 18.836 fb^{-1}");
+tex->SetNDC();
+   tex->SetTextAlign(22);
+   tex->SetTextSize(0.03);
+   tex->SetLineWidth(2);
+   tex->Draw();
+   C->Modified();
+   C->cd();
+   C->SetSelected(C);
+}
