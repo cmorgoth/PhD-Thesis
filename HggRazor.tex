@@ -403,20 +403,293 @@ dataset was draw, is defined as
 Only p.d.fs with AIC weight larger than 0.1 pass the first step and
 are then tested for the bias test described
 below. Table~\ref{table:aicpdfs} shows the full list of p.d.fs used in
-these studies. Tables~\ref{table:AICresults1} and
-~\ref{table:AICresults2} summarize two examples of the AIC results
-obtained for two search regions, Figures ~\ref{fig:AICresults1} and
-~\ref{fig:AICresults2} show the corresponding fits to the observed
+these studies. Tables~\ref{tab:AICresults1},~\ref{tab:AICresults2},~\ref{tab:AICresults3},  and
+~\ref{tab:AICresults4} summarize four examples of the AIC results
+obtained for four search regions -- one per each
+category in the analysis --, Figures ~\ref{fig:AICresults1},~\ref{fig:AICresults2},~\ref{fig:AICresults3}, and
+~\ref{fig:AICresults4} show the corresponding fits to the observed
 data. It is of note that the AIC fits are done only to the
-$m_{\gamma\gamma}\in \{[103-120],[131-160]\}$\GeV region.
+$m_{\gamma\gamma}\in \{[103-121],[129-160]\}$\GeV region.
+\begin{table*}[h] 
+\begin{center} 
+\topcaption{Full list of p.d.f (function) used in the AIC test.} 
+\footnotesize
+\begin{tabular}{|c|c|c|} 
+\hline
+function name & short name & functional form\\
+\hline
+single exponential & singleExp & $e^{-\alpha m_{\gamma\gamma}}$\\
+double exponential & doubleExp & $fe^{-\alpha_{1} m_{\gamma\gamma}}+(1-f)e^{-\alpha_{1} m_{\gamma\gamma}}$\\
+single power law & singlePow & $m_{\gamma\gamma}^{-\alpha}$\\
+double power law & doublePow &
+                               $fm_{\gamma\gamma}^{-\alpha_{1}}+(1-f)m_{\gamma\gamma}^{-\alpha_{2}}$\\
+modified exponential & modExp & $e^{-\alpha
+                                m_{\gamma\gamma}^{\beta}}$\\
+Bernstein polynomial order 2 & poly2 & $p_{0}(1-t)^{2} +
+                                       p_{1}2t(1-t) + p_{2} t^{2}$\\
+Bernstein polynomial order 3 & poly3 & $p_{0}(1-t)^{3} +
+                                       p_{1}3t(1-t)^{2} + p_{2}3t^{2}(1-t)
+                                       +p_{3} t^{3}$\\
+Bernstein polynomial order 4 & poly4 & $p_{0}(1-t)^{4} +
+                                       p_{1}4t(1-t)^{3} + p_{2}6t^{2}(1-t)^{2}
+                                       +p_{3} 4t^{3}(1-t) + p_{4} t^{4}$\\
+\hline
+\end{tabular} 
+\label{table:aicpdfs} 
+\end{center} 
+\end{table*} 
 
+\begin{figure}[h] 
+\begin{center} 
+\includegraphics[width=0.6\textwidth]{hgg/highpt/600_0d025.pdf} 
+\caption{sideband fits for the search region: HighPt, $M_R >
+  600$\GeV , $R^2 > 0.025$.} 
+\label{fig:AICresults1} 
+\end{center} 
+\end{figure} 
+
+\begin{table*}[h] 
+\begin{center} 
+\topcaption{AIC results summary for the search region: HighPt, $M_R >
+  600$\GeV , $R^2 > 0.025$.} 
+\begin{tabular}{|c|c|ccc|c|} 
+\hline function & \#P & $\Delta AIC$ & $\omega$ & $\omega_{max}/\omega$ & status \\ \hline 
+\rowcolor[rgb]{0.31,0.78,0.47}  
+singlePow &  1 &  0.000 &  0.247 &  1.000 &  0,  3 \\ 
+\rowcolor[rgb]{0.31,0.78,0.47}  
+singleExp &  1 &  0.128 &  0.232 &  1.066 &  0,  3 \\ 
+\rowcolor[rgb]{0.31,0.78,0.47}  
+poly3 &  4 &  0.605 &  0.183 &  1.353 &  0,  3 \\ 
+\rowcolor[rgb]{0.31,0.78,0.47}  
+poly2 &  3 &  0.673 &  0.177 &  1.400 &  0,  3 \\ 
+\rowcolor[rgb]{1.0,0.41,0.38}  
+modExp &  2 &  2.738 &  0.063 &  3.932 &  0,  3 \\ 
+\rowcolor[rgb]{1.0,0.41,0.38}  
+poly4 &  5 &  2.916 &  0.058 &  4.297 &  0,  3 \\ 
+\rowcolor[rgb]{1.0,0.41,0.38}  
+doubleExp &  3 &  4.958 &  0.021 & 11.929 &  0,  3 \\ 
+\rowcolor[rgb]{1.0,0.41,0.38}  
+doublePow &  3 &  5.031 &  0.020 & 12.371 &  0,  3 \\ 
+\hline 
+\end{tabular} 
+\label{tab:AICresults1} 
+\end{center} 
+\end{table*} 
+
+\begin{figure}[h] 
+\begin{center} 
+\includegraphics[width=0.6\textwidth]{hgg/highres/150_0d000.pdf} 
+\caption{sideband fits for the search region: HighRes, 150 $<$ $M_R$
+  $<$ 250\GeV, $R^2 > 0$} 
+\label{fig:AICresults2} 
+\end{center} 
+\end{figure}
+
+\begin{table*}[h] 
+\begin{center} 
+\topcaption{AIC results summary for the search region: HighRes, 150
+  $<$ $M_R$ $<$ 250\GeV ,$R^2 > 0$.} 
+\begin{tabular}{|c|c|ccc|c|} 
+\hline function & \#P & $\Delta AIC$ & $\omega$ & $\omega_{max}/\omega$ & status \\ \hline 
+\rowcolor[rgb]{0.31,0.78,0.47}  
+modExp &  2 &  0.000 &  0.484 &  1.000 &  1,  2 \\ 
+\rowcolor[rgb]{0.31,0.78,0.47}  
+singleExp &  1 &  1.704 &  0.206 &  2.344 &  0,  3 \\ 
+\rowcolor[rgb]{0.31,0.78,0.47}  
+poly2 &  3 &  2.173 &  0.163 &  2.964 &  0,  3 \\ 
+\rowcolor[rgb]{1.0,0.41,0.38}  
+poly3 &  4 &  4.028 &  0.065 &  7.492 &  1,  2 \\ 
+\rowcolor[rgb]{1.0,0.41,0.38}  
+poly4 &  5 &  4.714 &  0.046 & 10.560 &  0,  3 \\ 
+\rowcolor[rgb]{1.0,0.41,0.38}  
+doubleExp &  3 &  5.708 &  0.028 & 17.359 &  1,  2 \\ 
+\rowcolor[rgb]{1.0,0.41,0.38}  
+singlePow &  1 &  8.492 &  0.007 & 69.817 &  0,  3 \\ 
+\rowcolor[rgb]{1.0,0.41,0.38}  
+doublePow &  3 & 12.496 &  0.001 & 517.007 &  0,  3 \\ 
+\hline 
+\end{tabular} 
+\label{tab:AICresults2} 
+\end{center} 
+\end{table*} 
+
+\begin{figure}[h] 
+\begin{center} 
+\includegraphics[width=0.6\textwidth]{hgg/lowres/150_0d175.pdf} 
+\caption{Sideband fits for the search region: LowRes, 150 $<$ $M_R$
+  $<$ 250\GeV, $R^2 > 0.175$.} 
+\label{fig:AICresults3} 
+\end{center} 
+\end{figure} 
+
+\begin{table*}[h] 
+\begin{center} 
+\topcaption{AIC results summary for the search region: LowRes, LowRes,
+  150 $< M_R <$ 250\GeV, $R^2 > 0.175$ } 
+\begin{tabular}{|c|c|ccc|c|} 
+\hline function & \#P & $\Delta AIC$ & $\omega$ & $\omega_{max}/\omega$ & status \\ \hline 
+\rowcolor[rgb]{0.31,0.78,0.47}  
+singleExp &  1 &  0.000 &  0.529 &  1.000 &  0,  3 \\ 
+\rowcolor[rgb]{0.31,0.78,0.47}  
+modExp &  2 &  1.883 &  0.206 &  2.564 &  1,  2 \\ 
+\rowcolor[rgb]{1.0,0.41,0.38}  
+doubleExp &  3 &  3.646 &  0.085 &  6.191 &  0,  3 \\ 
+\rowcolor[rgb]{1.0,0.41,0.38}  
+singlePow &  1 &  3.698 &  0.083 &  6.353 &  0,  3 \\ 
+\rowcolor[rgb]{1.0,0.41,0.38}  
+poly2 &  3 &  4.925 &  0.045 & 11.736 &  0,  3 \\ 
+\rowcolor[rgb]{1.0,0.41,0.38}  
+poly3 &  4 &  5.892 &  0.028 & 19.029 &  0,  3 \\ 
+\rowcolor[rgb]{1.0,0.41,0.38}  
+poly4 &  5 &  7.657 &  0.012 & 45.992 &  0,  3 \\ 
+\rowcolor[rgb]{1.0,0.41,0.38}  
+doublePow &  3 &  7.703 &  0.011 & 47.065 &  1,  2 \\ 
+\hline 
+\end{tabular} 
+\label{tab:AICresults3} 
+\end{center} 
+\end{table*} 
+
+\begin{figure}[h] 
+\begin{center} 
+\includegraphics[width=0.6\textwidth]{hgg/hzbb/150_0d00.pdf} 
+\caption{Sideband fits for the search region:
+  H($\gamma\gamma$)-H/Z(bb), $M_R > 150$\GeV , $R^2 > 0$.} 
+\label{fig:AICresults4} 
+\end{center} 
+\end{figure} 
+
+\begin{table*}[h] 
+\begin{center} 
+\topcaption{AIC results summary for the search region:
+  H($\gamma\gamma$)-H/Z(bb), $M_R > 150$\GeV, $R^2 > 0$.} 
+\begin{tabular}{|c|c|ccc|c|} 
+\hline function & \#P & $\Delta AIC$ & $\omega$ & $\omega_{max}/\omega$ & status \\ \hline 
+\rowcolor[rgb]{0.31,0.78,0.47}  
+singleExp &  1 &  0.000 &  0.323 &  1.000 &  0,  3 \\ 
+\rowcolor[rgb]{0.31,0.78,0.47}  
+singlePow &  1 &  0.247 &  0.285 &  1.131 &  0,  3 \\ 
+\rowcolor[rgb]{0.31,0.78,0.47}  
+modExp &  2 &  1.619 &  0.144 &  2.247 &  1,  2 \\ 
+\rowcolor[rgb]{1.0,0.41,0.38}  
+poly2 &  3 &  3.252 &  0.063 &  5.083 &  0,  3 \\ 
+\rowcolor[rgb]{1.0,0.41,0.38}  
+poly4 &  5 &  3.334 &  0.061 &  5.297 &  0,  3 \\ 
+\rowcolor[rgb]{1.0,0.41,0.38}  
+poly3 &  4 &  3.858 &  0.047 &  6.881 &  0,  3 \\ 
+\rowcolor[rgb]{1.0,0.41,0.38}  
+doubleExp &  3 &  4.134 &  0.041 &  7.901 &  0,  3 \\ 
+\rowcolor[rgb]{1.0,0.41,0.38}  
+doublePow &  3 &  4.382 &  0.036 &  8.946 &  0,  3 \\ 
+\hline 
+\end{tabular} 
+\label{tab:AICresults4} 
+\end{center} 
+\end{table*} 
+\clearpage
 The second step is the bias test, where only functions that passed the
 AIC test are considered. The bias test quantifies the error on the
-measured signal strength made when
+measured signal made when
 performing a signal-plus-background fit to the entire
-$m_{\gamma\gamma}$ region in the final stage of the analysis.
-\section{Systematic Uncertainties}\label{sec:systematics}
+$m_{\gamma\gamma}$ region in the final stage of the analysis. By
+requiring the selected function to have a small bias relative to any of
+the functions passing the AIC test, the error on the measured signal
+strength is reduced. In this analysis, the bias is defined relative to
+the fit uncertainty on the signal, i.e.
+\begin{equation}
+\label{eq:bias}
+\delta s = \frac{\hat{N}_{s}-N_{s}}{\sigma_{N_{s}}},
+\end{equation}
+where $\hat{N}_{s}$ is the fitted signal, $N_{s}$ is the
+actual value of the signal, and $\sigma_{N_{s}}$ is the
+uncertainty on $\hat{N}_{s}$. The bias estimation is obtained by
+carrying a large number of pseudo-experiments (toys), each function
+passing the AIC test will be treated as the parent function from where
+the data was drawn, then several (10,000) toy datasets will be drawn from
+it containing the same amount of event as in the real dataset. For
+each toy dataset a know number of signal event will be injected ($N_{s}$) and a signal-plus-background fit will be carried out and
+the bias will be calculated. After this procedure is done, the
+resulting bias distribution will be fitted with a double-sided
+crystal ball function, where the most probable value after the fit is
+taken as an estimate of the bias. Figure~\ref{fig:biasExample} shows
+the resulting bias distribution and fit for two different
+cases. The studies carried out indicate that the most stringent test
+occurs when the number of injected signal events is small ( signal to
+background ratio or S/B equal to zero) and therefore the results shown
+here correspond to that case. Table~\ref{table:biasExample} shows the bias estimates for one of
+the search regions, where you can see the relative biases for all
+possible function passing the AIC test. Finally, the function with the
+least numer of free parameters and having a relative bias smaller than
+30\% -- which yield only an additional error of 5\% -- is selected as
+the background model. The final selection for all the signal regions
+is shown in Table~\ref{tab:modelSelectionSummary_15ifb}.
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.45\textwidth]{hgg/doubleTailCrystalBall_biasFits_poly3_singleExp.pdf}
+\includegraphics[width=0.45\textwidth]{hgg/doubleTailCrystalBall_biasFits_poly3_poly3.pdf}
+\caption{Examples of the bias distribution for bin0 (HighPt, $M_R>600, R^2>0.025$). Left: $f_{1}$ (assumed parent function) = poly3, $f_{2}$ (tested function) = singleExp; right: $f_{1}$ = poly3, $f_{2}$ =  poly3. From the left plot we can see that singleExp does not pass the bias test since it has large bias to fit poly3.  }
+\label{fig:biasExample}
+\end{center}
+\end{figure}
 
+\begin{table}[h]
+\begin{center}
+\topcaption{Examples of the bias estimate for diffrent function pairs
+  passing the AIC test for bin0 (HighPt, $M_R>600, R^2>0.025$). 
+Functiosn in the first column are the assumed parent functions
+($f_{1}$), while functions 
+in the first row are the ones being tested ($f_{2}$). In the first row,
+the numbers in brackets are the AIC weights. }
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+-- & singlePow(0.247) & singleExp(0.232) & poly3(0.183) & poly2(0.177) \\
+\hline
+singlePow & (21.3$\pm$ 1.0)\% & (19.3$\pm$ 1.0)\% & (17.8$\pm$ 1.0)\% & (18.5$\pm$ 1.4)\% \\
+singleExp & (22.9$\pm$ 2.0)\% & (18.3$\pm$ 1.0)\% & (7.9$\pm$ 1.3)\% & (18.7$\pm$ 2.0)\% \\
+poly3 & (69.9$\pm$ 1.5)\% & (70.7$\pm$ 0.9)\% & (24.6$\pm$ 1.3)\% & (33.5$\pm$ 1.0)\% \\
+poly2 & (60.6$\pm$ 0.9)\% & (62.6$\pm$ 0.9)\% & (15.7$\pm$ 1.9)\% & (17.4$\pm$ 1.4)\% \\
+\hline
+\end{tabular}
+\label{table:biasExample}
+\end{center}
+\end{table}
+\begin{table*}[h]
+\begin{center}
+\topcaption{List of the selected background functions for different search
+  regions.}
+\tiny
+\begin{tabular}{|c|c|cccc|c|cc|}
+\hline
+Bin & Category & LowMR & HighMR & LowRsq & HighRsq & Function & AIC weight & Max bias / $\sigma_{\mathrm{stat}}$ \\ 
+\hline
+0 & highpt & 600 & 10000 & 0.025 & 10.000 & poly3 & 0.183 & 24.6\%\\
+1 & highpt & 150 & 600 & 0.130 & 10.000 & singleExp & 0.356 & 17.7\%\\
+2 & highpt & 1250 & 10000 & 0.000 & 0.025 & singleExp & 0.359 & 16.4\%\\
+3 & highpt & 150 & 450 & 0.000 & 0.130 & -- & -- & --\%\\
+4 & highpt & 450 & 600 & 0.000 & 0.035 & poly2 & 0.324 & -24.2\%\\
+5 & highpt & 450 & 600 & 0.035 & 0.130 & singleExp & 0.348 & 16.1\%\\
+6 & highpt & 600 & 1250 & 0.000 & 0.015 & singleExp & 0.295 & -3.6\%\\
+7 & highpt & 600 & 1250 & 0.015 & 0.025 & singleExp & 0.344 & 14.8\%\\
+\hline
+8 & hzbb & 150 & 2000 & 0.00 & 10.000 & singleExp & 0.323 & 4.5\%\\ 
+\hline
+9 & highres & 150 & 250 & 0.000 & 0.175 & -- & -- & --\%\\
+10 & highres & 150 & 250 & 0.175 & 10.000 & poly2 & 0.132 & 16.9\%\\
+11 & highres & 250 & 10000 & 0.05 & 10.000 & singlePow & 0.237 & -19.1\%\\
+12 & highres & 250 & 600 & 0.000 & 0.05 & singlePow & 0.118 & 25.7\%\\
+13 & highres & 600 & 10000 & 0.000 & 0.05 & singleExp & 0.256 & -3.4\%\\
+\hline
+14 & lowres & 150 & 250 & 0.000 & 0.175 & singleExp & 0.529 & -3.4\%\\
+15 & lowres & 150 & 250 & 0.175 & 10.000 & singleExp & 0.365 & 7.9\%\\
+16 & lowres & 250 & 10000 & 0.05 & 10.000 & singleExp & 0.358 & -13.9\%\\
+17 & lowres &  250 & 600 & 0.000 & 0.05 & --  & --  &  --\%\\
+18 & lowres & 600 & 10000 & 0.000 & 0.05 & singleExp & 0.364 & -9.0\%\\
+\hline
+\end{tabular}
+\label{tab:modelSelectionSummary_15ifb}
+\end{center}
+\end{table*}
+\section{Systematic Uncertainties}\label{sec:systematics}
 The dominant systematic uncertainty is the uncertainty on the prediction of the 
 non-resonant background shape and normalization. These are propagated by
 profiling the overall normalization and the shape parameters of the non-resonant
@@ -702,7 +975,8 @@ We interpret these results in terms of limits on the production cross-section ti
 branching ratio for sbottom pair production with a cascade decay to a Higgs 
 boson, a bottom quark, and the LSP. The expected and observed limits on the sbottom pair production cross section 
 is shown in Figure~\ref{fig:Limits} as a function of the
-sbottom mass and the LSP mass. 
+sbottom mass and the LSP mass. The observe significance is also
+computed for this simplified model and shown in Figure~\ref{hgg:significance}.
 
 \begin{figure}[ht!]
 \centering
@@ -718,6 +992,17 @@ are shown. The solid and dotted black contours represent the observed exclusion 
 its $1\sigma$ bands, while the analogous blue contours represent the expected
 exclusion region and its $1\sigma$ bands.
 \label{fig:Limits}}
+\end{figure}
+\begin{figure}[ht!]
+\centering
+%\includegraphics[width=0.45\textwidth, angle=0.]{figs/limits/T2bHXSEC_OBSONLY.pdf}
+%\includegraphics[width=0.45\textwidth,
+%angle=0.]{figs/limits/T2bHXSEC_EXPONLY.pdf}
+%\includegraphics[width=0.45\textwidth,angle=0.]{figs/limits/T2bH_Smooth_July31_XSEC.pdf}
+\includegraphics[width=0.6\textwidth,angle=0.]{hgg/T2bH_SignificanceXSEC.pdf}
+\caption{ The observed significance scan for sbottom pair production
+  decaying to a bottom quark, a Higgs boson, and the LSP is shown.
+\label{hgg:significance}}
 \end{figure}
 
 
