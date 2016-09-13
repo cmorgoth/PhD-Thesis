@@ -104,6 +104,132 @@ the boosts needed to move from the lab frame to the squark rest frames.
    are in the right panel.\label{fig:restFrames}}
 \end{figure}  
 
+The approximate boost relating the CM frame and the rest frames of each of the
+squarks ($\vec{\beta}_{R}$) is assymetric since the two squarks are recoiling against each
+other in the CM frame. $\vec{\beta}_{R}$ is obtained by adding the condition
+that in their respective squark rest frame the magnitud of each quark
+momentum is the same, this is to say that the two decays are identical
+up to the decay angle. Since the quarks are assumed to be massless
+the condition is:
+
+\begin{equation}
+\label{eq:razorCond1}
+E^{q_{1}}_{s} = E^{q_{2}}_{s}
+\end{equation}
+\begin{equation}
+\label{eq:razorCond11}
+\Rightarrow\gamma_{R}(E^{q_{1}}_{CM} -\vec{\beta}_{R} \cdot \vec{p}_{CM}^{\hspace{0.06cm}q_{1}})= \gamma_{R}(E^{q_{2}}_{CM} +\vec{\beta}_{R} \cdot \vec{p}_{CM}^{\hspace{0.06cm}q_{2}})
+\end{equation}
+\begin{equation}
+\label{eq:razorCond12}
+\Rightarrow\vec{\beta}_{R} \cdot (\vec{p}_{CM}^{\hspace{0.06cm}q_{1}}+\vec{p}_{CM}^{\hspace{0.06cm}q_{2}})= E^{q_{1}}_{CM} -E^{q_{2}}_{CM},
+\end{equation}
+
+where $E^{q_{i}}_{s}$ is the energy of the $i$-th quark on its
+respective squark rest frame, $E^{q_{i}}_{CM}$ is the energy of the
+$i$-th quark in the CM frame, $\vec{p}_{CM}^{\hspace{0.06cm}q_{i}}$ is the momentum of the
+$i$-th quark in the CM frame, and $\gamma_{R}$ is the gamma factor
+corresponding to $\vec{\beta}_{R}$. This symmetry constraint is not
+enough to uniquely determine $\vec{\beta}_{R}$ and therefore an
+external condition is required; this external condition is such that
+the boost minimizes the sum of the quarks enegies, i.e.
+
+\begin{equation}
+\label{razonMinCondition}
+\frac{\partial (E^{q_{1}}_{s} + E^{q_{2}}_{s})}{\partial
+  \vec{\beta}_{R}} = 0.
+\end{equation}
+
+With the addition of this extremal condition, the boost is now
+found to be
+\begin{equation}
+\label{razonRboost}
+  \vec{\beta}_{R}  = \frac{\vec{p}_{CM}^{\hspace{0.06cm}q_{1}}-\vec{p}_{CM}^{\hspace{0.06cm}q_{2}}}{E^{q_{1}}_{CM} + E^{q_{2}}_{CM}}.
+\end{equation}
+
+
+Now, let's turn to the boost that relates the CM and the lab
+frames. The later is approximated by a
+purely longitudinal boost ($\vec{\beta}_{L} = \beta_{L} \cdot \hat{z}$). Again, the assumption that the boost is in the longitudinal
+direction only is not enough to uniquily determine $\beta_{L}$ and
+therefore an additional constraint is needed. We require that the
+longitudinal momentum of the visible system in the CM frame ought to
+be zero -- only resembling the true constraint: that the sum of the visible
+and invisible systems is indeed zero. This additional constraint, 
+\begin{equation}
+\label{eq:razorCond2}
+p^{1z}_{CM} + p^{2z}_{CM} = 0,
+\end{equation}
+is sufficient to find the magnitude of the boost :
+\begin{equation}
+\label{razonLboost}
+  \vec{\beta}_{L}  = \frac{p^{1z}_{\ell} + p^{2z}_{\ell}}{E^{q_{1}}_{\ell} + E^{q_{2}}_{\ell}}.
+\end{equation}
+
+With both boost now found, the only remaining task is to transform the
+quantities in the squark rest frame to the lab frame to be able to use
+them in a realistic environment. We define the characteristic mass
+estimator ($\mathrm{M_{R}}$), which is
+related to $M_{\Delta}$, in the following fashion: 
+\begin{equation}
+\label{eq:MRdef}
+\mathrm{M_{R}} \equiv \gamma_{R}(E^{q_{1}}_{s} + E^{q_{2}}_{s}) =
+  \gamma_{R} M_{\Delta}.
+\end{equation} 
+
+When expressed in the corresponding lab frame quantities by applying
+the boosts just found above, $\mathrm{M_{R}}$ takes the form:
+
+ \begin{equation}
+\label{eq:MRlabF}
+\mathrm{M_{R}} = \sqrt{(E^{q_{1}}_{\ell} + E^{q_{2}}_{\ell})^{2} - (p^{1z}_{\ell} + p^{2z}_{\ell})^{2}}.
+\end{equation} 
+
+
+We now proceed to construct another variable purely from the
+transverse information in the detector. Inspired by the ideal
+back-to-back topology of QCD dijet events we define the razor
+transverse mass variable:
+
+\begin{equation}
+\label{eq:MRTdef}
+\mathrm{M^{R}_{T}} =
+\sqrt{\frac{E^{\mathrm{miss}}_{\mathrm{T}}(p^{q_{1}}_{\mathrm{T}}+p^{q_{2}}_{\mathrm{T}})
+    - \ptvecmiss \cdot (\vec{p}^{q_{1}}_{\mathrm{T}} + \vec{p}^{q_{2}}_{\mathrm{T}})}{2}}.
+\end{equation} 
+
+This variable estimates the transverse momentum imbalance in the event
+and therefore is useful to discriminate between signal and
+background. Additionally, $\mathrm{M^{R}_{T}}$ is strictly smaller
+than $\mathrm{M_{R}}$ ( $\mathrm{M_{R}} < \mathrm{M_{R}}$), with this
+in mind we define de dimensionless razor variable:
+
+\begin{equation}
+\label{eq:R2}
+\mathrm{R^{2}} = \left(\frac{\mathrm{M^{R}_{T}}}{\mathrm{M_{R}} }\right)^{2}.
+\end{equation}
+
+Background events with no missing energy will tend to have values of $\mathrm{R^{2}}$ close
+to zero, while signal events will have values of $\mathrm{R^{2}}$
+that are on average larger than zero.
+
+
+The razor variables have been also generalized to topologies which
+include more than two visible objects in the detector. In order to
+achive this, a simple approach has been taken. Whenever more than two
+visible objects are present, the event is forced into a dijet-like topology
+by clustering all visible objects into two \textit{megajets}. All
+possible permutations of these \textit{megajets} are formed
+by adding the 4-momenta of the visible objects; we choose the configuration
+that minimizes $M_{1}^{2} + M_{2}^{2}$, where $M_{i}$ is the mass
+of the $i$-th \textit{megajet}.
 
 \section{Application of the Razor Variables to Search for BSM Physics}\label{razorApp}
 
+The razor variables have been employed in canonical searches for SUSY
+at the LHC~\cite{razor7TeV,razor8TeV,razor13TeV} and have been shown to have good sensitivity in a variety
+of final states. In this section a review of the main properties of
+this variables and a summary of the main results of the searches in
+references~\cite{razor7TeV,razor8TeV,razor13TeV} is given. The first
+result using razor variables was carried out by CMS using data
+collected a center-of-mass energy of 7\TeV.
