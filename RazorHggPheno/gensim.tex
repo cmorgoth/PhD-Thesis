@@ -1,0 +1,12 @@
+\section{Event generation and detector simulation}
+\label{sec:gensim}
+The study is performed using samples of Monte Carlo events. The event generation is performed in \textsc{PYTHIA}~8.210~\cite{Pythia64,Pythia82}.
+The default parton density function set is \textsc{NNPDF}~2.3 QCD+QED
+LO (with $\alpha_s(m_\PZ) =
+0.130$)~\cite{NNPDF1,NNPDF2,NNPDF3}. Fast simulation of the CMS
+detector is performed in \textsc{Delphes}~3.3.2~\cite{Delphes3}. The
+default description of CMS as provided in the release is used, except
+for a modification to the photon isolation and efficiency,
+described in the next section. Jet clustering is performed using
+\FASTJET~3.1.3~\cite{fastjet}. As in CMS, the anti-$\kt$ jet
+clustering algorithm is used with jet-size parameter $R=0.5$~\cite{antikt}.

@@ -12,6 +12,9 @@
 \usepackage{topcapt}
 \usepackage{multirow}
 \usepackage{multicol}
+\usepackage{subfig}%
+\let\subfigure\subfloat% compatibility between subfigure and subfig
+                       % packages
 %\usepackage[table]{xcolor} 
 
 %% Tentative: newtx for better-looking Times
@@ -44,8 +47,42 @@
 \newcommand{\Rtwoz}{\ensuremath{\mathrm{R}^2_0}\xspace}
 \newcommand{\R}{\ensuremath{\mathrm{R}}\xspace}
 \newcommand{\MRT}{\ensuremath{M_\mathrm{T}^\mathrm{R}}\xspace}
-%\newcommand{\ptvecmiss}{\ensuremath{{\vec p}_{\mathrm{T}}^{\text{miss}}}\xspace}                                                           
-\newcommand{\mgg}{\ensuremath{m_{\gamma\gamma}} }
+%\newcommand{\ptvecmiss}{\ensuremath{{\vec
+%p}_{\mathrm{T}}^{\text{miss}}}\xspace}                                                           
+\newlength\cmsFigWidth
+\newlength\cmsSmallFigWidth
+\newlength\cmsFigMedWidth
+\newlength\cmsFigDoubleWidth
+\ifthenelse{\boolean{cms@external}}{\setlength\cmsSmallFigWidth{0.85\columnwidth}}{\setlength\cmsSmallFigWidth{0.38\textwidth}}
+\ifthenelse{\boolean{cms@external}}{\setlength\cmsFigWidth{0.98\columnwidth}}{\setlength\cmsFigWidth{0.49\textwidth}}
+\ifthenelse{\boolean{cms@external}}{\setlength\cmsFigMedWidth{0.98\columnwidth}}{\setlength\cmsFigMedWidth{0.75\textwidth}}
+\ifthenelse{\boolean{cms@external}}{\setlength\cmsFigDoubleWidth{0.98\columnwidth}}{\setlength\cmsFigDoubleWidth{0.9\textwidth}}
+\ifthenelse{\boolean{cms@external}}{\providecommand{\cmsLeft}{top\xspace}}{\providecommand{\cmsLeft}{left\xspace}}
+\ifthenelse{\boolean{cms@external}}{\providecommand{\cmsRight}{bottom\xspace}}{\providecommand{\cmsRight}{right\xspace}}
+\ifthenelse{\boolean{cms@external}}{\providecommand{\cmsULeft}{top\xspace}}{\providecommand{\cmsULeft}{upper left\xspace}}
+\ifthenelse{\boolean{cms@external}}{\providecommand{\cmsURight}{middle\xspace}}{\providecommand{\cmsURight}{upper right\xspace}}
+\providecommand{\PX}{\ensuremath{\mathrm{X}}\xspace}
+\providecommand{\ktild}{\ensuremath{\tilde{k}}\xspace}
+\providecommand{\sqrts}{\ensuremath{\sqrt{s}}\xspace}
+\providecommand{\mgg}{\ensuremath{m_{\gamma\gamma}}\xspace}
+\providecommand{\gaga}{\ensuremath{\gamma \gamma}\xspace}
+\providecommand{\mX}{\ensuremath{m_{\PX}}\xspace}
+\providecommand{\GammaX}{\ensuremath{\Gamma_{\PX}}\xspace}
+\providecommand{\GammaOm}{\ensuremath{\Gamma_{\PX} / m_{\PX}}\xspace}
+\providecommand{\scEta}{\ensuremath{\abs{\eta_{\text{C}}}}\xspace}
+\providecommand{\RS}{{\textsc{RS}}\xspace}
+\providecommand{\MGAMC}{{{\textsc{MadGraph5}}\_aMC@NLO}\xspace}
+\providecommand{\mylumi}{\ensuremath{12.9\fbinv}\xspace}
+\providecommand{\CLs}{\ensuremath{\mathrm{CL_{s}}\xspace}
+\providecommand{\CL}{CL\xspace}}
+\providecommand{\bon}{3.8\unit{T}}
+\providecommand{\boff}{0\unit{T}}
+\providecommand{\fb}{\unit{fb}}
+\newcommand{\met}{\ETm}
+\newcommand{\mgaga}{\ensuremath{m_{\Pgg\Pgg}}\xspace}
+\newcommand{\sbottom}{\PSQb}
+\newcommand{\chizone}{\chiz_1}
+\newcommand{\chiztwo}{\chiz_2}
 \DeclareUnicodeCharacter{00A0}{ }
 
 % Name of your .bib file(s)
@@ -146,8 +183,14 @@ the publisher, not formatted as the publisher did.]
 \appendix
 
 \chapter{Search for Massive Resonances Decaying into Two Photons}
+\input{HighMassDiphoton}
 \chapter{Phenomenology of Anamalous Higgs Production in SuperSymmetric models}
-
+\input{RazorHggPheno/intro}
+\input{RazorHggPheno/models}
+\input{RazorHggPheno/gensim}
+\input{RazorHggPheno/analysis}
+\input{RazorHggPheno/results}
+\input{RazorHggPheno/conclusions}
 \printindex
 
 \theendnotes
