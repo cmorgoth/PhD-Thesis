@@ -227,9 +227,123 @@ of the $i$-th \textit{megajet}.
 \section{Application of the Razor Variables to Search for BSM Physics}\label{razorApp}
 
 The razor variables have been employed in canonical searches for SUSY
-at the LHC~\cite{razor7TeV,razor8TeV,razor13TeV} and have been shown to have good sensitivity in a variety
+at the LHC~\cite{razor2010,Razor8TeV,Razor13TeV} and have been shown to have good sensitivity in a variety
 of final states. In this section a review of the main properties of
 this variables and a summary of the main results of the searches in
-references~\cite{razor7TeV,razor8TeV,razor13TeV} is given. The first
-result using razor variables was carried out by CMS using data
-collected a center-of-mass energy of 7\TeV.
+references~\cite{razor2010,Razor8TeV,Razor13TeV} is given.
+
+Let's first examine if the expected behavior of the razor variables
+for the canonical squark pair production (see
+Figure~\ref{fig:squarkpair}) is indeed
+observed. Figure~\ref{fig:RazorVar} shows the $\mathrm{M_{R}}$ and
+$\mathrm{R^{2}}$ for squark pair production in the left and right
+panel, respectively. The mass of the squark was fixed to 1150\GeV and
+the LSP mass was varied between 50-900\GeV. As expected,
+$\mathrm{M_{R}}$ peaks a characteristic value related to
+$M_{\Delta}$. For example, $M_{\Delta}$ is approxiamtely 930\GeV when the LSP
+mass is 500\GeV -- this can be calculated by just plugging in the appropriate mass values
+into Equation~\ref{eq:Mdelta} -- and for this case $\mathrm{M_{R}}$ peaks at around
+$\sim$1000\GeV. Additionally, $\mathrm{R^{2}}$ exhibits a falling
+distribution that on average are much higher than the expected values
+for the SM processes -- again, specially the daunting QCD dijet
+production. Finally, Figure~\ref{fig:MRvsRsq} shows the 2-dimensional
+$\mathrm{M_{R}}$-$\mathrm{R^{2}}$ distribution for the same model, but
+adding contours of constant SM background. It is observed that the
+signals populates very clear regions on this 2-dimensional plane and
+that the SM background is reduced significantly (around 5 orders of
+magnitude between the first and third contour) when more extreme
+values of the razor variables are required.
+\begin{figure}
+ \centering
+\includegraphics[width=0.49\textwidth]{RazorVariables/MR_Plot.pdf}
+\includegraphics[width=0.49\textwidth]{RazorVariables/R2_Plot.pdf}
+ \caption{Razor variables distributions for squark
+   pair-production. $\mathrm{M_{R}}$ is shown in the left panel and
+   $\mathrm{R^{2}}$ is shown in the right panel. The squark mass is
+   set to 1150\GeV while the LSP mass is varied and shown with
+   different color lines.\label{fig:RazorVar}}
+\end{figure}
+\begin{figure}
+ \centering
+\includegraphics[width=0.7\textwidth]{RazorVariables/MR_vs_Rsq_Plot.pdf}
+\caption{The 2-dimensional $\mathrm{R^{2}}$-$\mathrm{M_{R}}$
+  distribution. The squark mass is
+   set to 1150\GeV while the LSP mass is varied and shown with
+   different color squares. The orange band represents the contour of
+   constant SM background.\label{fig:MRvsRsq}}
+\end{figure} 
+
+
+The first result using razor variables was carried out by CMS using data
+collected a center-of-mass energy of 7\TeV where an inclusive final
+state approach was adopted selecting jets, b-jets, and also leptons in
+the final state. There was no deviation from the SM background
+estimation and 95\% confidence level (CL) limits on the CMSSM model
+were placed. Figure~\ref{fig:Limit7TeV} shows the combine limit.
+CMS released another search for SUSY with razor variables using the full
+dataset ($\sim 20$ fb$^{-1}$) collected at 8\TeV, again, with no observed significant
+deviations from the SM background estimation. It is of note that the
+background estimation, which employs a fit to the sidebands of the
+data using an analytical functional form, was much improved with
+respect to the 7\TeV counterpart. The results were interpreted in the
+context of SUSY simplified models of gluino and top-squark (stop) pair
+production where the branching ratios (BRs) of the particles involved
+were varied in order to produce a more general
+result. Figure~\ref{fig:RazorLimit8TeV} shows the 95\% CL. limits for
+gluino and stop pair-production in the left and right panels,
+respectively. It is observed that the gluino is excluded around
+1200-1400\GeV depending on the exact values of the BRs, and the stop is
+excluded at about 700\GeV regardless of its BRs. Recently, an updated
+search using the first portion of 13\TeV data ($\sim 2.1$ fb$^{-1}$) was realeased following
+greatly the approach taken in the 8\TeV counterpart but adding an
+additional and totally independent background estimation based on scale
+factors derived in data control
+regions. Figure~\ref{fig:RazorLimit13TeV} show the 95\% CL. limits for
+gluino pair-production. It is observed that the gluino is excluded around
+1400-1600\GeV depending on the exact values of the BRs. It is of note
+that with only 10\% of the integrated luminosity the 13\TeV result
+surpasses the corresponding 8\TeV result.
+ 
+\begin{figure}
+ \centering
+\includegraphics[width=0.7\textwidth]{RazorVariables/Limit7TeV.pdf}
+\caption{Razor analysis 95\% CL. limit in the $m_{0}$-$m_{1/2}$
+  plane of the CMSSM model using 7\TeV data. The model parameters have the following values: tan($\beta$) =
+  10, $A_{0}$ = 0, and sgn($\mu$) = +1.\label{fig:Limit7TeV}}
+\end{figure} 
+
+\begin{figure}
+ \centering
+\includegraphics[width=0.49\textwidth]{RazorVariables/T1HybridNew0Lp1Lp2LBARE.pdf}
+\includegraphics[width=0.49\textwidth]{RazorVariables/T2HybridNew0Lp1Lp2LBARE.pdf}
+ \caption{Razor analysis 95\% CL. limits for (left) gluino and (right)
+   stop pair-production using 8\TeV data. The limits are shown for
+   different branching ratios of the particles involved.\label{fig:RazorLimit8TeV}}
+\end{figure}
+
+\begin{figure}
+ \centering
+\includegraphics[width=0.7\textwidth]{RazorVariables/CMS-PAS-SUS-15-004_Figure_010.pdf}
+\caption{Razor analysis 95\% CL. limits for gluino pair-production using 13\TeV data. The limits are shown for
+   different branching ratios of the particles involved.\label{fig:RazorLimit13TeV}}
+\end{figure} 
+
+The razor approach has been taken beyond squark and gluino
+pair-production to probe dark matter direct production and also
+to look for possible anomalous production of Higgs bosons. Seaches for dark matter direct
+production have been a very hot topic at the LHC where the most common
+final state includes a single high-$p_{\mathrm{T}}$  jet. It was
+suggested that the razor variables could have comparable sensitivity
+to dark matter direct production~\cite{Fox:2012ee} using a different kinematic
+phase-space, since they require at least two jets, and therefore
+increase the overall sensitivity to such a signal. Chapter~\ref{DMatLHC}
+presents the CMS search that carries out this idea, confirming the
+good sensitivity to direct dark matter production. Additionally, the razor
+variables have been also used to search for anomalous Higgs production
+by selecting events with jets and a diphoton pair whose invariant mass
+is consistent with the Higgs mass. The first search of this kind was
+carried out using the entire 8\TeV dataset~\cite{SUS-14-017} where an interesting excess
+of events was observed at high values of $\mathrm{M_{R}}$ and the
+results interpreted in the context of electroweak SUSY (see Section~\ref{hgg:8TeVsummary}). Chapter~\ref{HggRazor}
+presents an updated result of this search with an entirely different
+background estimation technique and using 15.3 fb$^{-1}$ of 13\TeV data.
