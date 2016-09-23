@@ -65,10 +65,68 @@ silicon area implemented.
    different subsytems are clearly labeled.\label{fig:trackerlayout}}
 \end{figure}
 
+\subsection{Pixel Tracker}
 The inner pixel detector is composed of three 53-cm-long cylindrical layers at a
-radii of 4.4, 7.3, and 10.2 cm. It is finallized by two disks of pixel
-modules at each side extending from approximately 6 to 15 cm in radius.
+radii of 4.4, 7.3, and 10.2 cm -- which is called BPix. It is finalized by two disks of pixel
+modules at each side extending from approximately 6 to 15 cm in
+radius -- which is called FPix. The barrel is composed of 672 full and 96 half modules, a full (half)
+module is composed of 16 (8) read-out chips equipped with 52$\times$80 pixels
+of size 100$\times$150 $\mu$m. A completed full-module has the
+dimensions of 66 mm$\times$26 mm and is provided with readout and
+power. Figure~\ref{fig:Bpix} shows a completed full- and half- module as
+well as an schematic of the different component integrated in the
+module. The two disks at each side of the pixel barrel (see
+Figure~\ref{fig:trackerlayout}) is composed 24 modules -- with a
+trapezoidal geometry. Each disk is composed of two different
+panel types; the first and closest to the interaction point is formed
+by a 1$\times$2, 2$\times$3, 2$\times$4, and 1$\times$5 plaquettes
+amounting to a total of 21 read-out chips; the second and furthest from
+the interaction point is formed by a 2$\times$3, 2$\times$4, and 2$\times$5 plaquettes
+amounting to a total of 24 read-out chips. A plaquette is the basic
+unit of the FPix and consist of a single pixel sensor bump-bonded to
+the read-out chip and wired-bonded to a very-high-density-interconnect
+(VHDI) that provides data connections, power, and
+control. Figure~\ref{fig:Fpix} show an schematic of these two
+different panels as well as a photograph of a finalized
+panel. Finally, a layout of the pixel traker system is given in
+Figure~\ref{fig:PixelLayout} as well as the a detection efficiency as
+a function of the pseudorapidity. The total number of pixels in the
+pixel tracker is about 66 millions and they are equivalent to an area
+of about 1 m$^2$.
+\begin{figure}
+ \centering
+\includegraphics[width=0.99\textwidth]{CMS_DetectorFigures/BPixModule.pdf}
+ \caption{BPix completed modules; (left) half-module, (center) an
+   schematic of the different component forming the a full-module,(right) full-module.\label{fig:Bpix}}
+\end{figure}
+\begin{figure}
+ \centering
+\includegraphics[width=0.99\textwidth]{CMS_DetectorFigures/FPixModule.pdf}
+ \caption{FPix module; (left) an schematic of the two types of module,
+   (right) a photograph of one of the completed FPix modules.\label{fig:Fpix}}
+\end{figure}
 
+\begin{figure}
+ \centering
+\includegraphics[width=0.49\textwidth]{CMS_DetectorFigures/PixelLayout.pdf}
+\includegraphics[width=0.49\textwidth]{CMS_DetectorFigures/PixelEfficiency.pdf}
+ \caption{(Left) the layput of the silicon pixel tracker, (right) the
+   pixel tracker detection efficiency as a function of the pseudorapidity.\label{fig:PixelLayout}}
+\end{figure}
+\subsection{Strip Tracker}
+The silicon tracker is located outside the inner pixel tracker and is
+composed of three subsystems that extend from 20 cm to 116 cm in the
+radial direction. The Tracker Inner Barrel and Disks (TIB/TID) are
+the innermost subsystem extending up to a radius of 55 cm, it includes
+4 barrel layers and 3 disks at each side. The TIB/TID with their 320
+$\mu$m thick silicon micro-strip sensor oriented along the $z$-axis records up to 4 $r$-$\phi$
+measurements on a particle's trajectory. The strips pitch  in the TIB -- the
+distance between each strip -- varies between 80 $\mu$m and 120 $\mu$m
+in layers 1-2 and 3-4, respectively. The resulting single point
+resolution is therefore 23 $\mu$m and 35 $\mu$m for the 1-2 and 3-4
+layers, respectively. The TID has strip pitches between 100 -140$\mu$m
+-- resulting in single point resolution between 29-41 $\mu$m. The
+TIB/TID is completely sorrounded by the 
 \section{The Electromagnetic Calorimeter}
 \section{The Hadronic Calorimeter}
 \section{The Superconducting Solenoid}
