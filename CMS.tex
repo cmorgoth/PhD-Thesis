@@ -57,14 +57,22 @@ regions starting a radious of 55 cm. More details about the tracker
 layout will be given below and are summarized in
 Figure~\ref{fig:trackerlayout}. The tracker covers up to
 pseudorapidities of $|eta| < 2.5$ with a about 200 m$^2$ of active
-silicon area implemented. 
+silicon area implemented. The material budget of the CMS tracker is
+shown in Figure~\ref{fig:materialBudget}. As it can be seen the most
+heavily implemented pseudorapidity is found to be at $|\eta|\approx$ 1.4.
 \begin{figure}
  \centering
 \includegraphics[width=0.99\textwidth]{CMS_DetectorFigures/TrackerLayout.png}
  \caption{A cross-sectional view of the silicon tracker layout. The
    different subsytems are clearly labeled.\label{fig:trackerlayout}}
 \end{figure}
-
+\begin{figure}
+ \centering
+\includegraphics[width=0.99\textwidth]{CMS_DetectorFigures/TrackerMaterialBudget.pdf}
+ \caption{Material budget of the CMS tracker in units of radiation
+   length as a function of pseudorapidity $\eta$ for the (left)
+   different subdetectors and (right) functional contributions.\label{fig:materialBudget}}
+\end{figure}
 \subsection{Pixel Tracker}
 The inner pixel detector is composed of three 53-cm-long cylindrical layers at a
 radii of 4.4, 7.3, and 10.2 cm -- which is called BPix. It is finalized by two disks of pixel
@@ -126,7 +134,31 @@ in layers 1-2 and 3-4, respectively. The resulting single point
 resolution is therefore 23 $\mu$m and 35 $\mu$m for the 1-2 and 3-4
 layers, respectively. The TID has strip pitches between 100 -140$\mu$m
 -- resulting in single point resolution between 29-41 $\mu$m. The
-TIB/TID is completely sorrounded by the 
+TIB/TID is completely sorrounded by the Tracker Outer Barrel (TOB)
+which with its 6 barrel layer extends up to a radious of 116 cm. The
+layers are composed of 500 $\mu$m thick micro-strips sensor with
+pitches of 183 $\mu$m and 122 $\mu$m for the firts 4  and last 2
+layer, respectively -- recording up to 6 $r$-$\phi$
+measurements on a particle's trajectory with single point resolutions of 53 $\mu$m
+and $\mu$m, respectively. The TIB/TID and the TOB cover the region
+with $|z|< 113$ cm, beyond this point (see
+Figure~\ref{fig:trackerlayout}) the Tracker EndCaps (TEC$^{\pm}$) --
+where the sign, obiously, represents the position on the $z$-axis --
+extend from 124 cm $|z|< 282$ cm and 22.5 cm $|r|< 113.5$ cm. The TEC
+consists of 9 disks which contains up to 7 rings of silicon
+micro-strips, the later are 320 $\mu$m and 500 $\mu$m thick in the
+inner 4 and outer 3 rings, respectively.
+Additionally, modules in the two innermost layers in the TIB and TOB,
+the two inner most rings of the TID, as well as rings 1,2 and 5 of the TECs are
+equipped with a second micro-strip detector module that is mounted
+back-to-back allowing measurements on the perpedicular coordinate --
+i.e. $z$ and r in the barrel and the disks, respectively. In this
+fashion at least $\approx$ 9 hits in the silicon strip tracker in the
+$|\eta|<2.4$ range are ensure, with at least $\approx$ 4
+two-dimensional measurements. The full strip tracker amounts to a
+total of 9.3 million strips and covers an active are of silicon equal
+to 198 m$^2$.
+
 \section{The Electromagnetic Calorimeter}
 \section{The Hadronic Calorimeter}
 \section{The Superconducting Solenoid}
