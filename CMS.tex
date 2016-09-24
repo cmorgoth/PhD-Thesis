@@ -159,7 +159,196 @@ two-dimensional measurements. The full strip tracker amounts to a
 total of 9.3 million strips and covers an active are of silicon equal
 to 198 m$^2$.
 
+\subsection{Performance of the CMS Tracker}
+
+The tracker efficiency for single muons is measured in 7\TeV data as a
+function of the muon pseudorapidity $\eta$ and the number of
+reconstructed vertices using the tag-and-probe technique on muons
+decaying from Z bosons. The results are shown in
+Figure~\ref{fig:MuonEfficiency}, where the muon efficiency is above
+99\% within the tracker acceptance and up to 20 reconstructed
+vertices. The muon transverse momentum and transverse impact
+paramenter resolution as a function of  $\eta$ are estimated from the
+CMS full simulation, the results are shown in left and right panel of
+Figure~\ref{fig:MuonResolution}, respectively. The muon transverse
+momentum resolution is about 1-3\% for $|\eta|<1.5$ for muons of
+different energies. The transverse impact parameter is estimated to be
+between $\sim$10-20 $\mu$m for a 100\GeV muon while the for 1\GeV muons the
+resolution is between $\sim$ 80-250 $\mu$m.
+
+\begin{figure}
+ \centering
+\includegraphics[width=0.99\textwidth]{CMS_DetectorFigures/TrackerMuonEff.pdf}
+\caption{Tracking efficiency for muons from Z decays using the tag-and
+ -probe technique. The left panel and right panel show the efficiency
+ as function of the muon $\eta$ and the number of reconstructed
+ vertices, respectively. The black dots represent the measurement in
+ 7\TeV data and the solid color represents the CMS simulation.\label{fig:MuonEfficiency}}
+\end{figure}
+
+\begin{figure}
+ \centering
+\includegraphics[width=0.49\textwidth]{CMS_DetectorFigures/TrackerPtResolution.pdf}
+\includegraphics[width=0.49\textwidth]{CMS_DetectorFigures/TrackerImpactParameterResolution.pdf}
+ \caption{Resolution as a function of the pseudorapidity $\eta$ for
+   muons of $p_{\mathrm{T}} = $ 1, 10, and 100\GeV. The left panel
+   shows the trasverse momentum resolution and the right panel the
+   transverse impact parameter resolution. Both quantities are
+   estimated from Simulation.\label{fig:MuonResolution}}
+\end{figure}
+
+
+
 \section{The Electromagnetic Calorimeter}
+The CMS electromagnectic calorimeter (ECAL) is a granular and homogeneous
+calorimeted built out of 61,200 lead tungstate (PbWO$_{4}$) crystals
+in the barrel and closed by 7,324 PbWO$_{4}$ crystals in each of the
+two endcaps. Additionally, a preshower detector is place in front of
+the endcaps -- i.e. closer to the interaction point. The scintillating
+light is collected by silicon avalanche photodiodes (APDs) in the ECAL barrel
+(EB) and by vacuum phototriodes (VPTs) in the ECAL endcaps
+(EE). Figure~\ref{fig:ECALgeometry} shows a projectional schematic
+layout as well as a geometric view of a quarter of the CMS ECAL. The
+ECAL excellent performance is one of the keystones of the physics
+results of the CMS experiment, perhaps, best exemplyfied by the Higgs
+boson search and characterization in the H$\rightarrow\gamma\gamma$
+and H$\rightarrow$ZZ$^{*}$ decay channels~\cite{CMSHgg, CMSHzz}.
+
+\begin{figure}
+ \centering
+\includegraphics[width=0.99\textwidth]{CMS_DetectorFigures/ECAL_Geometry.pdf}
+\caption{The layout of the CMS electromagnetic calorimenter. The left
+  panel shows a projectional schematic
+layout including all the major parts while the left panel shows a
+geometric view of a quarter of the ECAL.\label{fig:ECALgeometry}}
+\end{figure}
+
+The PbWO$_{4}$ crystals with a density of 8.28 g/cm$^{3}$ provided a
+good candidate because of its small radiation length ($X_{0} = 0.89$
+cm), small moli\`ere radious (2.19 cm), and fast response. PbWO$_{4}$
+crystals have a relatively low light yield of about 10
+photo-electrons/MeV and therefore they required to be read out by
+sensors with internal amplification inside the 3.8 T magnetic
+field. The crystals in the EB are 23 cm long and have a
+cross-sectional area of 2.2$\times$2.2 cm$^{2}$ (equivalent to
+0.0174$\times$0.0174 in $\eta$, $\phi$), they are located at radious
+of 1.29 m and arranged
+in a quasi-projective geometry with 170 crystals -- 85 at each side --  covering up to a pseudorapidity range
+$|\eta| < 1.48$. With 360 crytals in the $\phi$  direction the EB is
+fully hermetic. The EE crystals are located at $z = \pm$ 315.4 cm, they
+have a cross-sectional are of 2.86$\times$2.86 cm$^{2}$  and
+3.0$\times$3.0 cm$^{2}$ at the front an rear faces, respectively, and
+a length of 22 cm. They crystals are grouped in mechanical structure
+of 5$\times$5 crystals and arranged in the traditional $x$-$y$
+directions. Each endcap is divided into halves or \textit{Dees},
+holding 3,662 crystals. The EE extends the ECAL coverage up to the
+range $1.479 < |\eta| < 3.0$. The left and right panels of
+Figure~\ref{fig:ECALcrystals} show the EB crystal instrumented with an
+APD ant the EE crystal instrumented with a VPT, respectively.  Real
+photographs of an EB module equipped with crystal is presented in
+Figure~\ref{fig:ECALEB_module} while an EE Dee fully instrumented with crystals is shown
+in Figure~\ref{fig:ECALEE_module}.
+\begin{figure}
+ \centering
+\includegraphics[width=0.99\textwidth]{CMS_DetectorFigures/EcalCrytals.pdf}
+\caption{The  PbWO$_{4}$ crystal of the CMS ECAL, (left) a EB crystal
+  instrumented with an APD and (right) a EE crystal instrumented with a VPT.\label{fig:ECALcrystals}}
+\end{figure}
+\begin{figure}
+ \centering
+\includegraphics[width=0.99\textwidth]{CMS_DetectorFigures/ECALEB_Module.pdf}
+\caption{A photograph of a EB module instrumented with crystals.\label{fig:ECALEB_module}}
+\end{figure}
+\begin{figure}
+ \centering
+\includegraphics[width=0.99\textwidth]{CMS_DetectorFigures/ECALEE_Module.pdf}
+\caption{A photograph of a EE Dee instrumented with crystals.\label{fig:ECALEE_module}}
+\end{figure}
+\subsection{ECAL Perfomance}
+
+The EB has been extensively tested using electron beams, in this test
+beam setup -- with no magnetic field or material in front -- the
+energy resolution has been measured to be:
+\begin{equation}\label{eq:ecalRes}
+\frac{\sigma_{E}}{E} = \frac{2.8\%}{\sqrt{E(\GeV)}} \oplus
+\frac{12\%}{E(\GeV)} \oplus 0.3\%,
+\end{equation}
+
+where E is the electron beam energy in units of \GeV. The terms in the
+right-hand side of the Eq.~\ref{eq:ecalRes} are the so called
+stochastic, noise, and constant terms. The first is due to the
+fluctuations related to the development of the electromagnetic shower
+inside the calorimenter crystals, the second is dues to electronic
+noise of the readout chain, and the last is related to the
+instrumental effect such as non-linear response, radiation damage,
+shower leakage among others.
+
+The test beam ideal conditions clearly differ from those at the CMS
+experiment and therefore in situ measurements of the performance of
+the ECAL have been performed durin the data-taking period at 7 and
+8\TeV. One key measurement is the trigger efficiency for
+electron/photon (e/$\gamma$) candidates, the Level-1 trigger was
+operated with a threshold of $E_{T}$ = 20\GeV (provided by 5$\times$5
+crystals) in 2012 and found to be above 99\% efficienct for $E_{T}$ >
+40\GeV, thus enabling a fully efficienct H$\rightarrow\gamma\gamma$
+search.
+
+The e/$\gamma$ energy measurement depends upon the correct
+reconstruction of electromagnetic showers in the ECAL. Some e/$\gamma$
+candidates interact -- by bremsstrahlung or photon conversion -- with
+the silicon tracker  prior reaching the ECAL or their trajectories are
+modified due to the 3.8 T magnetic field causing the showers to spread
+on the azhimutal direction and thus their energy is shared by multiple
+crystals. In order to account for these effect and ensure a more
+accurate e/$\gamma$ reconstruction a dynamic clustering algorithim is
+used to merge clusters of energy deposited that belong to the same
+electromagnetic shower into the so-called \textit{superclusters}
+(SCs). Once the SC is formed, the e/$\gamma$ candidate energy
+($E_{e/\gamma}$) is reconstructed using the following expression:
+
+\begin{equation}
+\label{eq:ecalE}
+E_{e/\gamma} = F_{e/\gamma}\cdot \big(G\cdot\sum S_{i}(t)C_{i}A_{i} + E_{\mathrm{ES}}\big)
+\end{equation}
+ 
+where $F_{e/\gamma}$ is a correction accounting for the imperfect
+clustering, material, and geometric efffect; $G$ is the ADC-to-\GeV
+conversion; $S_{i}(t)$ is the time-dependent correction to account for
+the response variations of the $i$-th crystal; $C_{i}$ is the
+inter-calibration coefficient of the $i$-th crystal; $A_{i}$ is the
+amplitude of the $i$-th crystal in ADC counts; finally,
+$E_{\mathrm{ES}}$ is the pre-shower energy -- only relevant for
+e/$\gamma$s in the EE. Figure~\ref{fig:ECAL_clusterE} shows the effect
+of the clustering process and the application of the $F_{e/\gamma}$
+correction by comparing the invariant mass of $e^{+}e^{-}$ pairs
+coming from a Z boson with respect to the usage of the simple fixed
+5$\times$5 cluster energy.
+
+\begin{figure}
+ \centering
+\includegraphics[width=0.99\textwidth]{CMS_DetectorFigures/ECAL_Zee_Uncorr.pdf}
+\caption{The reconstructed Z invariant mass from $e^{+}e^{-}$
+  decays. The left and right panels show the reconstructed invariant mass for
+  the EB and EE, repectively, with different algorithms to reconstructed electron energies.\label{fig:ECAL_clusterE}}
+\end{figure}
+
+\begin{figure}
+ \centering
+\includegraphics[width=0.38\textwidth]{CMS_DetectorFigures/ECAL_RelativeResponse1.pdf}
+\includegraphics[width=0.49\textwidth]{CMS_DetectorFigures/ECAL_RelativeResponse2.pdf}
+\caption{The reconstructed Z invariant mass from $e^{+}e^{-}$
+  decays. The left and right panels show the reconstructed invariant mass for
+  the EB and EE, repectively, with different algorithms to reconstructed electron energies.\label{fig:ECAL_response}}
+\end{figure}
+
+\begin{figure}
+ \centering
+\includegraphics[width=0.38\textwidth]{CMS_DetectorFigures/ECAL_HiggsMassRes.pdf}
+\includegraphics[width=0.49\textwidth]{CMS_DetectorFigures/ECAL_EnergyResolution_Eta.pdf}
+\caption{The reconstructed Z invariant mass from $e^{+}e^{-}$
+  decays. The left and right panels show the reconstructed invariant mass for
+  the EB and EE, repectively, with different algorithms to reconstructed electron energies.\label{fig:ECAL_response}}
+\end{figure}
 \section{The Hadronic Calorimeter}
 \section{The Superconducting Solenoid}
 \section{The Muon Chambers}
