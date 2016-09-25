@@ -326,16 +326,77 @@ coming from a Z boson with respect to the usage of the simple fixed
 
 \begin{figure}
  \centering
-\includegraphics[width=0.99\textwidth]{CMS_DetectorFigures/ECAL_Zee_Uncorr.pdf}
+\includegraphics[width=0.49\textwidth]{CMS_DetectorFigures/E_corr-EB.png}
+\includegraphics[width=0.49\textwidth]{CMS_DetectorFigures/E_corr-EE.png}
 \caption{The reconstructed Z invariant mass from $e^{+}e^{-}$
   decays. The left and right panels show the reconstructed invariant mass for
   the EB and EE, repectively, with different algorithms to reconstructed electron energies.\label{fig:ECAL_clusterE}}
 \end{figure}
 
+The inter-calibration coefficient is responsible for correcting the
+channel-to-channel variation in response. The main sources for such
+variations are the crystal light yield variations ( up to $\sim$ 15\%)
+and the spread on the gain of the photodetectors ( up to $\sim$
+25\%). An inter-calibration is carrried out in situ by methods that
+explote the time- and $\phi$-invariance of the energy flow in the
+crystals at a given $\eta$ in minimum-bias events, as well as the
+$\pi^{0}/eta$ mass constraint to the photons pair from its decay, and
+the momentum constraint of isolated electrons from W and Z boson
+decays. The precision of these methods as a function of $\eta$ is
+shown in Figure~\ref{fig:ECAL_ICPrecision}. The invariant mass of
+diphotons consistent with a $\pi^{0}$ and $\eta$ used in the
+inter-calibration is shown in the left and right panels of
+Figure~\ref{fig:ECAL_pizero}, respectively.
+
 \begin{figure}
  \centering
-\includegraphics[width=0.38\textwidth]{CMS_DetectorFigures/ECAL_RelativeResponse1.pdf}
-\includegraphics[width=0.49\textwidth]{CMS_DetectorFigures/ECAL_RelativeResponse2.pdf}
+\includegraphics[width=0.49\textwidth]{CMS_DetectorFigures/2012EBprecWithCombV3.png}
+\includegraphics[width=0.49\textwidth]{CMS_DetectorFigures/2012EEprecWithCombV3.png}
+\caption{The reconstructed Z invariant mass from $e^{+}e^{-}$
+  decays. The left and right panels show the reconstructed invariant mass for
+  the EB and EE, repectively, with different algorithms to reconstructed electron energies.\label{fig:ECAL_ICPrecision}}
+\end{figure}
+
+\begin{figure}
+ \centering
+\includegraphics[width=0.49\textwidth]{CMS_DetectorFigures/EB_2012_pi0.png}
+\includegraphics[width=0.49\textwidth]{CMS_DetectorFigures/EB_2012_eta0.png}
+\caption{The reconstructed Z invariant mass from $e^{+}e^{-}$
+  decays. The left and right panels show the reconstructed invariant mass for
+  the EB and EE, repectively, with different algorithms to reconstructed electron energies.\label{fig:ECAL_pizero}}
+\end{figure}
+Another important ingredient to the precise measurement of the
+electromagnetic shower energy is the time dependent corrections, at
+CMS the ECAL crystals undergo changes in transparency due to the
+radiation received while collisions occur, while  during downtime the
+transparency is recovered. In order to correct for the transparency
+changes a laser monitoring system is installed and run every $\sim$40
+minutes. Laser light ($\lambda = 440$ nm) close to the emission peak of PbWO$_{4}$
+is impinge into all the crystals, thus, tracking their response
+variations. The variations on transparency as a function of time for
+different $\eta$ ranges is shown in
+the left panel of Figure~\ref{fig:ECAL_Transparency1}, where it is observed that the
+transparency variations are more severe at large pseudorapidities. The
+validity of the laser monitoring (LM) correction is checked using
+electrons from W decays. The stability of the LM correction is
+estimated by the rms of the $E/p$ ratio in these events and found to
+be about 0.1\% and 0.3\% for the EB and EE, respectively. The right
+panel of Figure~\ref{fig:ECAL_Transparency1} shown the LM correction
+effect on electron from W events in the EE. The effect of the
+inter-calibration and LM corrections is shown Figure~\ref{fig:ECAL_E_IC_LM}, where
+the invariant mass of $e^{+}e^{-}$ pairs from Z decays is
+reconstructed with and without such corrections being applied.
+\begin{figure}
+ \centering
+\includegraphics[width=0.99\textwidth]{CMS_DetectorFigures/histories_2011-2012.png}
+\caption{The reconstructed Z invariant mass from $e^{+}e^{-}$
+  decays. The left and right panels show the reconstructed invariant mass for
+  the EB and EE, repectively, with different algorithms to reconstructed electron energies.\label{fig:ECAL_Transparency1}}
+\end{figure}
+
+\begin{figure}
+ \centering
+\includegraphics[width=0.99\textwidth]{CMS_DetectorFigures/approval_EB_Winter2013.png}
 \caption{The reconstructed Z invariant mass from $e^{+}e^{-}$
   decays. The left and right panels show the reconstructed invariant mass for
   the EB and EE, repectively, with different algorithms to reconstructed electron energies.\label{fig:ECAL_response}}
@@ -343,12 +404,139 @@ coming from a Z boson with respect to the usage of the simple fixed
 
 \begin{figure}
  \centering
-\includegraphics[width=0.38\textwidth]{CMS_DetectorFigures/ECAL_HiggsMassRes.pdf}
-\includegraphics[width=0.49\textwidth]{CMS_DetectorFigures/ECAL_EnergyResolution_Eta.pdf}
+\includegraphics[width=0.49\textwidth]{CMS_DetectorFigures/noIC_noLaser-regrCorr_ele-EB.png}
+\includegraphics[width=0.49\textwidth]{CMS_DetectorFigures/propaganda_noIC_noLaser-regrCorr_ele-EE.png}
 \caption{The reconstructed Z invariant mass from $e^{+}e^{-}$
   decays. The left and right panels show the reconstructed invariant mass for
-  the EB and EE, repectively, with different algorithms to reconstructed electron energies.\label{fig:ECAL_response}}
+  the EB and EE, repectively, with and without the IC and the LM corrections.\label{fig:ECAL_E_IC_LM}}
+\end{figure}
+ Finally, the overall energy resolution of the CMS ECAL has been measured
+ and compared to simulation, this is shown in the right panel of
+ Figure~\ref{fig:ECAL_Higgs}. The energy resolution is found to be
+ between 1-2\% for $|\eta|<1$ and between 3-5\% in the EE, it is also
+ observed that the simulation and measurement do not agree and that an
+ extra constant term as a function of $\eta$ should be added to the
+ simulation. The performance of the ECAL can also be observed in the
+ width of the invariant mass of the Higgs boson, this is shown in the
+ left panel of Figure~\ref{fig:ECAL_Higgs}, where a $\sigma_{eff}$ =
+ 1.36\GeV is observed.
+\begin{figure}
+ \centering
+\includegraphics[width=0.38\textwidth]{CMS_DetectorFigures/ECAL_HiggsMassRes.pdf}
+\includegraphics[width=0.49\textwidth]{CMS_DetectorFigures/EcalScaleEta_Incl.png}
+\caption{The reconstructed Z invariant mass from $e^{+}e^{-}$
+  decays. The left and right panels show the reconstructed invariant mass for
+  the EB and EE, repectively, with different algorithms to reconstructed electron energies.\label{fig:ECAL_Higgs}}
 \end{figure}
 \section{The Hadronic Calorimeter}
+The CMS Hadron Calorimeter (HCAL) is sorrounds the silicon tracker and
+the electromagnetic calorimeter. It is composed of four different
+subsytems: the barrel (HB), endcaps (HEs), the outer (HO), and the
+forward (HF) calorimeters. The HB and HE are located inside the
+cryostat of the superconducting solenoid and both are sampling
+calorimeters with brass as the absorber and plastic scintillator as
+the active meadium. The HO is plastic scintillator calorimeter located outside the superconducting
+solenoid cryostat and is designed to catch the energy leakeage from
+the HB. The HF is a quartz fiber and steel calorimeter located at $z
+=\pm$ 11.15 m, thus, extending the pseudorapidity coverage up to
+$|\eta| = 5$. The layout of the HCAL is presented in
+Figure~\ref{fig:HCAL_Layout}.
+
+\begin{figure}
+ \centering
+\includegraphics[width=0.99\textwidth]{CMS_DetectorFigures/HCAL_Layout.pdf}
+\caption{The CMS HCAL layout.\label{fig:HCAL_Layout}}
+\end{figure}
+
+The hadronic energy resolution for the barrel HCAL and ECAL
+combination was measured in beam test using pions and protons and
+found to be:
+
+\begin{equation}
+\label{eq:hcal_res}
+\frac{\sigma_{E}}{E} = \frac{0.847\pm0.016\GeV^{\frac{1}{2}}}{\sqrt{E
+    (\GeV)}} \oplus 0.074\pm 0.008.
+\end{equation}
+The energy resolution in the endcaps is similar to that of the barrel.
+
+The following passages are aimed to give a more detailed description
+of the four HCAL subsystems.
+
+\subsection{The Barrel Hadronic Calorimeter}
+The HB is a sampling calorimeter made of brass absorber and plastic
+scintillator as the active medium. The whole EB is build out of two
+identical cylindrical structures, each of which is composed of 18
+brass wedges. The pseudorapidity coverage of the HB reaches
+approximately $|\eta| = 1.4$ while the $\phi$ covarage is
+360$^{\circ}$. The segmentation of the HB is provided by the plastic
+scintillator tiles inserted in the layers of the brass wedges, the later
+are segmented into four $\phi$ sector, while there are 16 scintillator
+tiles along the $\eta$ direction, thus providing the HB with an
+equivalent segmentation of 0.087$\times$0.087 in $\eta$, $\phi$. Each
+wedge calorimeter is composed of 16 layers of absorber and 17 layers of
+plastic scintillator, the intermediate layer are made of brass
+absorber and 3 mm plastic scintillator while the first and last layers
+are made of stainless steel  and thicker 9 mm plastic scintillator
+tiles. The very first layer is scintillator in order to detect showers
+developed in the electromagnetic calorimeter
+material. Figure~\ref{fig:HCALwedge} shows an schematic of a HB
+wedge. The 16 scintillator tiles of each layer are laid in a tray in
+order to facilitate their insertion and removal. Each tile's
+scintillating light is collected by a green double-cladded
+wavelength-shinting (WLS) fibers from Kuraray (Y-11) placed in groove
+in the scintillator. Upon exiting the scintillating tile, each WLS is
+splice into a clear fiber which subsequently ends in an optical
+connector at the back of the tray. At this point, optical cables
+take the light from the clear fiber into a 19 pixel hybrid photodiode
+(HPD), which is designed to work inside the 3.8 T magnetic field. The
+total interaction lengths ($\lambda_{I}$) of the HB varies with
+pseudoparidity, there are 5.8 $\lambda_{I}$ at $\eta = 0$, increasing
+up to 10.6 $\lambda_{I}$ at $|\eta| = 1.3$.
+The finalized HB is shown in Figure~\ref{fig:hcal}.
+\begin{figure}
+ \centering
+\includegraphics[width=0.99\textwidth]{CMS_DetectorFigures/HCAL_Wedge.pdf}
+\caption{An schematic drawn of one of the wedges of the CMS HB.\label{fig:HCALwedge}}
+\end{figure}
+\begin{figure}
+ \centering
+\includegraphics[width=0.99\textwidth]{CMS_DetectorFigures/hcal-HB.jpg}
+\caption{A photograph of the finalized CMS HB.\label{fig:hcal}}
+\end{figure}
+\subsection{The Endcap Hadronic Calorimeter}
+The HE is a brass/platic-scintillator sampling calorimeter that extend
+the pseudorapidity coverage from $1.3 < |\eta| < 3$. It is composed of
+79-mm-thick brass plates with 9 mm gaps to accomodate the
+scintillator. The total material, including the crystals in the EE, is
+about 10 $\lambda_{I}$. There are 18 layers -- along the $z$-direction
+-- of plastic scintillators, the first layer, right after the EE, is
+9-mm-thick, while the rest are 3-mm-thick. The scintillators are
+segmented in the radial direction and their light is collected by
+embedded WLS fiber. The scintillator tiles and the WLS are laid in
+trays with a trapezoidal geometry. Figure~\ref{fig:HEtiles} shows an
+schematic of the trays. The WLS are spliced to clear fibers which are
+susequently terminated in an optical connector. Optical cables
+transport the light from the optical connector the HPDs, which, as
+mentioned earlier, could operate in the presense of a magnetic
+field. This design results in a granularity of 0.087$\times$0.087
+($\eta\times\phi$) for $|\eta| < 1.6$ and 0.17$\times$0.17 for $|\eta|
+> 1.6$. Figure~\ref{fig:HE} shows one partially finalized HE, where
+only some of the scintillator trays have been inserted.
+
+\begin{figure}
+ \centering
+\includegraphics[width=0.99\textwidth]{CMS_DetectorFigures/hca_tile.pdf}
+\caption{An schematic of the HE geometry in the $\phi$ direction is
+  presented in the left panel. The configuration of two adjacent
+  scintillator trays is presented in the right panel.\label{fig:HEtiles}}
+\end{figure}
+\begin{figure}
+ \centering
+\includegraphics[width=0.99\textwidth]{CMS_DetectorFigures/hcal_HE.pdf}
+\caption{A photograph of the one partially finalized CMS HE.\label{fig:HE}}
+\end{figure}
+
+\subsection{The Outer Hadronic Calorimeter}
+\subsection{The Forward Hadronic Calorimeter}
 \section{The Superconducting Solenoid}
 \section{The Muon Chambers}
