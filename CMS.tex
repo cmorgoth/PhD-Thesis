@@ -31,6 +31,35 @@ different particle detections.
 This chapter presents an introduction to the CMS detector systems and
 reconstruction algorithms. It is by no means a complete picture of the
 CMS detector and its mostly based on Ref.~\cite{Chatrchyan:2008zzk}.
+
+\section{The Superconducting Solenoid}
+The superconducting solenoid magnet is at the heart of the CMS
+detector and the rest of the detector systems are build around it. The
+superconducting magnet is 6 m in diameter and 12.5 m in length. It is
+comprised of 4 layer of winding made from reinforced NbTi
+conductors. Creating a cold mass of about 220 tons. The magntitude of
+the magnetic field is 3.8 T -- produced by a  current of 19.1 kA
+running through the conductors -- along the $z-$direction in the
+barrel sector. The magnetic flux is return by means of a 10,000 tons
+iron-yoke wich is designed in modular fashion: there are 5 wheels in
+the barrel, each divided in 12 sectors in the transverse plane, and 2
+endcaps, each composed of three disks along the
+$z$-axis. Figure~\ref{fig:BField} shows a map of the magnetic field produced
+by the CMS superconducting solenoid magnet. A view of the iron-yokes
+in the early stages of assembly is presented in Figure~\ref{fig:yoke}
+\begin{figure}
+ \centering
+\includegraphics[width=0.9\textwidth]{CMS_DetectorFigures/CMS_B_Field.pdf}
+\caption{Map of the magnetic field in the $y-z$ plane of the CMS detector.\label{fig:BField}}
+\end{figure}
+\begin{figure}
+ \centering
+\includegraphics[width=0.9\textwidth]{CMS_DetectorFigures/Yoke.pdf}
+\caption{A photograph of the iron-yoke in the early stages of
+  assembly. The centermost wheel in the barrel support the
+  superconducting coil. One of the endcaps yoke can be seen at the
+  back.\label{fig:yoke}}
+\end{figure}
 \section{The Tracker System}
 The tracker is the innermost system of the CMS detector.
 It was designed to measure efficiently and precisely the trajectories
@@ -605,5 +634,167 @@ of the HF steel wedges equipped with quartz fibers.
 \caption{A photograph of the HF steel wedges equipped with quartz fibers.\label{fig:HF_photo}}
 \end{figure}
 
-\section{The Superconducting Solenoid}
 \section{The Muon Chambers}
+The CMS muon system is designed to trigger, identify, and measure the
+momenta of muons over a large kinematic range. Good muon momentum
+resolution is provided by the high granularity of the muon system and
+the relatively high magnetic field provided by the superconducing
+solenoid and it's iron flux-return yoke. The muon system design
+requirements are the following:
+\begin{itemize}
+\item Trigger on single- and multi-muon event with thresholds from a
+  few to 100\GeV
+\item Muon momentum (muon system only) resolution of 8-15\% at 10\GeV,
+  and 20-40\% at 1\TeV
+\item Muon momentum (muon \& tracker system) resolution of 1-1.5\% at
+  10\GeV, and 6-17\% at 1\TeV
+\item Charge missassignment < 0.1\% at muon p$_{T}$ of 100\GeV
+\end{itemize}
+
+The muon system detector is based in gas ionization chambers. In order
+to achieve the physics requirement and comply with the geometry
+constraints, three different technologies are used: drift tubes
+(DT) chambers, chathode strip chambers (CSCs), and resistive plate chambers
+(RPCs). There are 250 DT chambers, 540 CSCs, and 610 RPCs; each
+chamber operates independently and is assembled into the muon detector
+system. In order to match the cylindrical geometry of the CMS
+detector, a barrel region -- covering up to $|\eta| = 1.2$ -- and 2
+endcaps regions  -- covering the $ 0.9 < |\eta| = 2.4$ region --  are used. The barrel
+is equipped with DT chambers, the endcaps consists of CSCs, while the
+RPCs are used in both the barrel and endcap regions. The muon stations
+are collections of chambers around fixed $r$ and $z$ in the barrel and
+endcap regions, repectively. There are 4 stations in the barrel and
+endcaps, they are labeled MB1-MB4 and ME1-ME4, respectively. The
+barrel is divided into 5 ``wheels'' along the $z$-direction, wheel-0
+(W0) is centered at $z=0$, W+1 and W+2 are located in the positive
+$z$-region, while W-1 and W-2 are located in the negative
+$z$-region. The endcaps are divided in the $r$-direction forming rings
+of CSCs and RPCs. Thus, the former are labeled ME1/n-ME4/n, where n is
+an index that increments radially
+outwards. Figure~\ref{fig:MuonSystemLayout} show a layout of the
+muon system with its different detectors as well as the other systems
+od the CMS detector. 
+\begin{figure}
+ \centering
+\includegraphics[width=0.75\textwidth]{CMS_DetectorFigures/MuonSystemLayout.pdf}
+\caption{A layout of the CMS muon system. Different subdetectors are
+  labeled with different colors.\label{fig:MuonSystemLayout}}
+\end{figure}
+
+\subsection{The Drift Tube Chambers}
+The DTs are are composed of standard rectangular cells filled with a gas mixture of
+85\% Ar and 15\% CO$_{2}$, the later are called drift cells. Each cell
+has a transverse size of 42$\times$13 mm$^{2}$, they are equipped with
+a gold-plated stainless-steel anode wire of 50 $\mu$m diameter at the
+center, and four electrodes -- including two cathode strips -- at each
+side of the cell to shape the electric field. The anode wire operates
+at +3,600\unit{V} while the top/bottom electrodes and the electrodes
+on the side are operated at +1,800\unit{V} and -1,800\unit{V},
+respetively. The gas mixture in the drift cell provide a drift
+velocity of 55$\mu$m/s and good quenching properties. The maximum
+drift time was measured to be around 400 ns. Drift cells are grouped
+in 4 parallel and staggered layers -- each layer at different $r$ --
+to form a superlayer (SL). All DTs chambers -- except those in MB4 -- are formed by 2 SLs
+with wires along the $z$-direction, thus measuring $r-\phi$
+coordinates, and one SL with wires running perpedicular to the
+$z$-axis at fixed distance from the beam pipe, and therefore measuring
+$r-z$ coordinates. The MB4 chambers have only an $r-\phi$
+SL. The left and right panels of Figure~\ref{fig:DTandSL} show schematics of a barrel chamber and
+a DT, respectively . The
+chambers are 2.5 m long in the $z$-direction, and their transverse
+size varies with the station, raging from 1.9 for MB1 and 4.1 for
+MB4. Figure~\ref{fig:MB} shows a photograph of a barrel wheel during
+construction.
+\begin{figure}
+ \centering
+\includegraphics[width=0.9\textwidth]{CMS_DetectorFigures/DriftTube.pdf}
+\caption{(Left) an schematic of a barrel chamber with DT and SL
+  clearely labeled. (Right) an schematic of a drift cell.\label{fig:DTandSL}}
+\end{figure}
+\begin{figure}
+ \centering
+\includegraphics[width=0.9\textwidth]{CMS_DetectorFigures/MuonSystemBarrel.pdf}
+\caption{A photograph of the a barrel wheel during construction. The
+  DT chambers are gray while the 
+  iron return-yokes are painted in red.\label{fig:MuonSystemLayout}}
+\end{figure}
+\subsection{The Cathode Strips Chambers}
+Due to the higher rate of particles and the non-uniformities of the
+magnetic field in the endcap regions standard DTs are not a good
+candidate to detect muons in this region. Therefore, the muon endcap
+system is comprised of cathode strip chambers; which have a fast
+response, can be finely segmente, and can be operated in the presense
+of a non-uniform magnetic field -- Figure~\ref{fig:BField} shows the
+magnetic field lines and intensity in the CMS detector. Each endcap
+regions has four disk-shaped stations perpendicular to the
+$z$-axis. The endcap stations are formed by different sizes of
+CSC. The CSC units have 6 layer -- again, along the $z$-axis --, each
+of which has cathode strips along the $r$-direction and wires running
+perpedicular to the strips. Thus, the CSC units provide a
+2-dimensional measurement in the $r-\phi$ plane. All CSC are filled
+with a gas mixture composed of 50\% CO$_{2}$, 40\% Ar, and 10\%
+CF$_{4}$; the ME1/1 chambers are operated at an anode voltage of
+2,900\unit{V} while the rest of them at of 3,600\unit{V}. Each chamber
+has 80 cathode strips subtebding an angle between 2.2 and 4.7
+mradian. The ME1/1 anode wires are 30$\mu$m in diamater and placed 2.5
+mm apart, while the rest of the chambers wire's are 50$\mu$m in
+diamater and placed 3.12 or 3.16
+mm apart. Alternative layers are shifted in order to minimize gaps
+between chambers. An schematic of one the CSC is shown in
+Figure~\ref{fig:CSC} while a photograph of one of the endcaps during
+construction is shown in Figure~\ref{fig:MuonEndcap}.
+
+\begin{figure}
+ \centering
+\includegraphics[width=0.9\textwidth]{CMS_DetectorFigures/CSC.pdf}
+\caption{An schematic of a typical CSC.\label{fig:CSC}}
+\end{figure}
+\begin{figure}
+ \centering
+\includegraphics[width=0.9\textwidth]{CMS_DetectorFigures/MuonSystemEndcap.pdf}
+\caption{A photograph of one of the endcaps wheels.\label{fig:MuonEndcap}}
+\end{figure}
+\subsection{The Resistive Plate Chambers}
+The resistive plate chambers of the muon system are a complementary
+and dedicated trigger system with excellent time resolution in order
+to correctly identify the correct bunch crossing when the LHC is
+operating at high luminosities. The barrel and endcaps of the muon
+systems are equipped -- in addition to the main their main tracking
+systems, DT chambers and CSCs, respectively -- with RPCs, which
+provide an idependent trigger with lower $p_{T}$ thresholds up to
+$|\eta|$ = 1.6. The resistive plates are double-gap chambers consisting of two
+2-mm-thick resistive Bakelite plates separated by a 2-mm-thick gas
+gap. The gas mixture is 95.2\% Freon, 4.5\% isobutane, and 0.3\%
+sulphur hexafluoride. The outer surface of the resistive plates is
+coated with a conductive graphite layer and operated at
+9,600\unit{V}. Figure~\ref{fig:rpc} shows an schematic layout of a
+resistive plate.
+The geometry of the RPCs follows closely that of the DT chambers and
+the CSCs, thus, there are organize in 4 and and 3 stations in the
+barrel and each of the endcaps, repectively. In the barrel, there are two RPCs at
+each side of the DT chambers in the first two stations while only one
+in the front of the DT chamber in stations 3 and 4. In the endcaps
+each station is diveded into 3 ring at different radial distances. The
+RPCs are divided into 2 or 3 partitions in $\eta$. Figure~\ref{MuonSystemLayout} shows
+the locations of the RPCs in the muons system, labeled with blue color.
+\begin{figure}
+ \centering
+\includegraphics[width=0.9\textwidth]{CMS_DetectorFigures/RPC.pdf}
+\caption{An schematic of one of the resistive plates in the CMS muon system.\label{fig:rpc}}
+\end{figure}
+
+\section{The Trigger System}
+Due to the large rate of proton-proton collisions, the large amount
+of data nedeed to be recorded in order to reconstruct an event, and the constraints posed by
+the DAQ and computing sytems, a
+selection mechanism that significantly reduces the rate of events
+needed to be deployed. This task is carried out by the CMS trigger
+system, thus starting the event selection process. The CMS trigger
+is a two stage system, composed of two sequential but independent
+trigger systems. The first is the Level-1 (L1) trigger, which is
+largely based in FPGAs and ASICs, and therefore uses coarse and crude
+information to reduce the rate from 40\unit{MHz} to 100\unit{kHz}. The
+second is the High-Level Trigger (HLT), which is a softwate based
+system, implemented in computing farm with approximately 16,000 CPU
+cores, that reduces the L1 trigger rate to a viable level for storage
+of about 1\unit{kHz}.
