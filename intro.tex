@@ -160,7 +160,7 @@ Higgs produced in association with jets at 8\TeV.
 \chapter{The Standard Model in a Nutshell}
 \section{The Standard Model of Paticle Physics}
 The Standard Model (SM) of particle physics is a renormalizable
-quantum field theory based on symmetries and the gauge principle. The
+quantum field theory based on symmetries and the gauge principle~\cite{HOOF,WeinbergLeptons}. The
 SM explains the electromagnetic, weak, and strong interactions, as
 well as having a complete catalog of all subatomic particles
 known. The interactions between the fermions (spin 1/2 particles) is
@@ -236,7 +236,7 @@ Where $\ell_{\mathrm{L}}=\begin{pmatrix}e_{\mathrm{L}}\\
 doublet, $q_{\mathrm{L}}=\begin{pmatrix}u_{\mathrm{L}}\\
   d_{\mathrm{L}}\end{pmatrix}$ is the quark $\mathrm{SU(2)_{L}}$
 doublet, $D_{\mu}$ is the corresponding covariant derivative, and
- $\sigma_{mu}$ is the identity and the pauli matrices ($\sigma_{mu} = {1,\sigma^{i}}$).
+ $\sigma_{mu}$ is the identity and the pauli matrices ($\sigma_{\mu} = {1,\sigma^{i}}$).
 The $\mathcal{L}_{\mathrm{Higgs}}$ and $\mathcal{L}_{\mathrm{Yukawa}}$
 are presented in sections~\ref{higgs} and~\ref{yukawa}, respectively.
 Table~\ref{tab:SMGroup} presents the matter field representation in
@@ -270,7 +270,7 @@ the SM are massive ($W^{\pm}$,$Z$) there should be a mechanism by
 which gauge boson acquire mass. The gauge boson masses in the SM are
 realized by the \textit{spontaneous symmetry breaking} of the
 $\mathrm{SU(2)_{L}}\times U(1)_{\mathrm{Y}}$ symmetry which induced by the nature of
-the Higgs potential~\cite{HIGGES}. The best way to undertand this mechanism (the
+the Higgs potential~\cite{Englert,HIGGS1,HiGGS2,Guralnik,HIGGS3,Kibble}. The best way to undertand this mechanism (the
 Higgs mechanism) is to closely look at the lagrangian density:
 
 \begin{equation}
@@ -302,7 +302,7 @@ symmetry. Therefore the scalar field acquires a non-zero
 
 \begin{figure}
  \centering
-\includegraphics[width=0.9\textwidth]{IntroFigures/MexicanHat.png}
+\includegraphics[width=0.9\textwidth]{IntroFigures/HiggsPotential.pdf}
  \caption{The shape of the Higgs potential (``Mexican hat''). The
    degeneracy of the potential is observed along the azimuthal angle\label{fig:MexHat}}
 \end{figure}
@@ -324,11 +324,111 @@ lagrangian:
 
 \begin{equation}
 \label{eq:HiggsMass}
-(D^{\mu}\Phi)^{\dagger}(D^{\mu}\Phi) \rightarrow (\partial_{\mu}
--igA_{\mu}^{a}\tau^{a} - ig^{\prime}B_{\mu})^{\dagger}(\partial_{\mu}
--igA_{\mu}^{a}\tau^{a} - ig^{\prime}B_{\mu}) 
+(D^{\mu}\Phi)^{\dagger}(D^{\mu}\Phi) \rightarrow
+\Delta\mathcal{L} = \frac{1}{2}\begin{pmatrix} 0 & v\end{pmatrix} (gA_{\mu}^{a}\tau^{a} + g^{\prime}B_{\mu})(gA^{b\mu}\tau^{b} +g^{\prime}B^{\mu}) \begin{pmatrix} 0\\
+  v\end{pmatrix}.
 \end{equation}
+
+Evaluating the matrix products, using $\tau^{a}=\sigma^{a}/2$ and
+$\left\{\tau^{a},\tau^{b}\right\} = \delta^{ab}/2$, we find
+
+ 
+\begin{equation}
+\label{eq:HiggsMass2}
+\Delta\mathcal{L} = \frac{\mathit{v}^{2}}{8}\left[g^{2}(A^{1}_{\mu})^2
+  +g^{2}(A^{2}_{\mu})^2 + (-gA^{3}_{\mu}+g^{\prime}B_{\mu})^2)\right].
+\end{equation}
+
+This forms the mass matrix squared for the gauge boson in the
+$(A^{i}_{\mu}, B_{\mu})$ basis
+\begin{equation}
+\label{eq:HiggsMass}
+m^{2} = \left(\frac{v}{2}\right)^{2}
+\begin{pmatrix} g^{2} & 0 & 0 & 0\\
+0 & g^{2} & 0 & 0\\
+0 & 0 & g^{2} & -gg^{\prime}\\
+0 & 0 & -gg^{\prime} & g^{2}\\
+\end{pmatrix},
+\end{equation}
+
+by diagonalizing this matrix, it is clearly observed that there are three
+massive and one masless gauge boson, the linear combination of the
+gauge fields and their respective masses are the following:
+
+\begin{equation}
+ \begin{aligned}
+       &W^{\pm}_{\mu} = \frac{1}{\sqrt{2}}(A^{1}_{\mu}\mp A^{2}_{\mu})
+        \qquad \text{with mass}  \qquad  m_{W} = g\frac{v}{2}\\
+        & 
+        Z^{0}_{\mu} = \frac{1}{\sqrt{g^{2}+g^{\prime
+              2}}}(gA^{3}_{\mu}- g^{\prime 2}B_{\mu})
+        \qquad \text{with mass}  \qquad  m_{Z} = \sqrt{g^{2}+g^{\prime
+            2}}\frac{v}{2}\\
+        &
+        A_{\mu} = \frac{1}{\sqrt{g^{2}+g^{\prime
+              2}}}(g^{\prime}A^{3}_{\mu}+ gB_{\mu})
+        \qquad \text{with mass}  \qquad  m_{A} = 0
+       \end{aligned}
+\label{eq:BosonMasses}
+\end{equation}
+
+Besides providing the Higgs mechanism, the inclusion of the
+$SU(2)_{L}$ field in the SM predicts the presence of a
+self-interacting massive spin-0
+boson, this is realized by the fluctuation of the field around the
+\textit{vev}, i.e.
+\begin{equation}
+\Phi = \frac{1}{\sqrt{2}}\begin{pmatrix} 0\\
+  v + h(x)\end{pmatrix},
+\end{equation}
+ 
+now collecting the higgs-related terms in the lagrangian, we obtain
+the following:
+
+\begin{equation}
+\mathcal{L}_{\mathrm{Higgs}} \supset
+\frac{1}{2}\left(\partial_{\mu}h\right)^{2} -\lambda v^{2}h^{2} -
+\lambda vh^{3} - \frac{\lambda}{4}h^{4}.
+\end{equation}
+
+Where the first term is the standard kinetic term, the second term is
+the mass term ($m_{h} = \sqrt{2\lambda}v$), and the last two are the higgs self-interaction terms. 
 \section{Fermion Masses}\label{yukawa}
+Fermion masses in the standard model arise from the inclusion of
+interaction terms between the fermions and the $\Phi$ field~\cite{WeinbergLeptons}, when
+the latter is at the \textit{vev}. These interactions are called
+Yukawa terms, they have different strength depending on the particle
+type and generation. The corresponding part of the lagrangian in
+Eq.~\ref{eq:theSMlagrangian} is
+\begin{equation}
+\label{eq:yukawa}
+\mathcal{L}_{Yukawa} = -y_{e}\bar{\ell}_{L}\Phi e_{R} - y_{u}\bar{q}_{L}\Phi u_{R}  -
+y_{d}\bar{q}_{L}\tilde{\Phi} u_{d} + (h.c),
+\end{equation}
+
+where $y_{e,u,d}$ are the Yukawa couplings to the leptons, up-type
+quarks, and down-type quarks, respectively; $\tilde{\Phi} =
+i\sigma^{2}\Phi^{*}$ with weak hyperchage $Y = -1/2$ is used in the
+third term to generate the down-type quark masses. After the $\Phi$
+field acquires its \textit{vev} we can identify the fermion mass terms
+as
+
+\begin{equation}
+ \begin{aligned}
+       &m_{e} = \frac{y_{e}v}{2}  \qquad m_{u} = \frac{y_{u}v}{2}  \qquad  m_{\mu} = \frac{y_{d}v}{2} \\
+       &m_{\mu} = \frac{y_{\mu}v}{2}  \qquad m_{c} = \frac{y_{c}v}{2}
+       \qquad  m_{s} = \frac{y_{s}v}{2} \\
+       &
+       m_{\tau} = \frac{y_{\tau}v}{2}  \qquad m_{t} = \frac{y_{t}v}{2}  \qquad  m_{b} = \frac{y_{b}v}{2}.
+       \end{aligned}
+\label{eq:BosonMasses}
+\end{equation}
+
+The Yukawa terms give mass to all the fermions in the SM, provide decay modes of the physical higgs boson -- with
+$h\rightarrow b\bar{b}$ having the highest branching fraction --, and
+allow the fermions to modify the observerd mass of the Higgs boson through
+loop corrections -- the most important correction comes from the
+top-quark, which has the largest Yukawa coupling.
 \chapter{Supersymetry and Naturalness}
 \chapter{Dark Matter and Weakly Interacting Particles}
 
