@@ -429,7 +429,577 @@ $h\rightarrow b\bar{b}$ having the highest branching fraction --, and
 allow the fermions to modify the observerd mass of the Higgs boson through
 loop corrections -- the most important correction comes from the
 top-quark, which has the largest Yukawa coupling.
-\chapter{Supersymetry and Naturalness}
+
+%\chapter{Supersymetry and Naturalness}
 \chapter{Dark Matter and Weakly Interacting Particles}
+Different measurements during the twentieth century indicate that
+baryonic matter is not the dominant form of matter in the
+universe. In fact, recent measurements constraint the amount of baryonic matter
+to be about 5\% of the total energy density, while the rest is
+comprise of dark matter and dark energy, accounting for approximately 27\%  and 68\% ,
+respectively. The existence of dark matter has been inferred by
+several astronomical and astrophysical measurements since the 1930s,
+as well as the recent success of the standard model of Big Bang
+cosmology (commonly known as the $\mathrm{\Lambda CDM}$). Nowadays,
+the existence of dark matter is widely accepted but little is known
+about its nature. Dark energy is perhaps the least undertood component
+of our Universe, currently, we infer its existence based on the
+missing energy density in conjunction with the measured flatness of
+the universe, as well as the accelerated expansion of the universe.
 
+This chapter is intented to briefly summarize the evidence supporting
+the existence of dark matter and to introduce the concepts needed to
+understand the basis of the current searches for dark matter in direct
+detection experiments, indirect detection experiments, and the
+experiments at the Large Hadron Collider. The rest of this chapter has
+been based on~\cite{Golwala,DM_Primer}.
 
+\section{The Evidence for Dark Matter}
+\subsection{Early evidence}
+Perhaps the first convincing evidence of the existence of dark matter
+was the measurements carried out in the Coma cluster by F. Zwicky in
+1933 -- Oort also had measured earlier inconsitencies between the
+velocities of stars near the galactic center and the luminous
+mass. Zwicky measured the velocities of the galaxies in the cluster by observing the
+doppler shifts in their emission spectra and by employing the virial
+theorem he was able to calculate the cluster's total mass~\cite{zwikcy1,ZZZZW}. The cluster
+mass was $M_{\mathrm{cluster}} = 4.5\times10^{13}M_{\odot}$, since
+there are approximately 1,000 galaxies in the cluster the average
+galatic mass is $M_{\mathrm{galaxy}} = 4.5\times10^{13}M_{\odot}$. The
+mass of the galaxies were also measured using the standard
+mass-to-light ratio which yielded a galactic mass approximately 2\% of
+that measured by Zwicky. Therefore most of the mass in the Coma
+cluster was missing, or at least did not interact electromagnetically
+and thus dubbed ``dark matter''.
+
+ In the 1970s Vera Rubin and others
+set to measure the rotation curves of about 100 isolated
+galaxies~\cite{rubin}. What they found was that the rotation
+velocities reached a plateau at radii of about 10\unit{kpc}, which
+blatantly contradicted the observations from the luminous matter
+profile in the galaxies. The measured rotation curves measured by
+Persic and Salucci~\cite{PandS} are shown in Figure~\ref{fig:rotationcurve}, and a
+rotation curve from the spiral galaxy M33 is shown in
+Figure~\ref{fig:M33}. The fact that the luminous matter decays
+exponentially with the radius of the galaxy implies that  the velocity
+of gas and stars in the outskirts of the galaxy should start to
+decrease at around the optical radius $R_{\mathrm{opt}} = $10\unit{kpc} -- the radius
+such that 83\% of the light is contained in it. As observed in
+Figures~\ref{fig:rotationcurve} and~\ref{fig:M33}, this is not the case, since the
+velocities tend to be flat or even increase as a function of the
+galactic radius. To solve this conundrum one can introduce a dark
+matter halo with an spherically symmetric profile to account for the
+apparent missing mass that would explain the observed rotation
+curves. The most pedagogical way to vizualize this effect is by
+considering the rotation velocity to be constant (at large radius),
+assuming  circular trajectories in the galactic disk, and using a
+spherically symmetric density profile. Thus one finds
+\begin{equation}
+\label{eq:densityProfile}
+\begin{aligned}
+       &\frac{GM(r)}{r^{2}} = \frac{\mathrm{v}^{2}_{c}}{r} 
+        \qquad \text{and}  \qquad  M(r) = \int^{r}_{0} 4\pi \rho(r) r^{2}dr\\
+        & 
+        \Rightarrow \qquad \frac{\mathrm{v}^{2}_{c}r}{G} = 4\pi
+        \int^{r}_{0} \rho(r) r^{2}dr \qquad \text{}\\
+        & \Rightarrow \qquad \rho(r) = \frac{\mathrm{v}^{2}_{c}}{4\pi
+          G r^{2}}\qquad \text{},
+       \end{aligned}
+\end{equation}
+
+where $\rho(r)$ is the density profile of the dark matter halo,
+$\mathrm{v}_{c}$ is the constant rotational velocity (about
+220\unit{km/s}), $G$ is the gravitational constant, and $r$ is the
+galactic radius. A more accurate density profile, which fits the
+observed galaxy rotation data, was proposed by Navarro, Frenk, and
+White~\cite{NFW}
+\begin{equation}
+\rho(r) = \frac{\rho_{0}}{\frac{r}{R_{s}}\left( 1+\frac{r}{R_{s}}\right)^{2}},
+\label{eq:NFW}
+\end{equation}
+where the central density ($\rho_{0}$) and the scale radius ($R_{s}$)
+are parameters that vary from galaxy to galaxy.
+
+\begin{figure}
+ \centering
+\includegraphics[width=0.7\textwidth]{IntroFigures/RotationCurve1.pdf}
+ \caption{The rotation curves for different galaxies as measured by Persic and Salucci~\cite{PandS}.\label{fig:rotationcurve}}
+\end{figure}
+\begin{figure}
+ \centering
+\includegraphics[width=0.7\textwidth]{IntroFigures/M33_rotation_curve_HI.pdf}
+\caption{The rotation curve of the M33 galaxy.\label{fig:M33}}
+\end{figure}
+
+\subsection{Cosmological evidence}
+Cosmological evidence arise later by comparing the measurements of light
+elements (H, D, He, and Li) -- produced at
+the early stages of the universe in what is called the Big Bang
+Nucleosynthesis -- abundances with
+the theoretical calculations of nulear physics and known reaction
+rates. The results are shown in Figure~\ref{fig:BBN}, where the colored
+widths in the abundances represent the uncertainties in the calculations, the
+rectangular boxes represent the experimental measurements, and the
+vertical band indicates the region allowed by the deuterium
+observation. R. H Cyburt calculated possible values of the baryon
+relative density ($\Omega_{b}$) by using two deuterium measurements~\cite{BBN}
+\begin{equation}
+\label{eq:BBN}
+\begin{aligned}
+       &\Omega_{b}h^{2} = 0.0229\pm0.0013 
+        \qquad \text{and}  \qquad  \Omega_{b}h^{2} = 0.0216^{+0.0020}_{0.0021},
+       \end{aligned}
+\end{equation}
+
+where $h$ is the reduced Hubble parameter. Again, the baryon density
+is found to be very low compared to the energy budget of the universe,
+thus indicating the presence of dark matter -- and later, dark energy.
+\begin{figure}
+ \centering
+\includegraphics[width=0.6\textwidth]{IntroFigures/BBN.pdf}
+\caption{BBN abundances as calculated by theory and measured by
+  experiments in primordial-like areas of the universe with low
+  concentration of Li.\label{fig:BBN}}
+\end{figure}
+
+The Cosmic Microwave Background (CMB) discoverd by Penzias and Wilson
+in 1964 as an excess of background temperature of about 3.5\unit{K} at a
+wavelenght of 7.5\unit{cm}~\cite{CMBDiscovery}, has undoubtedly
+revolutionize the realm of precision cosmology. Later the CMB
+has been measured to be consistent with an almost perfect black-body
+spectrum with a temperature of  $2.72548\pm0.00057$\unit{K}, and thus
+consistent with compatible with the expected relic radiation in the
+form of photons from the epoch of recombination (380,000 years after
+the Big Bang). Although, the CMB is very much isotropic and uniform, there are
+fluctuation of about 1 part in 10$^{5}$ in the temperature of the CMB
+as measured by the COBE satellite. These fluctuations are attributed
+to two different effects, first, the Sachs-Wolfe effect: where photons
+with lower energy today came from denser areas at the time of
+recombination as they lost energy on their way out (these are
+associated with large angular scales). Second, the acoustic
+oscillations of the photon-baryon fluid that underwent compression and
+rarefraction and thus imprinted temperature fluctuations in the
+photons released when the baryons became electrically neutral and the
+CMS photons were released (these fluctuation are associated with small
+angular scales). The Wilkinson Microwave Anisotropy Probe (WMAP)
+measured the temperature fluctuations in the CMB with unprecedented
+precision and allowed the measurement of different cosmological
+paramenters including the density of baryonic dark matter. The
+spectrum of the CMB anisotropies is shown in
+Figure~\ref{fig:CMBAnisotropies}, where a multipole expansion has been
+performed in order to clearly see the intensity of each mode. The
+features of CMB anisotropies are directly related to the cosmological
+parameters such as baryonic matter and dark matter, this is clearly
+shown in Figure~\ref{fig:CMBAnisotropies}, where different values of
+the baryonic density are overlaid with the real data from WMAP; as
+observed, the incorrect baryonic density clearly mismodels the
+observations. Finally a global fit can be performed to the CMP power
+spectrum and thus obtain the comological parameters. The Plank
+satellite -- current state of the art CMB experiment --  has measured
+the  relative densities to be~\cite{plank}
+\begin{equation}
+\label{eq:plank}
+\begin{aligned}
+       &\Omega_{b}h^{2} = 0.02230\pm0.00014
+        \qquad \text{and}  \qquad  \Omega_{DM}h^{2} = 0.1188\pm0.0010\\
+        &\Omega_{m}= 0.6911\pm0.0062
+        \qquad \text{and}  \qquad  \Omega_{\Lambda} = 0.3089\pm0.0062,
+       \end{aligned}
+\end{equation}
+
+where $\Omega_{DM}$ is the dark matter relative density, $\Omega_{m}$
+is the total matter density (baryonic and dark), and
+$\Omega_{\Lambda}$ is the dark energy relative density.
+\begin{figure}
+ \centering
+\includegraphics[width=0.7\textwidth]{IntroFigures/CMB_Multipole.pdf}
+\caption{The CMB anisotropy spectrum measured by WMAP. Different
+  values of the baryonic matter are also shown with different
+  curves. In the multipole expansion of the CMB anisotropies
+  $l\approx\pi/\theta$, where $\theta$ is the angular scale in radians.\label{fig:CMBAnisotropies}}
+\end{figure}
+\subsection{Recent evidence}
+
+Most recent evidence for dark matter was obtained from the Bullet
+cluster, formed by the sub-cluster (``the bullet'') colliding with the
+larger cluster 1E 0657-56. During the collision, the galaxies pass by
+each other without interacting since the inter-galaxy distance is
+about 1\unit{Mpc}. Nevertheless, the bulk of the baryonic mass in the cluster is
+formed by the hot intergalactic gas that did interact during the
+collision, the excitations in the gas produced X-rays that were
+detected by the Chandra X-ray Observatory. This measurement provides
+an approximate distribution of the baryonic mass in the Bullet cluster
+that was compared with measurements carried out by using weak
+gravitational lensing. The comparison reveleaded that regions from
+where the detected X-rays originated did not match the regions
+compatible with gravitational lensing measurements, in fact the
+majoroty of the cluster's mass is non-baryonic in nature~\cite{bullet}. Similar
+measurements have been recently made with the Hubble Space Telescope~\cite{RingDM}.
+
+\section{Weakly Interacting Dark Matter Candidates}
+There are several dark matter suitable dark matter candidates, such as
+axions, MACHOs, Kaluza-Klein particles, among others. Nevertheless, the most relevant DM candidate for this
+thesis is what is called a Weakly Interacting Massice Particle
+(WIMP). WIMPs are perhaps the most widespread non-baryonic DM
+candidate since they have compelling properties, including the
+prediction of the correct abundance of dark matter that we observe
+today as a relic from
+the early stages of the universe. Besides their gravitational
+interaction, WIMPs only interact with a strength
+at the scale of the weak interaction with the known SM particles. It
+will be shown that this assumptions will provide a suitable DM
+candidate, predictiong the correct relic abundance, with a mass of
+about 100-1000\GeV. Thus, this beneficial concurrence of events has
+become to be known as the \textit{WIMP miracle}. WIMPs are now being
+search for in three different type of experiments, direct detection,
+where a large mass detector capable of detecting energy deposits from
+WIMP-nucleus interactions is placed underground to avoid backgrounds;
+indirect detection, where a satellite equipped with particle detectors
+looks for annihilation of WIMPs into SM particles; and particle collider
+experiments, such as ATLAS and CMS, where two SM particles (usually
+quarks) annihilate to produce two WIMPs, an extra SM particle with
+large transverse momentum should be produce in order to trigger and
+record the events since WIMPs will scape detection due to their wealy
+interacting nature. All these searches are currently underway, where
+up to know, there has not been any concrete detection, which may
+indicate that the WIMP miracle is not as miraculous as we once
+thought.
+
+In order to see why WIMPs are interesting from the astrophysical and experimental point
+of view we need to first derive their relic density, this is the
+density that they will obtain by falling out of thermal equilibrium in the
+early stages of the universe (freeze-out). In here we consider the standar case
+where WIMPs are  non-relativistic at the time of freeze-out. The WIMP
+decoupling occurs when their annihilation rate drops below the rate of
+expansion of the universe, i.e
+\begin{equation}
+\label{eq:AnnRate}
+\langle \sigma_{A}v\rangle_{f} n_{f} \sim H_{f},
+\end{equation}
+
+where $\sigma_{A}$ is the annihilation cross-section
+($\chi\chi\rightarrow \mathrm{anything}$, where $\chi$ is the WIMP),
+$v$ is the WIMP relative velocity, $f$ indicates the freeze-out time,
+$n_{f}$ is the WIMP number density, and $H_{f}$ is the hubble
+rate. The number density at freeze-out can be current relic density by
+using the freeze-out redshift ($z_{f}$):
+\begin{equation}
+\label{eq:relicDensity}
+\Omega_{\chi} = \frac{8\pi G}{3H^{2}_{0}}\rho_{\chi} = \frac{8\pi G}{3H^{2}_{0}}\frac{n_{f}M_{\chi}}{(1+z_{f})^{3}},
+\end{equation}
+
+where we have used $\rho_{\chi} = \frac{n_{f}M_{chi}}{(1+z_{f})^{3}}$
+-- coming from the dilution created by the expansion of the
+universe. Now the redshift at freeze-out can be related to the
+freeze-out temperature by using the temperature of the CMB today, thus
+\begin{equation}
+\label{eq:Tfreeze}
+T_{f} = \left( \frac{1+3\frac{7}{8}\frac{4}{11}}{g_{f}}\right)^{1/3} (1+z_{f})T_{\mathrm{CMB}},
+\end{equation}
+
+where the prefactors in the numerator arise changes in the
+contributing degrees of freedom in the entropy, and $g_{f}$ is the
+effective numbers of degrees of freedom. We can now express the number
+density in terms of the freeze-out temperature and the WIMP parameters
+by combining Equations~\ref{eq:relicDensity} and~\ref{eq:Tfreeze}:
+
+\begin{equation}
+\label{eq:densityT}
+n_{f} = \frac{3}{8\pi G}\frac{\Omega_{\chi}H^{2}_{0}}{M_{\chi}}\left(\frac{g_{f}}{1+3\frac{7}{8}\frac{4}{11}}\right)\left(\frac{T_{f}}{T_{\mathrm{CMB}}}\right)^{3}.
+\end{equation}
+
+In order to solve Equation~\ref{eq:AnnRate} for the temperature
+averaged annihilation rate ($\langle \sigma_{A}v\rangle_{f}$), we
+first need to find an expression for the expansion rate at the time of
+freeze-out. The later is readialy available from the Friedmann
+equations and the fact the the univer was radiation dominated at the
+epoch of freeze-out:
+\begin{equation}
+\label{eq:Hfreeze}
+H^{2}_{f} = \frac{8\pi G}{3}\rho^{\mathrm{rad}}_{f},
+\end{equation}
+where $\rho^{\mathrm{rad}}_{f}$ is the radiation dominated energy
+density at the time of freeze-out. Using the correct expresion for the
+latter yields
+\begin{equation}
+\label{eq:Hfreeze2}
+H^{2}_{f} = \frac{8\pi G}{3}\kappa_{p}g_{f}\frac{\pi^{2}}{30}T^{4}_{f},
+\end{equation}
+where $\kappa_{p}$ is a numerical value close to unity depending on
+the nature of the WIMP (boson,fermion). Now combining
+Equations~\ref{eq:densityT} and~\ref{eq:Hfreeze2} we find:
+
+\begin{equation}
+\label{eq:RELICDENSITY}
+\langle \sigma_{A}v\rangle_{f} = \frac{H_{f}}{n_{f}} \sim \frac{10^{-27}}{\sqrt{g_{f}}\Omega_{\chi}h^{2}}\frac{M_{\chi}}{T_{f}}\unit{cm}^{3}\unit{s}^{-1}.
+\end{equation}
+
+Now the only remaining unknown is the WIMP mass to temperature ratio
+at freeze-out ($\frac{M_{\chi}}{T_{f}}$). This can be approximated by
+the Boltzmann distribution -- in the non-relativistic limit --  for $n_{f}$ at the freeze-out temperature
+and combined that with Equation~\ref{eq:densityT}:
+
+\begin{equation}
+\label{eq:NfBoltzmann}
+\begin{aligned}
+       &
+n_{f} = \left(\frac{k_{B}T_{f}M_{\chi}}{2\pi
+    \hbar}\right)\mathrm{exp}\left(\frac{M_{\chi}c^{2}}{k_{B}T_{i}}\right)
+\qquad \text{and} \qquad n_{f} = \frac{3}{8\pi G}\frac{\Omega_{\chi}H^{2}_{0}}{M_{\chi}}\left(\frac{g_{f}}{1+3\frac{7}{8}\frac{4}{11}}\right)\left(\frac{T_{f}}{T_{\mathrm{CMB}}}\right)^{3}\\ \\
+& \Rightarrow \frac{M_{\chi}}{T_{f}}
+-\frac{3}{2}\mathrm{log}\left(\frac{M_{\chi}}{T_{f}}\right) = 18.9 +
+\mathrm{log}\left(\frac{M_{\chi}}{\Omega_{\chi}h^{2}g_{f}}\right).\\
+\end{aligned}
+\end{equation}
+
+This last expresion is fairly similar for relevant WIMP masse of the
+order of 1\GeV to 1\TeV, whichi yields $\frac{M_{\chi}}{T_{f}} \approx
+25-30$. This mass to temperature ratio at freeze out can be obtained
+more accurately by solving the appropiate differential equation
+yielding a result of the same order as obtained
+in~\ref{eq:NfBoltzmann}. Figure~\ref{fig:freezeout} show the evolution
+of the WIMP number density as a function of the
+$\frac{M_{\chi}}{T_{f}}$ ratio -- which is a proxy for the time
+evolution of the universe. Finally, by assuming a relevant relic
+density today ($\sqrt{g_{f}}\Omega_{\chi}h^{2}\sim 1$) we find that
+WIMP annihilation rate $\langle \sigma_{A}v\rangle_{f} =
+10^{-26}\unit{cm}^{3}\unit{s}^{-1}$.
+\begin{figure}
+ \centering
+\includegraphics[width=0.7\textwidth]{IntroFigures/freezeout.png}
+\caption{Comoving number density for WIMPs as a function of $\frac{M_{\chi}}{T}$.\label{fig:freezeout}}
+\end{figure}
+
+Now this annihilation rate can also be obtained from a particle
+physics prospective by using a weak scale interaction strength. The
+annihilation rate in this case is given by the following expression
+(Fermi's golden rule):
+\begin{equation}
+\label{eq:FERMIGL}
+\begin{aligned}
+       &
+\Gamma = \langle \sigma_{A}v\rangle = \frac{2\pi}{\hbar}|\mathcal{M}|^{2}\rho(E)
+\qquad \text{with} \qquad \rho_{E} = \frac{4\pi}{\left(2\pi\hbar c\right)^{3}}E^{2},\\
+\end{aligned}
+\end{equation}
+where $\mathcal{M}$ is the matrix element for the annhilation channel,
+and $\rho(E)$ is the density of states, where we have assumed
+relativistic particles in the final state. When the WIMPs are not
+relativistic the final state particle obtain an energy ($E$) that is
+equal to the mass of the WIMP. Now, assuming the simplest possible
+annihilation channel where the matrix element squared
+($\mathcal{M}|^{2}$) is just given by Fermi's constant squared
+($G^{2}_{\mathrm{F}}$) we can compute the annihilation rate:
+\begin{equation}
+\label{eq:FERMIGL}
+\begin{aligned}
+      \langle \sigma_{A}v\rangle &
+= \frac{1}{\pi}\frac{1}{\left(\hbar
+    c\right)^{3}}G^{2}_{\mathrm{F}} M^{2}_{\chi}c^{4}\\
+&
+ = \frac{1}{\pi}\frac{\left(\hbar
+    c\right)^{3}}{\hbar}(1.66\times 10^{-5}(\GeV)^{-2})^{2}
+M^{2}_{\chi} (GeV)^{2}\\
+ \langle \sigma_{A}v\rangle&\sim \frac{\left(\hbar
+    c\right)^{3}}{\hbar} 10^{-10}(\GeV)^{-2}
+M^{2}_{\chi}\\
+\langle \sigma_{A}v\rangle&\sim  10^{-27} M_{\chi}\unit{cm}^{3}\unit{s}^{-1}
+M^{2}_{\chi},\\
+\end{aligned}
+\end{equation}
+
+where $M_{\chi}$ is in units of \GeV. Now we can readily see that a
+WIMP mass at the weak scale (1\GeV-1\TeV) gives the correct order of
+magnitude for the WIMP annihilation. The fact that WIMPS with a weak
+scale interaction strength produces the necessary annihilation rate for a cold dark
+matter relic obtained in Equation~\ref{eq:RELICDENSITY} -- purely from
+astrophysical considerations -- is what some literature has named the
+\textit{WIMP miracle}. 
+\section{Searches for WIMP Dark Matter}
+Three different type of experiments to search for WIMP dark matter are currently
+underway. These searches are named, direct detection experiments,
+indirect detection experiments, and particle collider
+experiments. Figure~\ref{fig:dmDetection} shows a Feynman diagrams
+with the possible ways in which WIMP DM can be detected, the dashed
+blob represents the interaction of dark matter with the SM (quarks in
+this case).
+
+\begin{figure}
+ \centering
+\includegraphics[width=0.6\textwidth]{IntroFigures/DiagramDMdetection.pdf}
+\caption{Feynman diagram including the possible manner in which DM can
+  be experimentally detected. The green arrows indicate the
+  orientation in which the diagram should be read to produce a
+  particular detectable signal.\label{fig:dmDetection}}
+\end{figure}
+
+\subsection{Direct detection}
+Direct detection experiments are based on WIMP-nucleus scattering
+which in turn depend on the WIMP-quark cross-section. Assuming a
+stardard WIMP scenario the WIMP-nucleus cross section is of the order
+of $10^{-36}$\unit{cm}$^{2}$, which yields a detectable rate of
+interactions of about 1 event per kilogram per day. This requires
+large mass detector and large exposure times in order to increase the
+possibilities to detect WIMPs. Another consideration in direct
+detection experiments is the amount of energy transferred to the
+nucleus by the WIMP and the ability to record that energy. In an
+elastic collition the energy transfer to the nucleus (recoil energy)
+is
+
+\begin{equation}
+\label{eq:recoilE}
+E_{\mathrm{recoil}} = \frac{2\frac{M_{\mathrm{N}}}{M_{\mathrm{DM}}}}{\left(1+\frac{M_{\mathrm{N}}}{M_{\mathrm{DM}}}\right)^{2}}E_{\mathrm{DM}},
+\end{equation}
+
+where $E_{\mathrm{recoil}}$ is the recoil energy, $M_{\mathrm{N}}$ is
+the nucleus mass, $M_{\mathrm{DM}}$ is the DM mass (assumed to be
+around 100\GeV), and $E_{\mathrm{DM}}$ is the DM kinetic energy
+(assuming a velocity of about 270\unit{km/s} yield a kinetic energy of
+about 50\keV). Assuming an nucleus with an atomic weight of about
+72-131 (Germanium and Xenon, repectively), the recoil energy is about
+25 keV (note that the maximum kinetic energy is in fact just twice the
+DM kinetic energy). The experimental techniques used include detection
+of thermal/phonons fluctuations, ionization detectors, and scitillator
+detectors. No evidence of a DM detection has been announced and
+the current DM-nucleon cross-section limits are presented in
+Figure~\ref{fig:dmLimits}. 
+\begin{figure}
+ \centering
+\includegraphics[width=0.6\textwidth]{IntroFigures/SI_DM.pdf}
+\caption{Spin-independet DM-nucleon cross section ($\sigma_{N\chi}$) exclusion limits
+  as a function of the DM candidate mass ($M_{\chi}$) from direct detection experiments.\label{fig:dmLimits}}
+\end{figure}
+\subsection{Indirect detection}
+Assuming WIMP dark matter, the same mechanism by which the observed
+relic density was obtained at the early stages of the universe,
+i.e. WIMP-WIMP annihilation, should still be taking place in regions
+where there are large ammounts of dark matter. The annihilation
+rate is proportional to the  WIMP density squared
+($\Gamma_{\chi\chi\rightarrow X} \propto n^{2}_{\chi}$, where $\chi$
+depresents the WIMP), therefore the detection is increased when
+looking at regions of high DM density such as the Earth, the sun, and
+the galactic center. This annihilation signature is looked for in
+different channels that ultimately will produce excess of gamma-rays,
+neutrinos, or anti-particles -- particularly positrons. These
+astrophysical searches are classified as \textit{indirect
+  detection}~\cite{IND1,IND2}, since WIMPs are not directly detected. 
+
+Gamma-rays could be produce by the $\chi\chi\rightarrow q\bar{q}$
+reaction (specially in the galactic center), subsequently the quarks will hadronize and produce photons
+that can be detected by a particle detector; the limitation of this
+mode is that only as a contimuum excess. Another reactions that could
+produce an enhacement of gamma-rays are $\chi\chi\rightarrow
+\gamma\gamma$ and $\chi\chi\rightarrow
+\gamma Z$, where the excess will be observed by a line in the
+gamma-ray spectrum. The EGRET collaboration reported an excess of
+events in their gamma-ray spectrum in 1998\cite{EGRETT}, indicating a
+standard WIMP scenario. The EGRET excess remains controversial due to
+the null observation in the antiproton flux. The Fermi Gamma-ray Space
+Telescope (Fermi-LAT) launched in 2008~\cite{FERMILAT} has also observed some
+excesses coming from the galactic center~\cite{FermiExcess}, though encouraging results,
+the community await for more data to be collected to elucidate these
+hints of DM detection. Figure~\ref{fig:FERMI} shown the gamma-ray map
+collected by FERMI-LAT.
+
+\begin{figure}
+ \centering
+\includegraphics[width=0.9\textwidth]{IntroFigures/Fermi_Map.jpg}
+\caption{The gamma-ray sky as mapped by the FERMI-LAT satellite.\label{fig:FERMI}}
+\end{figure}
+
+Excess of neutrino flux can also indicate the presence if WIMP dark
+matter. The sun is  good place to look for neutrino flux excesses
+since the solid angle for annihilation is greatly increased with
+respect to that of the galactic center. Processes such as
+$\chi\chi\rightarrow t\bar{t}, b\bar{t}, c\bar{c}, ZZ, W^{+}W^{-},$ and
+$\tau^{+}\tau^{-}$ will lead to neutrino final states. Detectors can
+be located in Earth since  neutrinos interact very waekly with
+matter. Large detector such as IceCube, Super-Kamiokande, among other, are already in place trying to detect DM by
+observing neutrino flux excesses.
+
+Since anti-matter is rare in our universe, search for excesses of
+anti-particles is an attractive way to observed WIMP annihilation --
+particularly those producing positrons and antiprotons. Again,
+positrons can be produced directly or as decay product of other SM
+particles, whicle antiprotons via quark hadronization. The PAMELA
+satellite\cite{PAMELA} has observed an excess of events with positron energies
+between 1.5-100\GeV\cite{PAMELAEXCESS}. As
+in the gamma-ray excesses, larger data samples are needed to confirm or
+disprove the current observations, such data sets will be provided by
+FERMI-LAT.
+
+\subsection{Searches for dark matter production at the LHC}
+Dark matter could be produced at the LHC as a decay product of heavier
+states in the context of SUSY, this will result in a signature with a
+variety of SM particles in the final state along with missing
+transverse-momentum due to the weakly interacting nature of the DM
+candidate -- the lightest neutralino.  A different approach to search
+for dark matter in particle colliders which involves different
+coulings between the the relevant SM particles at the LHC and the DM
+candidate has been adopted by the ATLAS and CMS collaborations. These
+interactions involve different non-renomalizable effective operators
+-- in the context of quantum field theory -- where the mediating
+force carried field is assumed to be above the LHC energies and
+therefore \textit{integrated out}. A list of the possible effective
+operators in shown in Table~\ref{tab:EFT}. The most popular
+operator studied in the 7 and 8\TeV run of the LHC where the
+\textit{vector} and \textit{axial-vector} operators, which can be
+translated to spin-independent and spin-dependent DM-nucleon cross
+section and be compared to the results obtained by direct detection
+experiments. This comparison is the result of a series of assumptions
+in both experiments and therefore they should be intrepreted with
+caution. These event topologies will not be recorded in the particle
+detectors since they produce two DM candidates in the
+final state that will completely scape detection. Therefore another
+high-$p_{\mathrm{T}}$ particle needs to be produce in order to
+activate the trigger systems deployed in modern particle
+detectors. This extra requirement is satified by the production of
+initial-state-radiation off the quarks (see left panel of
+Figure~\ref{fig:DMdiamgrams}). Such events topologies became to be
+know as \textit{mono-X}, where X denotes the high-$p_{\mathrm{T}}$
+object that could be a jet, photon, lepton, Z/W bosons, or a Higgs
+boson, among others. Figure~\ref{fig:CMSlimits} shows the
+spin-independent results from the mono-jet and mono-photon analyses
+realeased by the CMS
+collaboration~\cite{Aad:2011xw,Chatrchyan:2012me,Khachatryan:2014rwa,Aad:2014tda}. The
+effective field theory approach to obtain the operators in
+Table~\ref{tab:EFT} turned out to be violated in a portion
+of the events recored at the LHC and therefore their bounds are not
+completely accurate~\cite{Riotto1,Riotto2,Riotto3}. Attemps to solve this issue are now in
+place by including the mediator particle and the coupling strength to
+be parameters of the model~\cite{DMFORUM}. Chapter~\ref{DMatLHC} presents a
+search for particle DM in events with two or more jets, providing the
+LHC searches with a inclusive analysis approach that is at the same
+time complementary to the existing mono-jet searches by ATLAS and
+CMS. This search also quantifies the amount fraction of events that
+violate the EFT assumption.
+
+\begin{table}[htb]
+\centering
+\large
+\begin{tabular}{cccc}
+  \hline
+  \hline
+  Name &  Initial state &  Type & Operator\\
+  \hline                                                        
+  D1 & $q\bar{q}$ &  scalar & $\frac{m_{q}}{M^{3}_{*}}\bar{\chi}\chi\bar{q}q$\\
+  D5 & $q\bar{q}$ & vector & $\frac{1}{M^{2}_{*}}\bar{\chi}\gamma_{\mu}\chi\bar{q}\gamma^{\mu} q$\\
+  D8 & $q\bar{q}$ &  axial-vector & $\frac{1}{M^{2}_{*}}\bar{\chi}\gamma_{\mu}\gamma^{5}\chi\bar{q}\gamma^{\mu}\gamma^{5} q$\\
+  D9 & $q\bar{q}$ &  tensor & $\frac{1}{M^{2}_{*}}\bar{\chi}\sigma_{\mu\nu}\chi\bar{q}\sigma^{\mu\nu} q$\\
+  D11 & $gg$ &  scalar & $\frac{1}{M^{3}_{*}}\bar{\chi}\chi\alpha_{s}(G^{s}_{\mu\nu})^2$\\
+  \hline
+  \hline
+\end{tabular}
+  \caption{\label{tab:EFT}A selection of the possible effective operators for DM production at
+    the LHC~\cite{EFTColliders}. $M_{*}$ is the cutoff scale of
+    the effective operator (sometimes this quantity is also
+    represented by $\Lambda$).}
+\end{table}
+
+\begin{figure}
+ \centering
+\includegraphics[width=0.7\textwidth]{IntroFigures/dm_limit.pdf}
+\caption{The DM-nucleon cross section 90\% CL. bounds published by
+  the CMS mono-jet
+  and mono-photon searches.\label{fig:CMSlimits}}
+\end{figure}

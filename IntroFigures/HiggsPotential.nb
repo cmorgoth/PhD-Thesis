@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      4633,        128]
-NotebookOptionsPosition[      4275,        110]
-NotebookOutlinePosition[      4627,        126]
-CellTagsIndexPosition[      4584,        123]
+NotebookDataLength[      9390,        242]
+NotebookOptionsPosition[      8876,        219]
+NotebookOutlinePosition[      9229,        235]
+CellTagsIndexPosition[      9186,        232]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -75,12 +75,13 @@ Cell[BoxData[
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{{
        Hold[$CellContext`T$$], -4, "Symmetry breaking parameter"}, -5, 5}}, 
-    Typeset`size$$ = Automatic, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`T$1121$$ = 0}, 
+    Typeset`size$$ = {400., {192., 197.}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = True, $CellContext`T$453$$ = 
+    0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`T$$ = -4}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`T$$, $CellContext`T$1121$$, 0]}, 
+        Hold[$CellContext`T$$, $CellContext`T$453$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -94,6 +95,7 @@ Cell[BoxData[
       "Specifications" :> {{{$CellContext`T$$, -4, 
           "Symmetry breaking parameter"}, -5, 5, Appearance -> "Labeled"}}, 
       "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{445., {236., 241.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -105,10 +107,117 @@ Cell[BoxData[
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
  CellChangeTimes->{3.685126919932482*^9, 3.6851270418010807`*^9, 
-  3.685127083711193*^9, 3.6851271278683033`*^9}]
-}, Open  ]]
+  3.685127083711193*^9, 3.6851271278683033`*^9, 3.685128269428049*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"RevolutionPlot3D", "[", 
+    RowBox[{
+     RowBox[{"V", "[", 
+      RowBox[{"x", ",", "T"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", "2"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"q", ",", "0", ",", 
+       RowBox[{"1.5`", " ", "\[Pi]"}]}], "}"}], ",", 
+     RowBox[{"PlotPoints", "\[Rule]", "30"}], ",", 
+     RowBox[{"PlotStyle", "\[Rule]", 
+      RowBox[{"Opacity", "[", "0.5`", "]"}]}], ",", 
+     RowBox[{"Axes", "\[Rule]", "True"}], ",", 
+     RowBox[{"AxesLabel", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<Re(\!\(\*SuperscriptBox[\(\[Phi]\), \(0\)]\))\>\"", ",", 
+        "\"\<Im(\!\(\*SuperscriptBox[\(\[Phi]\), \(0\)]\))\>\"", ",", 
+        "\"\<V(\!\(\*SuperscriptBox[\(\[Phi]\), \(0\)]\))\>\""}], "}"}]}], 
+     ",", 
+     RowBox[{"ColorFunction", "\[Rule]", "\"\<DarkRainbow\>\""}], ",", 
+     RowBox[{"Mesh", "\[Rule]", "20"}], ",", 
+     RowBox[{"MeshStyle", "\[Rule]", 
+      RowBox[{"Opacity", "[", "0.5`", "]"}]}], ",", 
+     RowBox[{"SphericalRegion", "\[Rule]", "True"}], ",", 
+     RowBox[{"BoxRatios", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "1", ",", "0.5`"}], "}"}]}], ",", 
+     RowBox[{"ImageSize", "\[Rule]", "400"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"T", ",", 
+       RowBox[{"-", "4"}], ",", "\"\<Symmetry breaking parameter\>\""}], 
+      "}"}], ",", 
+     RowBox[{"-", "5"}], ",", "5", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.685282120493051*^9, 3.685282255994164*^9}},
+ NumberMarks->False],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`T$$ = -4, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`T$$], -4, "Symmetry breaking parameter"}, -5, 5}}, 
+    Typeset`size$$ = {400., {179., 183.}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = True, $CellContext`T$2761$$ =
+     0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`T$$ = -4}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`T$$, $CellContext`T$2761$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> RevolutionPlot3D[
+        $CellContext`V[$CellContext`x, $CellContext`T$$], {$CellContext`x, 0, 
+         2}, {$CellContext`q, 0, 1.5 Pi}, PlotPoints -> 30, PlotStyle -> 
+        Opacity[0.5], Axes -> True, 
+        AxesLabel -> {
+         "Re(\!\(\*SuperscriptBox[\(\[Phi]\), \(0\)]\))", 
+          "Im(\!\(\*SuperscriptBox[\(\[Phi]\), \(0\)]\))", 
+          "V(\!\(\*SuperscriptBox[\(\[Phi]\), \(0\)]\))"}, ColorFunction -> 
+        "DarkRainbow", Mesh -> 20, MeshStyle -> Opacity[0.5], SphericalRegion -> 
+        True, BoxRatios -> {1, 1, 0.5}, ImageSize -> 400], 
+      "Specifications" :> {{{$CellContext`T$$, -4, 
+          "Symmetry breaking parameter"}, -5, 5, Appearance -> "Labeled"}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{445., {223., 228.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.6851283369767647`*^9, 3.6852821488639307`*^9, {3.685282182643091*^9, 
+   3.685282195605926*^9}, {3.685282235121429*^9, 3.6852822625731792`*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Show", "[", 
+  RowBox[{
+   RowBox[{"PolyhedronData", "[", 
+    RowBox[{"\"\<Dodecahedron\>\"", ",", "\"\<Image\>\""}], "]"}], ",", 
+   RowBox[{"Axes", "\[Rule]", "True"}], ",", 
+   RowBox[{"AxesLabel", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\"\<x\>\"", ",", "\"\<y\>\"", ",", "\"\<z\>\""}], "}"}]}], ",", 
+   
+   RowBox[{"Ticks", "\[Rule]", "None"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.685282105534051*^9, 3.685282105539196*^9}}]
 },
-WindowSize->{808, 855},
+WindowSize->{1128, 855},
 WindowMargins->{{78, Automatic}, {Automatic, 9}},
 FrontEndVersion->"10.2 for Mac OS X x86 (32-bit, 64-bit Kernel) (July 6, \
 2015)",
@@ -125,14 +234,18 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 266, 8, 28, "Input"],
+Cell[558, 20, 266, 8, 62, "Input"],
 Cell[CellGroupData[{
-Cell[849, 32, 1398, 35, 80, "Input"],
-Cell[2250, 69, 2009, 38, 41, "Output"]
-}, Open  ]]
+Cell[849, 32, 1398, 35, 63, "Input"],
+Cell[2250, 69, 2088, 40, 494, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4375, 114, 1677, 42, 99, "Input"],
+Cell[6055, 158, 2338, 45, 502, "Output"]
+}, Open  ]],
+Cell[8408, 206, 464, 11, 28, "Input"]
 }
 ]
 *)
 
 (* End of internal cache information *)
-

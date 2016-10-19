@@ -43,6 +43,7 @@ void SI_TOYS_FINAL_Nov9_CWR_RazorOnly()
    ci = TColor::GetColor("#ff0000");
    graph->SetLineColor(ci);
    graph->SetLineWidth(3);
+   graph->SetLineColor(kWhite);
    
    TH1F *Graph_Graph1 = new TH1F("Graph_Graph1","",100,0.9,1099.9);
    Graph_Graph1->SetMinimum(1e-46);
@@ -121,7 +122,7 @@ void SI_TOYS_FINAL_Nov9_CWR_RazorOnly()
    Graph_Graph_Graph12->GetZaxis()->SetTitleFont(42);
    graph->SetHistogram(Graph_Graph_Graph12);
    
-   multigraph->Add(graph,"L");
+   //multigraph->Add(graph,"L");
    
    Double_t Graph_fx3[33] = {
    5.5,
@@ -223,7 +224,7 @@ void SI_TOYS_FINAL_Nov9_CWR_RazorOnly()
    Graph_Graph3->GetZaxis()->SetTitleFont(42);
    graph->SetHistogram(Graph_Graph3);
    
-   multigraph->Add(graph,"L");
+      multigraph->Add(graph,"L");
    
    Double_t Graph_fx4[500] = {
    5.958544,
@@ -3050,7 +3051,7 @@ tex->SetNDC();
    entry->SetMarkerStyle(21);
    entry->SetMarkerSize(1);
    entry->SetTextFont(42);
-   leg->Draw();
+   //leg->Draw();
 
    TLegend *leg2 = new TLegend(0.715,0.59,0.935,0.9,NULL,"brNDC");
    leg2->SetBorderSize(0);
@@ -3156,16 +3157,16 @@ tex->SetNDC();
    tex->SetTextFont(42);
    tex->SetTextSize(0.75*0.06);
    tex->SetLineWidth(2);
-   tex->Draw();
+   //tex->Draw();
    tex = new TLatex(0.3,0.875,"CMS");
    tex->SetNDC();
    tex->SetTextAlign(31);
    tex->SetTextFont(61);
    tex->SetTextSize(0.75*0.06);
    tex->SetLineWidth(2);
-   tex->Draw();
+   //tex->Draw();
    c->Modified();
    c->cd();
    c->SetSelected(c);
-   c->SaveAs("SI_TOYS_FINAL_Nov9_CWR_RazorOnly.pdf");
+   c->SaveAs("SI_DM.pdf");
 }

@@ -250,8 +250,7 @@ and 15$X_{0}$ (blue crosses).}
 \label{fig:transverseProfile}
 \end{figure}
 \clearpage
-\subsection{Important Calorimeter Quantities}
- xyz
+%\subsection{Important Calorimeter Quantities}
 
 \chapter{LYSO-based Calorimeters}\label{lyso-cal}
 This chapter presents studies on measurements of the time of flight (TOF) using sampling calorimeters 
@@ -1605,8 +1604,8 @@ consistent with a time constant of a silicon sensor coupled to a
 50~Ohm amplifier.
 \begin{figure}[h] 
 \centering
-\includegraphics[width=0.45\textwidth]{HGC/pixel_linear_fit.png} 
-\includegraphics[width=0.45\textwidth]{HGC/photek_gaussian.png} 
+\includegraphics[width=0.45\textwidth]{HGC/HGC_RAWpulse.pdf} 
+\includegraphics[width=0.45\textwidth]{HGC/photek_example.pdf} 
 \caption{Examples of the signal pulse waveform for one the pixels of
   the HGC timing layer (left) and the Photek MCP-PMT (right) digitized by CAEN V1742 digitizer board. The bias
 voltage applied to the HGC silicon sensor is~$-300$~V.} 
@@ -1626,8 +1625,8 @@ of the CAEN V1742 digitizer was measured to be $\sim$4~ps and
 neglected on the timing measurements described below.
 \begin{figure}[h] 
 \centering
-\includegraphics[width=0.45\textwidth]{HGC/pixel_linear_fit.png} 
-\includegraphics[width=0.45\textwidth]{HGC/photek_gaussian.png} 
+\includegraphics[width=0.45\textwidth]{HGC/HGC_Pulse.pdf} 
+\includegraphics[width=0.45\textwidth]{HGC/photek_pulse_fit.pdf} 
 \caption{Examples of the timestamps extraction for a pulse waveform in
   one the pixels of the HGC timing layer (left) and
 the Photek 240 MCP-PMT (right) digitized by CAEN V1742 digitizer
@@ -1839,8 +1838,10 @@ standard deviation parameter of the Gaussian fit (red solid curve) to the TOF di
 \includegraphics[width=0.45\textwidth]{HGC/deltaT_PicoSilEqual_MCP_Equal_BothSmear50.pdf} 
 \caption{TOF distributions after a 50~ps Gaussian smearing for (left)
   the HGC layer and (right) the final two-layer combination using a
-  32\GeV electron beam and 6$X_{0}$ of tungsten. The TOF resolutions are estimated by the
-standard deviation parameter of the Gaussian fit (red solid curve) to the TOF distribution.} 
+32\GeV electron beam and 6$X_{0}$ of tungsten. The TOF resolutions are estimated by the
+standard deviation parameter of the Gaussian fit (red solid curve) to
+the TOF distribution.} 
+
 \label{hgc:tof2_smear} 
 \end{figure}
 \begin{figure}[h] 
@@ -1862,9 +1863,12 @@ equivalent to ~1~cm resolution in the collision axis).
 \begin{figure}[h] 
 \centering
 \includegraphics[width=0.45\textwidth]{HGC/TOF_vs_beamEnergy_50_ps_smearing.pdf} 
-\includegraphics[width=0.45\textwidth]{HGC/TOF_vs_beamEnergy_50_ps_smearing_50_ps_smearing_two_layer.pdf} 
-\caption{TOF distributions as a function of the beam energy after a 50~ps Gaussian smearing for (left)
-  the HGC layer and (right) the final two-layer combination using 6$X_{0}$ of tungsten. The functional form $A/\sqrt{E} +
+%\includegraphics[width=0.45\textwidth]{HGC/TOF_vs_beamEnergy_50_ps_smearing_50_ps_smearing_two_layer.pdf} 
+%\caption{TOF distributions as a function of the beam energy after a 50~ps Gaussian smearing for (left)
+ % the HGC layer and (right) the final two-layer combination using 6$X_{0}$ of tungsten. The functional form $A/\sqrt{E} +
+%B$ was fitted to the data points (red solid curve).} 
+\caption{TOF distributions as a function of the beam energy after a 50~ps Gaussian smearing for 
+  the HGC layer using 6$X_{0}$ of tungsten. The functional form $A/\sqrt{E} +
 B$ was fitted to the data points (red solid curve).} 
 \label{hgc:TOF_vs_beamEnergy_Smeared} 
 \end{figure}
