@@ -3,7 +3,7 @@
 \usepackage[table]{xcolor}
 \usepackage{lipsum}
 \usepackage{graphicx}
-
+\usepackage{feynmp-auto} 
 \usepackage{todonotes}
 %%TDR
 %\usepackage{pennames-pazo}
@@ -22,6 +22,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{newtxtext,newtxmath}
 \usepackage[pdfencoding=auto]{hyperref}
+\usepackage{calligra}
 
 
 % Must use biblatex to produce the Published Contents and Contributions, per-chapter bibliography (if desired), etc.
@@ -100,25 +101,134 @@ Muon Solenoid Experiment and Precision Timing Calorimetry}
 \address{Pasadena, California}                     % Institution address
 \unilogo{caltech.png}                                 % Institution logo
 \copyyear{2016}  % Year (of graduation) on diploma
-\defenddate{October 2016}          % Date of defense
+\defenddate{November 2016}          % Date of defense
 
-\orcid{[Author ORCID]}
+%\orcid{[Author ORCID]}
 
 %% IMPORTANT: Select ONE of the rights statement below.
-\rightsstatement{All rights reserved\todo[size=\footnotesize]{Choose one from the choices in the source code!! And delete this \texttt{todo} when you're done that. :-)}}
+%\rightsstatement{All rights reserved\todo[size=\footnotesize]}
 % \rightsstatement{All rights reserved except where otherwise noted}
 % \rightsstatement{Some rights reserved. This thesis is distributed under a [name license, e.g., ``Creative Commons Attribution-NonCommercial-ShareAlike License'']}
 
-%%  If you'd like to remove the Caltech logo from your title page, simply remove the "[logo]" text from the maketitle command
+%%  If you'd like to remove the Caltech logo from your title page,
+%%  simply remove the "[logo]" text from the maketitle command
+
 \maketitle[logo]
 %\maketitle
 
+\par\vspace*{.2\textheight}{\centering To my parents, brother, wife, and son\par}
+\clearpage
 \begin{acknowledgements} 	 
-  To the two times Copa America Champions!!!
+  I would like to begin by thanking my adviser, Maria Spiropulu, whose
+  knowledge and understanding of experimental High Energy Physics has
+  guided me during my Ph.D. Maria's passion, integrity, and energy have
+  truly inspired me and made working with her a remarkable
+  experience. I would also like to thank Harvey Newman for his
+  insightful and thoughtful help throught the completion of this
+  dissertation. I also want to thank Bradley Filippone, my original
+  adviser, for his guidance when arrived to Caltech and for his
+  generosity, which allowed me to pursue my research interests that finally resulted in
+  this thesis. 
+
+I would also like to thank Adolf Bornheim, Yong Yang, and Jan Veverka
+for guiding and helping me to successfully carry out the first projects within the
+Caltech-CMS group. A special thank to Maurizio Pierini with whom I
+worked on my first physics analysis; his support, patience, knowledge,
+and insight 
+throughout that project were a turning point in my career. I would really
+like to thank Artur Apresyan and Si Xie with whom I have worked in
+many physics analyses and detector research and development projects; I
+truly value the discussions, lessons, encouragement, inspiration, and help they have
+provided me. I would also like to thank Anatoly Ronzhin and Sergey
+Loss, with whom I have worked in many beam test at Fermilab, for the
+valuable discussions about particle detection. I want to also thank  Josh Bendavid for all 
+his insightful comments and suggestions regarding my work in the later stages of my Ph.D.
+
+To my friends Javier Duarte and Dustin Anderson, who also work on the
+Caltech-CMS group, I want to thank them for all the discussions we ever
+had, they have significantly contributed to the completion of this
+dissertation. I would also like to thank Ana Brown, Kristen Boydstun,
+Chen-Chih Hsu,
+Tristan McKinney, Belinda Pang, and Ingmar Saberi for all the physics
+and non-physics discussions we had.
+
+I would also like to thank my undergraduate advisers and mentors; specially to William Brooks
+for his enormous support, encouragement and inspiration; Hayk Hakobyan
+for teaching me the essential programming skills that have been
+proved so helpful during the last 5 years; finally to Viktor Slusarenko and
+Jaime Glar\'ia for their invaluable guidance, and encouragement in the very early stages of my
+education.
+
+
+I would also like to thank all the people that have helped me in one
+way or another to get to this point. To Jorge Pareja, Alejandra Ortiz,
+Sebastian Pulgar for being so awesome as friends and roommates. To
+Patricio Klenner and Alejandro Vargas for sharing their enthusiasm for
+science with me. A special mention to Ren\'e Rios who encouraged me
+to pursue along with him an education in Physics. To Orlando Soto for
+sharing so many hours of study with me. I want to also thank my
+friends in Pasadena, Ruby, Carlos, Valentina, George, Mari Cruz, and
+Alejandro for sharing so many evenings and making me feel closer to
+home. I thank the Chilean soccer national team for the two ``Copa
+America'' championships, they have provided happiness when much
+needed.
+
+My deepest gratitude to my all my family, particularly my parents and brother,
+Nancy, Ricardo, and David for all their love, support, hard work, and
+encouragement throughout my whole life; and to my beloved wife, Camila,
+for all her love, support, encouragement, understanding, and
+unselfishness during all the time we have been together. I owe to all
+of them a great deal, that is why this
+dissertation is dedicated to them and my son to be, Nicanor.
+ 
+
 \end{acknowledgements}
 
 \begin{abstract}
-   [This abstract must provide a succinct and informative condensation of your work. Candidates are welcome to prepare a lengthier abstract for inclusion in the dissertation, and provide a shorter one in the CaltechTHESIS record.]
+ In this thesis, we present several searches for beyond the standard
+ model physics in proton-proton collisions recorded by the Compact
+ Muon Solenoid Experiment at center-of-mass energy of 8 and 13\TeV. We
+ search for particle dark matter in events with two or more jets and
+ missing transverse momentum at $\sqrt{s} = 8$\TeV, in this search we use the razor
+ variables to discriminate signal from background events and thus
+ improve the overall sensitivity of the analysis. We observe
+ agreement between the observation and the background estimation. The
+ interpretation of the results is carried out in the context of an
+ effective field theory that couples the standard model quarks to the
+ dark matter candidate. A search for anomalous production of Higgs
+ bosons using 15.3 $\mathrm{fb}^{-1}$ of  proton-proton collisions at
+ $\sqrt{s} = 13$\TeV is also presented, this search selects events
+ with a Higgs boson in association with jets, where the Higgs
+ candidate decays into two photons. We
+ also employ the razor variables ($\mathrm{M_{R}}, \mathrm{R}^{2}$) to discriminate signal from
+ background. We observe an excess of events in one of the search bins
+ with relatively high values of $\mathrm{M_{R}}$ and
+ $\mathrm{R}^{2}$. The interpretation of this analysis is pair
+ production of bottom squarks in the context of supersymmetry, this
+ model is also presented in one of the appendices of this thesis. In
+ the other appendix of this thesis, we present a search for new
+ phenomena in high-mass diphoton events using 12.9 $\mathrm{fb}^{-1}$ of
+ proton-proton collisions at $\sqrt{s} = 13$\TeV. This search observed
+ a significant excess (3.4 standard deviations, local) with 2015 data at a diphoton invariant mass of 750\GeV, equivalent to $\approx$ 20\% of
+ the current dataset. By repeating the search with the larger dataset,
+ we found that the
+ observed excess has been greatly disfavored. Additionally, in order to confirm the robustness and correctness of this
+ search, we have carried out an independent analysis, which indeed
+ finds compatible results.
+
+ We
+ also present detector research and developments studies of
+ electromagnetic calorimeters equipped with precision timing
+ capabilities. We present several calorimeter prototypes that were
+ tested at the Fermilab Test Beam Facility. These prototypes include
+ LYSO-based calorimeters, tungsten-LYSO ``shashlik'' sampling
+ calorimeters, micro-channel-plate sampling calorimeters, and
+ silicon-based sampling calorimeters. The results of these studies
+ indicate that time resolutions of the order of $\sim$ 30 ps are
+ readily available when measuring electromagnetic showers. A discussion about the
+ applications of precision timing in high energy physics experiments is also
+ presented, with a particular interest in pileup rejection in the
+ context of the high-luminosity upgrade of the Large Hadron Collider.
 \end{abstract}
 
 %% Uncomment the `iknowhattodo' option to dismiss the instruction in the PDF.
@@ -136,7 +246,7 @@ Muon Solenoid Experiment and Precision Timing Calorimetry}
 %%%%%%%%%%%%%%%%
 %%%%% New Part%%%%
 %%%%%%%%%%%%%%%%
-\part{Preliminaries, Supersymmetry, and Dark Matter}
+\part{Preliminaries, the Standard Model, and Dark Matter}
 \input{intro}
 %%%%%%%%%%%%%%%%
 %%%%% New Part%%%%
@@ -170,9 +280,7 @@ Muon Solenoid Experiment and Precision Timing Calorimetry}
 \input{Conclusion}
 %\publishedas{Cahn:etal:2015}
 
-[You can have chapters that were published as part of your thesis. The
-text style of the body should be single column, as it was submitted to
-the publisher, not formatted as the publisher did.]
+
 
 \printbibliography[heading=bibintoc]
 
@@ -181,7 +289,7 @@ the publisher, not formatted as the publisher did.]
 
 \chapter{Search for Massive Resonances Decaying into Two Photons}
 \input{HighMassDiphoton}
-\chapter{Phenomenology of Anamalous Higgs Production in SuperSymmetric models}\label{hggPheno}
+\chapter{Phenomenology of Anomalous Higgs Production in SuperSymmetric models}\label{hggPheno}
 \input{RazorHggPheno/intro}
 \input{RazorHggPheno/models}
 \input{RazorHggPheno/gensim}

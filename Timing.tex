@@ -2,7 +2,7 @@
 Calorimeters are a key detector systems in high energy physics experiments
 ranging from neutrino to particle collider detectors. In
 particular, electromagnetic (EM) calorimeters are designed to fully
-contain the energy deposisted by electrons, positrons, and photons (e/$\gamma$);
+contain the energy deposited by electrons, positrons, and photons (e/$\gamma$);
 as well as to provide position information by means of their granular
 design. They are usually divided in two types: homogeneous and
 sampling, homogenous calorimeters are those in which their entire
@@ -10,11 +10,11 @@ volume is composed of sensitive media, while sampling calorimeters
 are composed of alternating layers of sensitive and absorber
 media. 
 
-Homogeous EM calorimeters are usually made out of dense scintillating
+Homogenous EM calorimeters are usually made out of dense scintillating
 crystals (BGO, BaF$_{2}$, LYSO, PbWO$_{4}$, among others) or liquid nobel gases
-(Ar, Kr, Xe) and they provide an oustanding energy resolution for
+(Ar, Kr, Xe) and they provide an outstanding energy resolution for
 e/$\gamma$. For example, the CMS EM calorimeter~\cite{cmsECAL} is
-composed of PbWO$_{4}$ scintillating crystals coupled to avalance
+composed of PbWO$_{4}$ scintillating crystals coupled to avalanche
 photodiodes and with and energy resolution of
 
 \begin{equation}
@@ -37,8 +37,8 @@ sampling calorimeter with an energy resolution of
 Particle collider experiments at the LHC such as ATLAS and CMS
 use EM calorimeters in the e/$\gamma$ four-momentum and jet
 energy measurements, particle identification algorithms,
-trigger systems, and the mesurement of the missing transverse energy in
-each proton-proton collision. Therefore, maintaining the current perfomance of the EM
+trigger systems, and the measurement of the missing transverse energy in
+each proton-proton collision. Therefore, maintaining the current performance of the EM
 calorimeters is critical for the current and future physics measurements of those experiments.
 
 In order to provide the necessary datasets to perform precision measurements of the Higgs couplings, 
@@ -82,7 +82,7 @@ possible improvements as well as future measurements.
 \section{EM Calorimeter Preliminaries}\label{prelim-cal}
 Calorimeters are highly complex instruments and therefore some
 background is required to understand the subsequent sections in this
-chater; this section is intended to provide a short overview of the
+chapter; this section is intended to provide a short overview of the
 most important effects -- mostly different physical processes in
 different energy regimes -- and the relevant considerations when
 designing a calorimeter.
@@ -92,7 +92,7 @@ shower upon entering the calorimeter. The processes involved in the EM
 shower development are few and well understood. Photons lose energy
 mostly by photoelectric effect, Compton scattering, or pair production
 of electrons and positrons. The later dominates at high energies and
-it is reponsible for the shower development, while
+it is responsible for the shower development, while
 photoelectric effect overwhelmingly dominates at low energies
 (typically below ~10\MeV), Figure~\ref{fig:photonEL} shows the photon cross
 section as a function of the incoming photon energy in lead.
@@ -124,7 +124,7 @@ shows a graphical representation of this definition.
 \label{fig:criticalE}
 \end{figure} 
 Empirical functional forms for $E_{c}$ can be obtained when a
-distinction between gase and liquid or solid media is made, since there are
+distinction between gas and liquid or solid media is made, since there are
 significant difference in ionization that arise mainly due to the
 density effect. Figure~\ref{fig:criticalEFF} shows the experimental
 data for $E_{c}$ as a function of the atomic number (Z) along with the
@@ -146,11 +146,11 @@ EM showers are then produced when high energy photons
 (electron/positron) enters the calorimeter media and loses energy by
 pair production (bremsstrahlung), the subsequently $e^{+}$/$e^{-}$
 pair (high energy photon produced by radiation) loses energy by
-bremsstralung (pair production). The number of particles produced by
+bremsstrahlung (pair production). The number of particles produced by
 this multiplicative process increases until a maximum is reached
 (shower maximum) at the certain depth inside the calorimeter. After
 this point the newly created particles have low energies and therefore other processes such as
-photoelectric effect, Compton scatterring, and ionization start to
+photoelectric effect, Compton scattering, and ionization start to
 become relevant. The shower profile in the longitudinal direction for
 a 30\GeV electron in iron is
 shown in Figure~\ref{fig:showerProfile1}. The longitudinal shower
@@ -162,7 +162,7 @@ different energies in copper.
 \includegraphics[width=0.85\textwidth]{calorimetry/EGS4_Simulation.pdf}
 \caption{Shower profile in the longitudinal direction for
 a 30\GeV electron in iron from an EGS4 simulation. The solid line
-histrogram shows the fractional energy per radiation length, and the
+histogram shows the fractional energy per radiation length, and the
 solid line curve is a fit to the distribution using a gamma
 function. The number of electrons (solid circles) and photons
 (hollowed squares) with energies larger than 1.5\MeV and crossing
@@ -182,7 +182,7 @@ different electron energies ranging from 1\GeV-1\TeV.}
 Shower development is described independently of the
 calorimeter material by two quantities: the \textbf{radiation length}
 ($X_{0}$) and the \textbf{Moli\`ere radius} ($R_{M}$). The radiation length is the characteristic amount traversed by high energy
-e/$\gamma$s in the longitudinal direction (along the orignal
+e/$\gamma$s in the longitudinal direction (along the original
 particle's direction), it is usually measured in $g
 \mathrm{cm}^{-2}$. The quantitative definition is (a) the
 mean distance over which it  and electron looses 1/$e$ of its initial
@@ -731,19 +731,10 @@ we obtain about $30$~ps resolution time measurement for the maximum light yield 
 As a follow-up we will investigate the time resolution in the limit of very large light yield, 
 and attempt to improve the light collection efficiency in these types of detectors.
 
-\section{Acknowledgements} 
-I would like to thank Erik Ramberg and Sergey Los for their help and support of this work, and Aria Soha and the FTBF test beam facility for
-the beam delivery and control. We thank Randy Ruchti for providing us with
-the DSB1 fibers used in the measurements, and Eileen Hahn for the high quality
-work in polishing the fibers. We would also like to thank Ewa Skup and Geoff Savage for help with
-operation of the Cherenkov counters, and to Todd Nobel for organizing and providing
-supporting equipment at FTBF.
-
-This work is supported by funding from Fermi Research Alliance, LLC under Contract No. DE-AC02-07CH11359 with the United States Department of Energy and from California Institute of Technology High Energy Physics under Contract DE-SC0011925 with the United States Department of Energy. 
 
 \clearpage
 \chapter{High-Granularity MCP-BASED Calorimeters}\label{mcp-cal}
-In this chapter another precision timing calorimetric propototype
+In this chapter another precision timing calorimetric prototype
 using MCPs as the sensitive medium is studied.
 
 \section{Introduction}
@@ -864,7 +855,7 @@ used for the experiment and data analysis.}
 \label{fig:photonis} 
 \end{figure}
 Four DRS4 high speed waveform digitizers were used to acquire the signals from
-the Photek 240 MCP-PMT, the cherenkov counter, and the eight operational
+the Photek 240 MCP-PMT, the Cherenkov counter, and the eight operational
 channels from the Photonis XP85011 MCP-PMT. In order to allow a synchronized
 readout of four separate DRS4 units we split the signals from the Photek 240
 MCP-PMT into four, and connected them to each of the four DRS4 units, thus achieving
@@ -1101,23 +1092,12 @@ transverse plane is obtained. Combining the measurements from a
 $3\times3$-pixel readout a sub-millimeter position resolution is
 measured, which far exceeds the 6~mm size of the individual pixels. While the more granular readout degrades
 the signal to noise for each individual pixel, the proper combination from 
-independent pixels preserves a good time resolution. The mesured time resolution improves with the increase in the number of pixels used as 
+independent pixels preserves a good time resolution. The measured time resolution improves with the increase in the number of pixels used as 
 $1/\sqrt{N}$, and when using all pixels, the time resolution is $30-40$~ps. 
 Future measurements could include larger prototypes with several layers of sensitive
 material, that will allow the study of the longitudinal development of the
 showers.
 
-\section{Acknowledgements}
-I like to thank Erik Ramberg for supporting 
-this work, and Aria Soha and the FTBF test beam facility for the good beam
-delivery and control. Thanks to Ewa Skup and Geoff Savage for help with
-operation of Cherenkov counters, and to Todd Nebel for organizing and providing
-supporting equipment at FTBF. 
-
-This work is supported by funding from Fermi Research Alliance, LLC under
-Contract No. DE-AC02-07CH11359 with the United States Department of Energy, and
-from California Institute of Technology High Energy Physics under Contract
-DE-SC0011925 with the United States Department of Energy.
 
 \clearpage
 \chapter{Silicon-Based Sampling Calorimeters}\label{sil-cal}
@@ -1338,7 +1318,7 @@ charge distribution measured in the silicon sensor after 6 radiation lengths of
 tungsten, for runs with $32$~GeV electrons. The mean and RMS of
 these distributions as a function of incident electron beam energy in
 are shown in Figure~\ref{fig:ChargeDistributionExample}. The plotted uncertainties represent the RMS of the
-charge distribution. Since the electron beam profile and purity varies at different beam energies, we collected between 10 and 50 thousand events for each beam energy, in order to ensure sufficiently large data samples. A fairly linear depedence between the measured
+charge distribution. Since the electron beam profile and purity varies at different beam energies, we collected between 10 and 50 thousand events for each beam energy, in order to ensure sufficiently large data samples. A fairly linear dependence between the measured
 charge and the incident beam energy is observed, see the right panel of
 Figure~\ref{fig:ChargeDistributionExample}.
 \begin{figure}[h] 
@@ -1356,13 +1336,13 @@ is the best fit to a linear function..}
 \end{figure}
 The measured the time resolution between the silicon sensor and the Photek
 MCP-PMT, was obtained by measuring the standard deviation of the Gaussian fit to the
-TOF distribution, i.e. $\Delta t = t_0-t_1$. The later exibits a systematic dependence on the total charge measured in the silicon detector, as shown on the
+TOF distribution, i.e. $\Delta t = t_0-t_1$. The later exhibits a systematic dependence on the total charge measured in the silicon detector, as shown on the
 left panel in Figure~\ref{fig:timewalk}. This dependence on the integrated
 charge of the amplified signal was reproduced when the output of
 the pulse-generator was connected to the same amplifiers as used in the measurements. Therefore
 a correction to $\Delta t$ for each event using the measured charge in
 the silicon sensor was applied. This procedure is referred to in the following as
-\textit{time correction}. The correction is obtained by fittin a second degree
+\textit{time correction}. The correction is obtained by fitting a second degree
 polynomial to the profiled distribution of the $\Delta t$ versus total charge
 collected in the silicon sensor, as shown in
 Figure~\ref{fig:timewalk}. The cross-check that the \textit{time correction} flattens the dependence of the time measurement
@@ -1448,7 +1428,7 @@ after 6~$X_0$ of tungsten absorber.}
 
 \section{Discussion} \label{sec:discussion} 
 From Figures~\ref{fig:noise}~and~\ref{fig:MIP}, it is observed that the noise of the
-prototype calotimetric system is sufficiently low to extract signals from MIPs. Comparing the
+prototype calorimetric system is sufficiently low to extract signals from MIPs. Comparing the
 RMS of the noise distribution with the mean of the MIP signal, a
 signal-to-noise ratio around $2$ to $2.5$ is extracted. A rough estimate from
 Figure~\ref{fig:MIP} demonstrates that the efficiency to detect $120$\GeV
@@ -1481,7 +1461,7 @@ lengths of tungsten absorber. Based on the calibration data for the response of 
 silicon sensor to MIPs, this measurement corresponds roughly to 
 an average of $54$ secondary particles registered from the electromagnetic shower. 
 This results provide a solid ground and further encouragement to use silicon as
-the sesitive medium in sampling calorimeters, as is planned for example for the CMS Phase 2 
+the sensitive medium in sampling calorimeters, as is planned for example for the CMS Phase 2 
 upgrade~\cite{Butler:2020886}, and explicitly demonstrates the opportunity 
 to use silicon for timing measurements in future calorimeters. Further
 measurements include more realistic prototypes covering larger transverse and longitudinal 
@@ -1490,8 +1470,8 @@ granularity.
 
 \chapter{CMS High-Granularity Calorimeter Timing Layer}\label{chapter:HGC}
 \section{Introduction}\label{hgc:intro}
-Recent advances in silicon sensors in terms of radiation tolerance, highly granular desings~\cite{Adloff:2011ha}, and cost per unit area
-offers the possibility of their use as the sentive media in a sampling
+Recent advances in silicon sensors in terms of radiation tolerance, highly granular designs~\cite{Adloff:2011ha}, and cost per unit area
+offers the possibility of their use as the sensitive media in a sampling
 calorimeter at the HL-LHC. An important example of such a device is
 the forward calorimeter proposed for the CMS Phase 2 Upgrade~\cite{Butler:2020886}, where
 high-granularity silicon sensors and tungsten/copper absorber layers
@@ -1499,7 +1479,7 @@ are interleaved.
 As described in Chapter~\ref{sil-cal}, silicon-based shower maximum
 detectors have extremely good precision timing capabilities -- achieving a  TOF
 resolution of 25~ps for 32\GeV electron induced shower -- which could
-be use to reduce the detrimental effects of the high pileup enviroment
+be use to reduce the detrimental effects of the high pileup environment
 foreseen for the HL-LHC. This chapter presents recents studies on the
 intrinsic timing properties of the silicon sensors to be used by the
 proposed CMS high-granularity calorimeter (HGC).
@@ -1581,7 +1561,7 @@ MCPFastCaloNIMA, Ronzhin2015288,Ronzhin201552} as well as in Chapters~\ref{lyso-
 \end{figure}
 The DAQ system is based on a CAEN V1742 digitizer board~\cite{CAENDRS}, which
 provides digitized waveforms sampled at 5 GS/s. The HGC timing layer
-was not electromagneticly shielded and therefore some electronic
+was not electromagnetically shielded and therefore some electronic
 pickup noise was detected and accounted for during the offline
 analysis. A nominal bias voltage of $-300$~V was applied to deplete the silicon sensor in all of the studies shown below.
 \section{Test Beam Measurement, Data Analysis, and
@@ -1631,7 +1611,7 @@ neglected on the timing measurements described below.
   one the pixels of the HGC timing layer (left) and
 the Photek 240 MCP-PMT (right) digitized by CAEN V1742 digitizer
 board. The timestamp on the HGC pixel is extracted by intersecting the
-linar fit (solid red line) with the horizonal line corresponding to
+linear fit (solid red line) with the horizontal line corresponding to
 45\% of the pulse maximum. The timestamp for the Photek 240 is the
 mean parameter of the Gaussian fit (solid blue line).} 
 \label{hgc:fits} 
@@ -1649,11 +1629,11 @@ layer. The HGC timing layer was positioned just downstream of 6$X_{0}$
 of lead and showering electrons were selected by requiring the
 signal amplitude and integrated charge in the Photek 240 MCP-PMT to be
 above a certain threshold. Figure~\ref{hgc:showerprofile} shows two
-examples of transeverse shower profile measured by the HGC layer,
+examples of transverse shower profile measured by the HGC layer,
 where the color palette represents the integrated charge in each
 pixel. As observed in Figure~\ref{hgc:showerprofile} most of the
-activity is concentrated in the central and the 6 neighbouring pixels
--- these 7 pixel are more clearly reprensented in the left panel of
+activity is concentrated in the central and the 6 neighboring pixels
+-- these 7 pixel are more clearly represented in the left panel of
 Figure~\ref{hgc:cartoon} -- and therefore the studies in this chapter
 just include these pixels. It is of note that the central pixel could
 fluctuate in an event-by-event basis. 
@@ -1721,7 +1701,7 @@ HGC layer. This suggests that pixels combination does not provide a
 significant improvement to the overall TOF
 resolution. Figure~\ref{hgc:tof_vs_pixel} shows the HGC TOF resolution
 as a function of the pixels combined at different separations between
-the tunsten absorber and the HGC layer, where it is observed that the
+the tungsten absorber and the HGC layer, where it is observed that the
 TOF resolution is not significantly improved as a function of the
 added pixels for any of the separations. Despite the small
 improvement, it is observed that the larger the distance between the
@@ -1729,9 +1709,9 @@ absorber and the HGC layer the larger is the relative improvement in
 the time resolution as more pixels are added, this is consistent with
 the fact that showers are more spread for the runs with more
 separation. Thus, it is convenient to define a quantity related to the
-transverse shower spread, to achive this we use the ratio of the
+transverse shower spread, to achieve this we use the ratio of the
 charge in the central pixel and the total charge in the 7 pixels as
-proxy to the transverse showe profile:
+proxy to the transverse shower profile:
 
 \begin{equation}
 \mathrm{R_{7}} = \frac{\mathrm{charge_{0}}}{\sum\limits_{i=0}^{6} \mathrm{charge_{i}}},
@@ -1760,11 +1740,11 @@ was varied to sample the shower at different location.}
 Finally, the dependence of the time resolution as a function of the
 beam energy is studied. Electron beams with energies of 8, 16, and
 32\GeV were used, the separation between the absorber and the HGC
-layer was 1~mm. The results are sumarized in
+layer was 1~mm. The results are summarized in
 Figure~\ref{hgc:res_vs_beamEnergy}, the functional form $A/\sqrt{E} +
 B$ was used to fit the data points. It is observed that the functional
 form does not fit well the data and thus more beam energy points are needed
-to better contrain the floating parameters. Nevertheless, the best time
+to better constrain the floating parameters. Nevertheless, the best time
 resolution measured was found to be around 15~ps for a 32\GeV electron
 beam.
 
@@ -1781,7 +1761,7 @@ B$ was fitted to the data points (red solid curve).}
 Combining the timing information of multiple HGC layers could improve
 the final TOF resolution of the calorimeter to em showers. The
 measurements presented in this chapter lack of an identical second HGC layer, but as shown in
-Chapter~\ref{mcp-cal} the Photonics MCP-PMT localted downstream of the HGC
+Chapter~\ref{mcp-cal} the Photonics MCP-PMT located downstream of the HGC
 layer could be use as an additional timing measurement. To obtain the
 final TOF measurement (two-layer combination) the HGC layer and the
 Photonis MCP-PMT are combined with an equal weigh. Figure~\ref{hgc:tofLong} shows the TOF distribution for the Photonis
@@ -1800,7 +1780,7 @@ standard deviation parameter of the Gaussian fit (red solid curve) to the TOF di
 
 \subsubsection{Emulation of SKIROC2 Readout}
 The HGC proposed for the Phase 2 Upgrade of the CMS electromagnetic
-calorimeter uses a fron-end electronics readout based on the
+calorimeter uses a front-end electronics readout based on the
 \textit{SKIROC2} chip, which has been preliminary shown to have
 around 50~ps jitter\cite{Butler:2020886}. In order to simulate the effect of having a
 \textit{SKIROC2} readout, the studies just presented
@@ -1853,7 +1833,7 @@ the TOF distribution.}
 \end{figure}
 
 Finally, the dependence of the TOF resolution is studied after the
-50~ps smearing was applied. The results are sumarized in
+50~ps smearing was applied. The results are summarized in
 Figure~\ref{hgc:TOF_vs_beamEnergy_Smeared}.
 It is of note that the final
 two-layer combination time
@@ -1879,14 +1859,14 @@ independent analog readout and then digitized by the the CAEN
 V1742 digitizer. The HGC layer was place right downstream of 6$X_{0}$
 of tungsten absorber. The selected em shower events showed a
 transverse spread that was contained in the inner most pixels with the
-central pixel containig most of the energy of the shower. As expected,
+central pixel containing most of the energy of the shower. As expected,
 the total
 charge deposited in the 7 HGC pixels showed a linear relationship with
 respect to the electron beam energy. The HGC time-of-flight resolution
 was obtained by combining the 7 inner pixels and found to be around
 15~ps, which was close to that of the central pixel alone; suggesting,
 that sampling the shower at place with more transverse spread could
-inprove the timing performance, provided large signal to noise ratios in
+improve the timing performance, provided large signal to noise ratios in
 the 7 inner pixels. The combination of two timing layers was also
 studied, the results suggest that adding additional timing layers
 improves the timing performance as expected from two uncorrelated
@@ -1894,6 +1874,6 @@ measurements. Finally, the effect of the \textit{SKIROC2} readout was
 studied by smearing each timestamp measurement by a Gaussian with
 50~ps width. The HGC layer time resolution and the final two-layer
 combination were measured to be about
-45~ps and 30~ps, respetively. These studies suggest that the desirable
+45~ps and 30~ps, respectively. These studies suggest that the desirable
 time-of-flight resolution for the proposed CMS high-granularity
 calorimeter are in principle well within reach. 
