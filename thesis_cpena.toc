@@ -1,0 +1,267 @@
+\vskip 35pt
+\SingleSpacing 
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{{Acknowledgements}}{iv}{chapter*.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{{Abstract}}{vi}{chapter*.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Table of Contents}{viii}{section*.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{List of Illustrations}{xi}{section*.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{List of Tables}{xxxii}{section*.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{\partnumberline {I}Preliminaries, the Standard Model, and Dark Matter}{1}{part.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {1}Introduction}{2}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {2}The Standard Model in a Nutshell}{5}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}The Standard Model of Particle Physics}{5}{section.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}The Higgs Boson and Electroweak Symmetry Breaking}{6}{section.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Fermion Masses}{9}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}On the Hierarchy Problem and Supersymmetry}{10}{section.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {3}Dark Matter and Weakly Interacting Particles}{13}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}The Evidence for Dark Matter}{13}{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Early evidence}{13}{section*.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Cosmological evidence}{14}{section*.13}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Recent evidence}{17}{section*.16}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Weakly Interacting Dark Matter Candidates}{18}{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Searches for WIMP Dark Matter}{22}{section.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Direct detection}{23}{section*.19}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Indirect detection}{23}{section*.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Searches for dark matter production at the LHC}{25}{section*.23}
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{\partnumberline {II}The Large Hadron Collides and The Compact Muon Solenoid Experiment}{28}{part.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {4}The Large Hadron Collider}{29}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}The Large Hadron Collider}{29}{section.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {5}The Compact Muon Solenoid Experiment}{34}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}The Superconducting Solenoid}{34}{section.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}The Tracker System}{37}{section.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Pixel Tracker}{37}{section*.38}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Strip Tracker}{39}{section*.42}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Performance of the CMS Tracker}{41}{section*.43}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}The Electromagnetic Calorimeter}{41}{section.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{ECAL Perfomance}{43}{section*.50}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.4}The Hadronic Calorimeter}{49}{section.5.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{The Barrel Hadronic Calorimeter}{51}{section*.59}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{The Endcap Hadronic Calorimeter}{51}{section*.62}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{The Outer Hadronic Calorimeter}{53}{section*.65}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{The Forward Hadronic Calorimeter}{54}{section*.68}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.5}The Muon Chambers}{56}{section.5.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{The Drift Tube Chambers}{57}{section*.71}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{The Cathode Strips Chambers}{59}{section*.74}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{The Resistive Plate Chambers}{60}{section*.77}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.6}The Trigger System}{61}{section.5.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{\partnumberline {III} Searches for New Physics with the Compact Muon Solenoid Experiment}{65}{part.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {6}Razor Approach to Search for BSM Physics}{66}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Introduction}{66}{section.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}The Razor Variables}{67}{section.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.3}Application of the Razor Variables to Search for BSM Physics}{70}{section.6.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {7}Searches for Dark Matter at the LHC with 8 TeV pp collisions}{75}{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}Introduction}{75}{section.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Data set and simulated samples}{77}{section.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.3}Event selection}{78}{section.7.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.4}Analysis Strategy}{80}{section.7.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.5}Background estimation}{82}{section.7.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Background estimation for the zero b-tag search region}{83}{section*.97}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Background estimation for the 0$\mu $b and 0$\mu $bb samples}{87}{section*.105}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.6}Systematic uncertainties}{90}{section.7.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.7}Results and interpretation}{93}{section.7.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Limits on dark matter production from the 0$\mu $ sample}{94}{section*.116}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Limits on dark matter production from the 0$\mu $b and 0$\mu $bb samples}{101}{section*.122}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.8}Summary}{101}{section.7.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.9}Appendix: background estimation and observed yield}{103}{section.7.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {8}Searches for Anomalous Higgs Boson Production}{105}{chapter.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.1}Introduction}{105}{section.8.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.2}Summary of the 8 TeV Results}{106}{section.8.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.3}Object Selection}{108}{section.8.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.4}Event Selection and Analysis Strategy}{110}{section.8.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.5}Background Estimation}{112}{section.8.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.6}Nos-resonant Background Functional Form Selection: AIC Criterion and Bias Tests}{114}{section.8.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.7}Systematic Uncertainties}{120}{section.8.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.8}Results and Interpretations}{122}{section.8.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.9}Summary}{124}{section.8.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{\partnumberline {IV} Precision Timing Calorimetry}{134}{part.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {9}Introduction}{135}{chapter.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.1}EM Calorimeter Preliminaries}{137}{section.9.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{EM Shower Development}{137}{section*.169}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {10}LYSO-based Calorimeters}{145}{chapter.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.1}Introduction}{145}{section.10.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.2}Experimental Setup}{146}{section.10.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.3}Event Selection and Data Analysis}{147}{section.10.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.4}Timing in LYSO-based Calorimeters}{149}{section.10.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Timing Studies of the LYSO-based Sampling Calorimeter}{149}{section*.182}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Timing Studies of the LYSO-Tungsten Shashlik Calorimeter}{151}{section*.185}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Wavelength shifting fibers readout (WLS Y11 \& DSB1)}{151}{section*.186}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Directly coupled MCP-PMTs to LYSO shashlik plates}{153}{section*.192}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.5}Results Discussion and Summary }{155}{section.10.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {11}High-Granularity MCP-BASED Calorimeters}{158}{chapter.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.1}Introduction}{158}{section.11.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.2}Experimental Setup}{160}{section.11.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.3}Event Selection and Pulse Reconstruction}{161}{section.11.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.4} Electromagnetic Shower Position Reconstruction and Resolution}{162}{section.11.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.5}Electromagnetic Shower Time Resolution}{164}{section.11.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.6}Summary}{166}{section.11.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {12}Silicon-Based Sampling Calorimeters}{171}{chapter.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.1}Introduction}{171}{section.12.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.2}General Properties of Silicon Timing and Bench Test Studies}{171}{section.12.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.3}Test-beam Setup and Experimental Apparatus }{173}{section.12.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.4}Test Beam Measurements and Results}{173}{section.12.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.5}Discussion}{179}{section.12.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.6}Conclusion}{181}{section.12.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {13}CMS High-Granularity Calorimeter Timing Layer}{182}{chapter.13}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {13.1}Introduction}{182}{section.13.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {13.2}General Properties of Silicon Timing and Bench Test Studies}{182}{section.13.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {13.3}Test-beam Setup and Experimental Apparatus }{183}{section.13.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {13.4}Test Beam Measurement, Data Analysis, and Results}{184}{section.13.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Intrinsic HGC TOF resolution}{186}{section*.229}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Combining Two Timing Layers}{190}{section*.236}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Emulation of SKIROC2 Readout}{190}{section*.238}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {13.5}Conclusions}{192}{section.13.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{\partnumberline {V}Summary and Conclusions}{194}{part.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {14}Conclusion and Discussion}{195}{chapter.14}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{198}{section*.245}
+\defcounter {refsection}{0}\relax 
+\renewcommand {\chaptername }{Appendix} 
+\defcounter {refsection}{0}\relax 
+\contentsline {appendix}{\chapternumberline {A}Search for Massive Resonances Decaying into Two Photons}{220}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.1}Introduction}{220}{section.A.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.2}Event simulation}{221}{section.A.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.3}Event selection and diphoton mass spectrum}{222}{section.A.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.4}Likelihood fit}{224}{section.A.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.5}Systematic uncertainties}{226}{section.A.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.6}Results for the 2016 data}{227}{section.A.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.7}Combination with the 2012 and 2015 data}{228}{section.A.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.8}Alternative analysis}{231}{section.A.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.9}Summary}{234}{section.A.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {appendix}{\chapternumberline {B}Phenomenology of Anomalous Higgs Production in SuperSymmetric models}{238}{appendix.B}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.1}Introduction}{238}{section.B.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.2}Benchmark signal models}{239}{section.B.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.3}Event generation and detector simulation}{240}{section.B.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.4}Emulation of the CMS search}{240}{section.B.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.5}Bayesian Statistical Interpretation}{243}{section.B.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.6}Correction and Validation}{244}{section.B.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.7}Results}{244}{section.B.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.8}Discussion and summary}{246}{section.B.8}

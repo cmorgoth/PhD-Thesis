@@ -1,0 +1,74 @@
+{\itshape Number}\hfill {\itshape Page}\par 
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {2.1}{\ignorespaces Group representation of the matter fields in the SM.\relax }}{7}{table.caption.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {3.1}{\ignorespaces A selection of the possible effective operators for DM production at the LHC\nobreakspace {}\cite {EFTColliders}. $M_{*}$ is the cutoff scale of the effective operator (sometimes this quantity is also represented by $\Lambda $).\relax }}{26}{table.caption.24}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.1}{\ignorespaces Measured trigger efficiency for different $\ensuremath {M_\mathrm {R}}\xspace $ regions. The selection $\ensuremath {R}\xspace ^2 > 0.35$ is applied. The uncertainty shown represents the statistical uncertainty in the measured efficiency. }}{78}{table.caption.91}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.2}{\ignorespaces Observed yield in each in events with $0\mu $ and no b-tagged jets for each $\mathrm {M_R}$ category. The number overlapping events between the razor and monojet searches is also presented.\relax }}{81}{table.caption.92}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.3}{\ignorespaces Analysis regions for events with zero identified b-tagged jets. The definition of these regions is based on the muon multiplicity, the output of the CSV b-tagging algorithm, and the value of $\ensuremath {M_\mathrm {R}}\xspace $. For all the regions, $\ensuremath {R}\xspace ^2>0.5$ is required.}}{82}{table.caption.93}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.4}{\ignorespaces Analysis regions for events with identified b-tagged jets. The definition of these regions is based on the muon multiplicity, the output of the CSV b-tagging algorithm, and the value of $\ensuremath {M_\mathrm {R}}\xspace $. For all the regions, $\ensuremath {R}\xspace ^2>0.5$ is required.}}{82}{table.caption.94}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.5}{\ignorespaces Comparison of the observed yield in the 1$\mu $ control region in each $\ensuremath {M_\mathrm {R}}\xspace $ category and the corresponding data-driven background estimate obtained by extrapolating from the 2$\mu $ control region. The uncertainty in the estimates takes into account both the statistical and systematic components. The contribution of each individual background process is also shown, as estimated from simulated samples, as well as the total MC predicted yield.}}{85}{table.caption.98}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.6}{\ignorespaces Comparison of the observed yield for the 2$\mu $ control region in each $\ensuremath {M_\mathrm {R}}\xspace $ category and the corresponding prediction from background simulation. The quoted uncertainty in the prediction reflects only the size of the simulated sample. The contribution of each individual background process is also shown, as estimated from simulated samples.}}{85}{table.caption.99}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.7}{\ignorespaces Observed yield and predicted background from simulated samples in the 2$\mu $b control region. The quoted uncertainty in the prediction only reflects the size of the simulated sample. The contribution of each individual background process is also shown, as estimated from simulated samples.}}{86}{table.caption.101}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.8}{\ignorespaces Comparison of the observed yields for for the zero b-tag search region in each $\ensuremath {M_\mathrm {R}}\xspace $ category and the corresponding background estimates. The uncertainty in the background estimate takes into account both the statistical and systematic components. The contribution of each individual background process is also shown, as estimated from simulated samples, as well as the total MC predicted yield.}}{87}{table.caption.103}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.9}{\ignorespaces Comparison of the observed yields in the $\ensuremath {\mathrm {Z}}(\mu \mu )$b and $1\mu $b samples, the corresponding predictions from background simulation, and (for $1\mu $b only) the cross-check background estimate. The contribution of each individual background process is also shown, as estimated from simulated samples.}}{89}{table.caption.106}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.10}{\ignorespaces Comparison of the observed yield for events in the one and two b-tag search regions and the corresponding background estimates. The uncertainty in the estimates takes into account both the statistical and systematic components. The contribution of each individual background process is also shown, as estimated from simulated samples, as well as the total MC predicted yield. }}{90}{table.caption.109}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.11}{\ignorespaces Systematic uncertainties associated with the description of the DM signal. The values indicated represent the typical size. The dependence of these systematic uncertainties on the $\ensuremath {R}\xspace ^2$ and $\ensuremath {M_\mathrm {R}}\xspace $ values is taken into account in the determination of the results.}}{93}{table.caption.115}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.12}{\ignorespaces The 90\% CL limits on DM production in the case of axial-vector couplings. Here, $\sigma ^{u}_\mathrm {UL}$ and $\sigma ^{d}_\mathrm {UL}$ are the observed upper limits on the production cross section for u and d quarks, respectively; $\Lambda _\mathrm {LL}$ is the observed cutoff energy scale lower limit; and $\sigma _{N\chi }$ is the observed DM-nucleon scattering cross section upper limit.}}{99}{table.caption.118}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.13}{\ignorespaces The 90\% CL limits on DM production in the case of vector couplings. Here, $\sigma ^{u}_\mathrm {UL}$ and $\sigma ^{d}_\mathrm {UL}$ are the observed upper limits on the production cross section for u and d quarks, respectively; $\Lambda _\mathrm {LL}$ is the observed cutoff energy scale lower limit; and $\sigma _{N\chi }$ is the observed DM-nucleon scattering cross section upper limit.}}{100}{table.caption.119}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.14}{\ignorespaces The 90\% CL limits on DM production in the case of scalar couplings. Here, $\sigma ^\text {obs}_\mathrm {UL}$ is the observed upper limit on the production cross section, $\Lambda ^\text {obs}_\mathrm {LL}$ and $\Lambda ^\text {exp}_\mathrm {LL}$ are the observed and expected cutoff energy scale lower limit, respectively.}}{102}{table.caption.123}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.15}{\ignorespaces Background estimates and observed yield for each $\ensuremath {R}\xspace ^2$ bin in the VL $\ensuremath {M_\mathrm {R}}\xspace $ category.}}{103}{table.caption.125}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.16}{\ignorespaces Background estimates and observed yield for each $\ensuremath {R}\xspace ^2$ bin in the L $\ensuremath {M_\mathrm {R}}\xspace $ category.}}{104}{table.caption.126}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.17}{\ignorespaces Background estimates and observed yield for each $\ensuremath {R}\xspace ^2$ bin in the H $\ensuremath {M_\mathrm {R}}\xspace $ category.}}{104}{table.caption.127}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.18}{\ignorespaces Background estimates and observed yield for each $\ensuremath {R}\xspace ^2$ bin in the VH $\ensuremath {M_\mathrm {R}}\xspace $ category.}}{104}{table.caption.128}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.19}{\ignorespaces Background estimates and observed yield for each bin in the $0\mu $b signal region.}}{104}{table.caption.129}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.20}{\ignorespaces Background estimates and observed yield for each bin in the $0\mu $bb signal region.}}{104}{table.caption.130}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {8.1}{\ignorespaces A summary of the search region bins in each category is presented. The functional form used to model the non-resonant background is also listed. An exponential function of the form $e^{-ax}$ is denoted as ``singleExp''; a modified exponential function of the form $e^{-ax^{b}}$ is denoted as ``modExp''; and an N'th order Bernstein polynomial is denoted by ``polyN''. }}{112}{table.caption.138}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {8.2}{\ignorespaces The predicted yields for the standard model Higgs background processes are shown for an integrated luminosity corresponding to 15.2\nobreakspace {}$\mathrm {fb}^{-1}$ for each search region considered in this analysis. The contributions from each standard model Higgs process is shown separately, and the total is shown on the rightmost column along with its full uncertainty. \relax }}{117}{table.caption.141}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {8.3}{\ignorespaces Full list of p.d.f (function) used in the AIC test.}}{118}{table.caption.142}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {8.4}{\ignorespaces AIC results summary for the search region: HighPt, $M_R > 600$\ensuremath {\tmspace +\thinmuskip {.1667em}\text {Ge\hspace {-.08em}V}}\xspace , $R^2 > 0.025$.}}{118}{table.caption.144}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {8.5}{\ignorespaces AIC results summary for the search region: HighRes, 150 $<$ $M_R$ $<$ 250\ensuremath {\tmspace +\thinmuskip {.1667em}\text {Ge\hspace {-.08em}V}}\xspace ,$R^2 > 0$.}}{118}{table.caption.146}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {8.6}{\ignorespaces AIC results summary for the search region: LowRes, LowRes, 150 $< M_R <$ 250\ensuremath {\tmspace +\thinmuskip {.1667em}\text {Ge\hspace {-.08em}V}}\xspace , $R^2 > 0.175$ }}{119}{table.caption.148}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {8.7}{\ignorespaces AIC results summary for the search region: H($\gamma \gamma $)-H/Z(bb), $M_R > 150$\ensuremath {\tmspace +\thinmuskip {.1667em}\text {Ge\hspace {-.08em}V}}\xspace , $R^2 > 0$.}}{119}{table.caption.150}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {8.8}{\ignorespaces Examples of the bias estimate for different function pairs passing the AIC test for bin0 (HighPt, $M_R>600, R^2>0.025$). Functions in the first column are the assumed parent functions ($f_{1}$), while functions in the first row are the ones being tested ($f_{2}$). In the first row, the numbers in brackets are the AIC weights. }}{121}{table.caption.152}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {8.9}{\ignorespaces List of the selected background functions for different search regions.}}{122}{table.caption.153}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {8.10}{\ignorespaces Summary of systematic uncertainties and their size.\relax }}{122}{table.caption.154}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {8.11}{\ignorespaces The non-resonant background yields, SM Higgs background yields, best fit signal yields, and observed local significance are shown for the signal plus background fit in each search region bin. The uncertainties include both statistical and systematic components. The non-resonant background yields shown correspond to the yield within the window between $122$\nobreakspace {}GeV and $129$\nobreakspace {}GeV and is intended to better reflect the background under the signal peak. The observed significance for the bins in HighRes and LowRes categories are identical because they are the result of a simultaneous fit. The significance is computed using the profile likelihood, where the sign reflects whether an excess (positive sign) or deficit (negative sign) is observed. }}{131}{table.caption.164}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {9.1}{\ignorespaces Tabulated values for $L_{\mathrm {rad}}$ and $L^{'}_{\mathrm {rad}}$ from Y. S Tsai.\relax }}{139}{table.caption.176}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {B.1}{\ignorespaces Photon isolation requirements, as in Ref\nobreakspace {}\cite {CMSPhoton}. The photon isolation variables, $I_{\gamma }$, $I_{\mathrm {n}}$, and $I_{\pi }$, are computed by summing the transverse momenta of photons, neutral hadrons, and charged hadrons, respectively, inside an isolation cone of radius $\Delta R=0.3$ around the selected photon.\relax }}{241}{table.caption.261}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {B.2}{\ignorespaces \texttt {HighRes} bin numbering scheme as in Ref.\nobreakspace {}\cite {RazorHgaga}.\relax }}{245}{table.caption.263}
